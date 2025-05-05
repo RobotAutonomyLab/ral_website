@@ -1,0 +1,38 @@
+List of Website Pages (Not in Order):
+    - Home
+    - Research
+        - Current Projects
+        - Past Projects
+    - Robots
+        - Mini Niu Scout Mini
+    - Publications
+        - Papers
+        - Theses
+        - Datasets & Codes
+    - News
+        - Lab News
+        - Events / Seminars
+        - Gallery (images & videos)
+    - Our Team
+        - Current
+        - Alumni
+        - Collaborators
+    - Join Us
+        - Open Positions (Grad / UG / Postdoc)
+        - Application steps
+    - Teaching
+        - MECG 7440 - Mobile Robotics
+
+NavBar:
+    - Left: 
+        - Logo
+    - Right:
+        - Pages
+        - Light/Dark Toggle
+
+Footer:
+    - 
+    - Info
+    - Contact Us
+    - Quick Links (to other pages)
+    - Social Links
