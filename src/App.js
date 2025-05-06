@@ -14,7 +14,7 @@ import Teaching from './pages/Teaching';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/ral_website'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/research" element={<Research />} />

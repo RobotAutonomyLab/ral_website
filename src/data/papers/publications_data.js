@@ -591,8 +591,16 @@ const publications_data = [
                     ],
                     abstract: "",
                     displayImage: "",
-                    citationLink: "",
-                    citation: ``
+                    citationLink: "wang2019mapping",
+                    citation: `@article{wang2019mapping,
+                                title={Mapping Quality Evaluation of Monocular Slam Solutions for Micro Aerial Vehicles},
+                                author={Wang, J and Shahbazi, M},
+                                journal={The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+                                volume={42},
+                                pages={413--420},
+                                year={2019},
+                                publisher={Copernicus GmbH}
+                                }`
                 },
             ],
             "2017": [
