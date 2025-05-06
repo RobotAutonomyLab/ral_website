@@ -143,13 +143,46 @@ function Publications() {
                                                         </a>
                                                     </h4>
                                                     <p>
-                                                        <span className="journal">{paper.journal}</span>, <span className="volume">{paper.volume}</span>, <span className="page">{paper.page}</span>
+                                                        {paper.journal && <span className="journal">{paper.journal}</span>}
+                                                        {paper.volume && (
+                                                            <>
+                                                                {paper.journal && ', '}
+                                                                <span className="volume">
+                                                                    {paper.volume}
+                                                                    {paper.issue && `(${paper.issue})`}
+                                                                </span>
+                                                            </>
+                                                        )}
+                                                        {!paper.volume && paper.issue && (
+                                                            <>
+                                                                {paper.journal && ', '}
+                                                                <span className="issue">{paper.issue}</span>
+                                                            </>
+                                                        )}
+                                                        {paper.page && (
+                                                            <>
+                                                                {(paper.journal || paper.volume || paper.issue) && ', '}
+                                                                <span className="page">{paper.page}</span>
+                                                            </>
+                                                        )}
                                                     </p>
                                                     <span className="caption">
                                                         {paper.authors.map((author, index) => (
-                                                            <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
-                                                                {author.name}{index < paper.authors.length - 1 && ',\u00A0'}
-                                                            </a>
+                                                            author.link ? (
+                                                                <>
+                                                                    <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
+                                                                        {author.name}
+                                                                    </a>
+                                                                    {index < paper.authors.length - 1 && ',\u00A0'}
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    <a key={index} className="not_author">
+                                                                        {author.name}
+                                                                    </a>
+                                                                    {index < paper.authors.length - 1 && ',\u00A0'}
+                                                                </>
+                                                            )
                                                         ))}
                                                     </span>
                                                     <p className="pub-links">

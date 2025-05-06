@@ -33,13 +33,24 @@
                     }
 
                     .journal,
-                    .volume {
+                    .volume,
+                    .issue {
                         font-style: italic;
                     }
                 }
 
                 .caption {
                     display: block;
+
+                    .not_author {
+                        color: gray;
+
+                        &:hover {
+                            background-color: white;
+                            color: gray;
+                            padding: 0rem;
+                        }
+                    }
                 }
 
                 .pub-links {

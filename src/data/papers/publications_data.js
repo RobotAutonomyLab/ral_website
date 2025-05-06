@@ -364,8 +364,8 @@ const publications_data = [
                     title: "How to pick a mobile robot simulator: A quantitative comparison of CoppeliaSim, Gazebo, MORSE and Webots with a focus on accuracy of motion",
                     journal: 'Simulation Modelling Practice and Theory',
                     volume: '120',
-                    issue: '102629',
-                    page: '',
+                    issue: '',
+                    page: '102629',
                     authors: [
                         { name: 'Andrew Farley' },
                         { name: 'Jay Wang', link: '/' },
@@ -566,7 +566,7 @@ const publications_data = [
                     page: '413-420',
                     authors: [
                         { name: 'Mozhdeh Shahbazi' },
-                        { name: "Jay Wang", link: '/'}
+                        { name: "Jay Wang", link: '/' }
                     ],
                     minRead: "",
                     profiles: ["Jay"],
@@ -589,7 +589,7 @@ const publications_data = [
                         "",
                         "",
                     ],
-                    abstract: "",
+                    abstract: "Monocular simultaneous localization and mapping (SLAM) attracted much attention in the mobile-robotics domain over the past decades along with the advancements of small-format, consumer-grade digital cameras. This is especially the case for micro air vehicles (MAV) due to their payload and power limitations. The quality of global 3D reconstruction by SLAM solutions is a critical factor in occupancy-grid mapping, obstacle avoidance, and map representation. Although several benchmarks have been created in the past to evaluate the quality of vision-based localization and trajectory-estimation, the quality of mapping products has been rarely studied. This paper evaluates the quality of three state-of-the-art open-source monocular SLAM solutions including LSD-SLAM, ORB-SLAM, and LDSO in terms of the geometric accuracy of the global mapping. Since there is no ground-truth information of the testing environment in existing visual SLAM benchmark datasets (e.g., EuRoC, TUM, and KITTI), an evaluation dataset using a quadcopter and a terrestrial laser scanner is created in this work. The dataset is composed of the image data extracted from the recorded videos by flying a drone in the test environment and the high-fidelity point clouds of the test area acquired by a terrestrial laser scanner as the ground truth reference. The mapping quality evaluation of the three SLAM algorithms was mainly conducted on geometric accuracy comparisons by calculating the deviation distance between each SLAM-derived point clouds and the laser-scanned reference. The mapping quality was also discussed with respect to their noise levels as well as further applications.",
                     displayImage: "",
                     citationLink: "wang2019mapping",
                     citation: `@article{wang2019mapping,
@@ -605,27 +605,28 @@ const publications_data = [
             ],
             "2017": [
                 {
-                    title: "",
-                    journal: '',
+                    title: "Locomotion mode transition study of ground hybrid robots",
+                    journal: 'Advances in Cooperative Robotics',
                     volume: '',
                     issue: '',
-                    page: '',
+                    page: '531-538',
                     authors: [
-                        { name: '', link: '' },
+                        { name: 'Jay Wang', link: '/' },
+                        { name: "Alex Ramirez-Serrano" }
                     ],
                     minRead: "",
-                    profiles: ["", ""],
+                    profiles: ["Jay"],
                     links: [
-                        { type: "PDF", url: "" },
+                        { type: "PDF", url: c_2017_1 },
                         { type: "Cite", url: "/" },
-                        { type: "DOI", url: "" }
+                        { type: "DOI", url: "https://www.worldscientific.com/doi/abs/10.1142/9789813149137_0063" }
                     ],
                     keywords: [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Hybrid robots",
+                        "Criterion",
+                        "Energy consumption",
+                        "Stair-obstacle negotiation",
+                        "Locomotion mode transition"
                     ],
                     highlights: [
                         "",
@@ -634,35 +635,44 @@ const publications_data = [
                         "",
                         "",
                     ],
-                    abstract: "",
+                    abstract: "This paper proposes a criterion based method to make possible the autonomous locomotion mode transition of ground hybrid robots. The criterion is developed based on both the internal states of robots (energy) and the external environmental information (obstacle height), which has been verified via the energy consumption comparison of two simplified locomotion models of rolling and walking locomotion. A method to determine the conditions under which locomotion transition should be performed is also discussed. Compared with current studies in this area, the novelty of the proposed method lies on considering external environmental information in developing the transition criterion, comparing and evaluating the alternative locomotion performance to determine the criterion threshold, and developing criteria based on generalizable robot parameters rather than particular designs, thus the proposed method can be implemented on various hybrid robots.",
                     displayImage: "",
-                    citationLink: "",
-                    citation: ``
+                    citationLink: "wang2017locomotion",
+                    citation: `@incollection{wang2017locomotion,
+                                title={Locomotion mode transition study of ground hybrid robots},
+                                author={WANG, JIE and RAMIREZ-SERRANO, ALEX},
+                                booktitle={Advances in Cooperative Robotics},
+                                pages={531--538},
+                                year={2017},
+                                publisher={World Scientific}
+                                }`
                 },
             ],
             "2016": [
                 {
-                    title: "",
-                    journal: '',
+                    title: "Stair-climbing and energy consumption evaluation of a leg-tracked quadruped robot",
+                    journal: '2016 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)',
                     volume: '',
                     issue: '',
-                    page: '',
+                    page: '1448-1453',
                     authors: [
-                        { name: '', link: '' },
+                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Alex Ramirez-Serrano' }
                     ],
                     minRead: "",
-                    profiles: ["", ""],
+                    profiles: ["Jay"],
                     links: [
-                        { type: "PDF", url: "" },
+                        { type: "PDF", url: c_2016_1 },
                         { type: "Cite", url: "/" },
-                        { type: "DOI", url: "" }
+                        { type: "DOI", url: "https://ieeexplore.ieee.org/abstract/document/7576974" }
                     ],
                     keywords: [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Legged locomotion",
+                        "Energy consumption",
+                        "Stability analysis",
+                        "Kinematics",
+                        "Robot kinematics",
+                        "Torque"
                     ],
                     highlights: [
                         "",
@@ -671,38 +681,41 @@ const publications_data = [
                         "",
                         "",
                     ],
-                    abstract: "",
+                    abstract: "This paper proposes an energy consumption criterion to realize the locomotion mode transition of hybrid ground robots, which particularly focuses on gait and energy analysis of a leg-tracked quadruped robot. The proposed criterion uses both the internal states of the robot and the external environmental information to determine the most energy efficient locomotion mode. The criterion is proposed based on the knowledge of the energy consumption of the studied robot to negotiate stairs of varying heights in the walking locomotion mode.",
                     displayImage: "",
-                    citationLink: "",
-                    citation: ``
+                    citationLink: "wang2016stair",
+                    citation: `@inproceedings{wang2016stair,
+                                title={Stair-climbing and energy consumption evaluation of a leg-tracked quadruped robot},
+                                author={Wang, Jie and Ramirez-Serrano, Alex},
+                                booktitle={2016 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)},
+                                pages={1448--1453},
+                                year={2016},
+                                organization={IEEE}
+                                }`
                 },
             ],
         },
 
         "Theses": {
-            "2022": [
+            "2017": [
                 {
-                    title: "",
-                    journal: '',
+                    title: "Autonomous Locomotion Mode Transition of Ground Hybrid Robots",
+                    journal: 'University of Calgary',
                     volume: '',
                     issue: '',
                     page: '',
                     authors: [
-                        { name: '', link: '' },
+                        { name: 'Jay Wang', link: '/' },
                     ],
                     minRead: "",
-                    profiles: ["", ""],
+                    profiles: ["Jay"],
                     links: [
-                        { type: "PDF", url: "" },
+                        { type: "PDF", url: t_2017_1 },
                         { type: "Cite", url: "/" },
-                        { type: "DOI", url: "" }
+                        { type: "DOI", url: "https://ucalgary.scholaris.ca/items/e08f10cd-1f0f-473b-b3d0-a1bc7e70ccbf" }
                     ],
                     keywords: [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Robotics",
                     ],
                     highlights: [
                         "",
@@ -711,10 +724,14 @@ const publications_data = [
                         "",
                         "",
                     ],
-                    abstract: "",
+                    abstract: "Multi-modal locomotion (eg terrestrial, aerial, and aquatic) is gaining increasing interest in robotics research as it improves the robots’ environmental adaptability, locomotion versatility, and operational flexibility. Within the terrestrial multiple locomotion robots, the main advantage of hybrid robots stems from their multiple (two or more) locomotion modes, among which robots can select from depending on the encountering terrain conditions. The majority of the ground hybrid robots proposed in the past two decades are wheel/track-legged systems due to their excellence in both locomotive efficiency and rough terrain negotiation abilities. However, there are many challenges in improving the autonomy of the locomotion mode transition between their multiple locomotion modes. The main goal of this research is to develop a method to enable an autonomous locomotion mode transition for ground hybrid robots. To achieve this goal, simplified dynamic modeling methods for the rolling and walking locomotion modes of wheel/track-legged hybrid robots are developed, a novel energy based criterion is proposed to evaluate the locomotion performance of the rolling and walking locomotion mode, a new rule to determine the threshold values of the locomotion transition criterion is derived, and two walking gaits to negotiate steps with different heights for quadruped wheel/track-legged hybrid robots are proposed. The autonomous locomotion mode transition method is proposed. It’s first proposed based on the energy performance knowledge of the simplified rolling and walking locomotion evaluations of ground hybrid robots. Then, the method is refined by the work on the Cricket robot. Simulated case study results are presented to illustrate that the autonomous locomotion mode transition method is able to switch between the Cricket’s rolling and walking locomotion modes when negotiating step style obstacles. Even though the proposed method is improved by the work on the Cricket robot, the method is generally applicable to a wide range of wheel/track-legged hybrid robots.",
                     displayImage: "",
-                    citationLink: "",
-                    citation: ``
+                    citationLink: "wang2017autonomous",
+                    citation: `@article{wang2017autonomous,
+                                title={Autonomous locomotion mode transition of ground hybrid robots},
+                                author={Wang, Jie},
+                                year={2017}
+                                }`
                 },
             ],
         },
