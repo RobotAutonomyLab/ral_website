@@ -18,6 +18,7 @@
 
                 h4 {
                     text-wrap: wrap;
+                    margin-bottom: 0.8rem;
 
                     .papername {
                         display: block;
@@ -27,6 +28,7 @@
 
                 p {
                     text-align: left;
+                    margin-bottom: 0.8rem;
 
                     .journal {
                         font-weight: 700;
@@ -41,6 +43,7 @@
 
                 .caption {
                     display: block;
+                    color: gray;
 
                     .not_author {
                         color: gray;

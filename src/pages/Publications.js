@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import './Publications.scss';
 import publications_data from '../data/papers/publications_data';
 
@@ -136,11 +138,11 @@ function Publications() {
                                             {years[year].map((paper, i) => (
                                                 <div key={i}>
                                                     <h4>
-                                                        <a className="paper-link" href="link" target="_blank" rel="noreferrer">
+                                                        <Link to={`/publication/${paper.id}`} target="_blank">
                                                             <span className="title-text">
                                                                 {paper.title}
                                                             </span>
-                                                        </a>
+                                                        </Link>
                                                     </h4>
                                                     <p>
                                                         {paper.journal && <span className="journal">{paper.journal}</span>}
@@ -183,7 +185,7 @@ function Publications() {
                                                                     {index < paper.authors.length - 1 && ',\u00A0'}
                                                                 </>
                                                             )
-                                                        ))}
+                                                        ))} | {paper.minRead}
                                                     </span>
                                                     <p className="pub-links">
                                                         {paper.links.map((link, index) =>

@@ -55,6 +55,10 @@
                 font-weight: 500;
                 display: flex;
                 align-items: center;
+
+                &:hover{
+                    padding: 0rem;
+                }
             }
         }
     }
@@ -113,11 +117,16 @@
                     }
                 }
             }
-
-            img {
-                width: 250px;
-                height: auto;
-
+            
+            a {
+                &:hover{
+                    padding: 0rem;
+                }
+                
+                img {
+                    width: 250px;
+                    height: auto;
+                }
             }
         }
 

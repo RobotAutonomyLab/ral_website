@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Research from './pages/Research';
 import Robots from './pages/Robots';
 import Publications from './pages/Publications';
+import IndividualPublication from './pages/IndividualPublication';
 import News from './pages/News';
 import OurTeam from './pages/OurTeam';
 import JoinUs from './pages/JoinUs';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/research" element={<Research />} />
           <Route path="/robots" element={<Robots />} />
           <Route path="/publications" element={<Publications />} />
+          <Route path='/publication/:id' element={<IndividualPublication />} />
           <Route path="/news" element={<News />} />
           <Route path="/team" element={<OurTeam />} />
           <Route path="/join" element={<JoinUs />} />

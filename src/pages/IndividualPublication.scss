@@ -1,0 +1,80 @@
+.IndividualPublication {
+    max-width: 760px;
+
+    .section {
+        padding-bottom: 3.5rem;
+
+        h3 {
+            text-wrap: wrap;
+        }
+
+        .caption {
+            display: block;
+            color: gray;
+            margin-bottom: 1.5rem;
+
+            .not_author {
+                color: gray;
+
+                &:hover {
+                    background-color: white;
+                    color: gray;
+                    padding: 0rem;
+                }
+            }
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 1rem;
+            font-size: 1rem;
+            // margin-bottom: 0rem;
+
+            * {
+                padding: 5px 0.4rem;
+                border-radius: 0.5rem;
+                border: 1px solid var(--accent-color);
+                color: var(--accent-color);
+
+                &:hover {
+                    background-color: var(--accent-color);
+                    color: white;
+                }
+            }
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+
+            * {
+                color: white;
+                background-color: var(--accent-color);
+                padding: 5px 10px;
+                text-wrap: nowrap;
+                margin-bottom: 0rem;
+                margin-right: 8px;
+                margin-bottom: 8px;
+                border-radius: 6px;
+            }
+        }
+
+        ul {
+            padding-left: 2.5rem;
+
+            p {
+                display: list-item;
+
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
