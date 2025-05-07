@@ -138,7 +138,7 @@ function Publications() {
                                             {years[year].map((paper, i) => (
                                                 <div key={i}>
                                                     <h4>
-                                                        <Link to={`/publication/${paper.id}`} target="_blank">
+                                                        <Link to={`/publications/${paper.id}`} target="_blank">
                                                             <span className="title-text">
                                                                 {paper.title}
                                                             </span>

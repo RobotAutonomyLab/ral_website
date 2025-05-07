@@ -21,7 +21,7 @@ function App() {
           <Route path="/research" element={<Research />} />
           <Route path="/robots" element={<Robots />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path='/publication/:id' element={<IndividualPublication />} />
+          <Route path='/publications/:id' element={<IndividualPublication />} />
           <Route path="/news" element={<News />} />
           <Route path="/team" element={<OurTeam />} />
           <Route path="/join" element={<JoinUs />} />
