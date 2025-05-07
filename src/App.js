@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.scss';
 
 import React from 'react';
@@ -15,7 +15,7 @@ import Teaching from './pages/Teaching';
 function App() {
   return (
     <div className="App">
-      <Router basename='/ral_website'>
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/research" element={<Research />} />
