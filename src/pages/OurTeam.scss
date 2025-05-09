@@ -1,5 +1,101 @@
-// .OurTeam {
-//     .section {
+.OurTeam {
+    .section {
+        .PI {
+            display: flex;
+            gap: 5rem;
+            
+            .PI_top {
+                display: none;
+            }
 
-//     }
-// }
+            .PI_left {
+                flex: 0 0 200px;
+                // float: left;
+                // margin-right: 5rem;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+
+                .PI_Links {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: center;
+                    margin-top: 0.5rem;
+
+                    * {
+                        font-size: 2.5rem;
+
+                        &:hover {
+                            padding: 0;
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .PI_right {
+                h3 {
+                    text-wrap: wrap;
+                }
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+                // gap: 2.5rem;
+
+                .PI_left {
+                    float: left;
+                    margin-right: 2.5rem;
+                    flex: 0 0 150px;
+
+                    img {
+                        width: 150px;
+                        height: auto;
+                        margin: auto;
+                    }
+                }
+            }
+
+            @media (max-width: 576px) {
+                display: flex;
+                flex-direction: column;
+                gap: 0rem;
+
+                .PI_top {
+                    display: block;
+
+                    h3 {
+                        text-wrap: wrap;
+                    }
+                }
+                // .PI_top {
+                //     display: block;
+
+                //     h3 {
+                //         text-wrap: wrap;
+                //     }
+                // }
+
+                .PI_right {
+                    h2, h3 {
+                        display: none;
+                    }
+                }
+
+                .PI_left {
+                    flex: 0 0 200px;
+
+                    img {
+                        width: 200px;
+                        height: auto;
+                    }
+
+                    margin-bottom: 1.6rem;
+                }
+            }
+        }
+    }
+}

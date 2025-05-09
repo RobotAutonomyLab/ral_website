@@ -1,5 +1,11 @@
 .Publications {
     .section {
+        p {
+            a {
+                font-weight: 900;
+            }
+        }
+
         .pub-each-year {
             display: flex;
             margin-bottom: 3rem;
