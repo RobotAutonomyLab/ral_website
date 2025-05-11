@@ -1,0 +1,39 @@
+.Robots {
+    .section {
+        .robots {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            .each_robot {
+                display: flex;
+                gap: 2rem;
+                img {
+                    width: 400px;
+                    height: auto;
+                }
+            }
+            // display: flex;
+            // flex-flow: row wrap;
+            // gap: 2rem;
+            // justify-content: center;
+
+            // .each_robot {
+            //     padding: 1rem 1rem;
+            //     border: 1px solid rgba(0,0,0,.125); // #0062b055;
+            //     border-radius: .25rem;
+
+            //     img {
+            //         width: 400px;
+            //         height: auto;
+            //     }
+
+            //     h3 {
+            //         text-align: center;
+            //         margin-bottom: 0rem;
+            //         padding: 1.6rem;
+            //     }
+            // }
+        }
+    }
+}

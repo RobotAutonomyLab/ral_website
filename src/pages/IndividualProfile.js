@@ -55,7 +55,7 @@ function IndividualProfile() {
                 </div>
 
                 <div className="IndividualProfile section">
-                    <p>{profile.Biography}</p>
+                    <p className='bio'>{profile.Biography}</p>
                 </div>
 
                 <div className="IndividualProfile section">
