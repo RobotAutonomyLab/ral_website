@@ -103,7 +103,11 @@ const profile_data = [
                 ProfilePic: IlyasPic,
                 Name: 'Ilyas Dawoodjee',
                 Position: 'MSc Student',
-                Biography: 'I am Ilyas Dawoodjee, currently a MSc Mechanical Engineering student at University of Manitoba where I research in the Robot Autonomy Laboratory (RAL). My area of research involves computer vision and machine learning integrated with mobile robots. I have experience involving the detection of physiological signals using computer vision and digial signal processing. I previously worked as a Research Engineer in the Building Robotics Laboratory at the National University of Singapore (NUS). I am constantly trying to learn new things and expand my knowledge base. My main language is Python.',
+                Biography: (
+                    <>
+                        I am <a href='https://blank-ed.github.io/ilyas_dawoodjee/#/' target_='blank' rel='noreferrer'>Ilyas Dawoodjee</a>, currently a MSc Mechanical Engineering student at University of Manitoba where I research in the Robot Autonomy Laboratory (RAL). My area of research involves computer vision and machine learning integrated with mobile robots. I have experience involving the detection of physiological signals using computer vision and digial signal processing. I previously worked as a Research Engineer in the <a href='https://building-robotics-lab.github.io/brlab/' target='_blank' rel='noreferrer'>Building Robotics Laboratory</a> at the <a href='http://www.nus.edu.sg/' target='_blank' rel='noreferrer'>National University of Singapore (NUS)</a>. I am constantly trying to learn new things and expand my knowledge base. My main language is Python.
+                    </>
+                ),
                 Education: [
                     { degreeName: 'Master of Science in Mechanical Engineering', degreeUniversity: "University of Manitoba", gradYear: "2026" },
                     { degreeName: 'Bachelor of Engineering (First Class Honours w/ Distinction) in Mechatronics Engineering', degreeUniversity: "Asia Pacific University of Technology & Innovation", gradYear: "2022" },
@@ -119,7 +123,7 @@ const profile_data = [
                     ),
                 ],
                 Links: [
-                    { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
+                    { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "Email" },
                     { href: IlyasResume, icon: faFile, text: 'Resume' },
                     { href: 'https://scholar.google.com/citations?user=FlonsoAAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
                     { href: 'https://www.linkedin.com/in/ilyas-dawoodjee-858011195', icon: faLinkedin, text: 'LinkedIn' },
@@ -170,7 +174,8 @@ const profile_data = [
                     'Interest3',
                     'Interest4',
                 ],
-            }, {
+            },
+            {
                 ProfileName: 'UnderGrad2',
                 ProfileLink: "/team/undergrad2",
                 ProfilePic: PlaceholderPic,

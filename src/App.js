@@ -9,6 +9,7 @@ import Publications from './pages/Publications';
 import IndividualPublication from './pages/IndividualPublication';
 import News from './pages/News';
 import OurTeam from './pages/OurTeam';
+import IndividualProfile from './pages/IndividualProfile';
 import JoinUs from './pages/JoinUs';
 import Teaching from './pages/Teaching';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/publications/:id' element={<IndividualPublication />} />
           <Route path="/news" element={<News />} />
           <Route path="/team" element={<OurTeam />} />
+          <Route path="/team/:id" element={<IndividualProfile />} />
           <Route path="/join" element={<JoinUs />} />
           <Route path="/teaching" element={<Teaching />} />
         </Routes>

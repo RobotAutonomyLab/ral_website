@@ -3,15 +3,13 @@
         .PI {
             display: flex;
             gap: 5rem;
-            
+
             .PI_top {
                 display: none;
             }
 
             .PI_left {
                 flex: 0 0 200px;
-                // float: left;
-                // margin-right: 5rem;
 
                 img {
                     width: 200px;
@@ -19,13 +17,38 @@
                 }
 
                 .PI_Links {
+
                     display: flex;
                     gap: 1rem;
-                    justify-content: center;
                     margin-top: 0.5rem;
-
-                    * {
+                    justify-content: center;
+                
+                    a {
                         font-size: 2.5rem;
+                        position: relative;
+                        text-decoration: none; 
+                
+                        &[data-tooltip]::after {
+                            font-size: 1rem;
+                            content: attr(data-tooltip); 
+                            position: absolute;
+                            top: 100%; 
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: black;
+                            color: white;
+                            margin-top: 0.5rem;
+                            padding: 5px 10px; 
+                            border-radius: 5px;
+                            white-space: nowrap;
+                            opacity: 0;
+                            transition: opacity 0.3s;
+                            pointer-events: none;
+                        }
+                
+                        &:hover::after {
+                            opacity: 1; 
+                        }
 
                         &:hover {
                             padding: 0;
@@ -44,7 +67,6 @@
 
             @media (max-width: 768px) {
                 display: block;
-                // gap: 2.5rem;
 
                 .PI_left {
                     float: left;
@@ -71,16 +93,11 @@
                         text-wrap: wrap;
                     }
                 }
-                // .PI_top {
-                //     display: block;
-
-                //     h3 {
-                //         text-wrap: wrap;
-                //     }
-                // }
 
                 .PI_right {
-                    h2, h3 {
+
+                    h2,
+                    h3 {
                         display: none;
                     }
                 }
@@ -97,5 +114,86 @@
                 }
             }
         }
+
+        .OurTeam-each {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .OurTeam-each-person {
+                box-shadow: 0 1px 5px 0px rgba(38, 59, 94, 0.3);
+                border-bottom: 3px solid var(--accent-color);
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 2rem;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    margin-bottom: 0rem;
+                    text-align: center;
+                }
+
+                .caption {
+                    display: flex;
+                    justify-content: center;
+                    color: gray;
+                    margin-bottom: 0rem;
+                }
+
+                .each_person_links {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: center;
+                
+                    a {
+                        font-size: 2rem;
+                        position: relative; 
+                        text-decoration: none;
+                
+                        &[data-tooltip]::after {
+                            font-size: 1rem;
+                            content: attr(data-tooltip);
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: black;
+                            color: white;
+                            margin-top: 0.5rem;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            white-space: nowrap;
+                            opacity: 0;
+                            transition: opacity 0.3s; 
+                            pointer-events: none;
+                        }
+                
+                        &:hover::after {
+                            opacity: 1;
+                        }
+
+                        &:hover {
+                            padding: 0;
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+        }
     }
 }
+
+// https://imagy.app/image-aspect-ratio-changer/ 
+// Use above website to get consistent images for all users
+// Make it 1:1 ratio and adjust 

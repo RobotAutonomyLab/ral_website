@@ -1,0 +1,104 @@
+.IndividualProfile {
+    max-width: 760px;
+
+    .section {
+        padding-bottom: 3.5rem;
+        p {
+            &:last-child {
+                margin-bottom: 0rem;
+            }
+        }
+
+        .hero_section {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            img {
+                width: 200px;
+                height: auto;
+                border-radius: 3rem;
+            }
+
+            @media (max-width: 576px) {
+                flex-direction: column-reverse;
+                gap: 0rem;
+
+                div {
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 1rem;
+            font-size: 1rem;
+            flex-wrap: wrap;
+            // margin-bottom: 0rem;
+
+            > * {
+                padding: 5px 0.4rem;
+                border-radius: 0.5rem;
+                border: 1px solid var(--accent-color);
+                color: var(--accent-color);
+
+                &:hover {
+                    background-color: var(--accent-color);
+                    color: white;
+                }
+            }
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+
+            * {
+                color: white;
+                background-color: var(--accent-color);
+                padding: 5px 10px;
+                text-wrap: nowrap;
+                margin-bottom: 0rem;
+                margin-right: 8px;
+                margin-bottom: 8px;
+                border-radius: 6px;
+            }
+        }
+
+        ul {
+            padding-left: 2.5rem;
+
+            p {
+                display: list-item;
+                text-align: left;
+
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+
+                b {
+                    font-weight: 900;
+                }
+            }
+
+            @media (max-width: 576px) {
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .Links {
+            p {
+                padding-left: 2.5rem;
+            }
+        }
+    }
+}
