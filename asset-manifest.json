@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ral_website/static/css/main.c858c189.css",
-    "main.js": "/ral_website/static/js/main.bd33b3d3.js",
+    "main.css": "/ral_website/static/css/main.4bc743b3.css",
+    "main.js": "/ral_website/static/js/main.bd65596b.js",
     "static/media/j_2024_1.pdf": "/ral_website/static/media/j_2024_1.0e3bf0df47387bac77dd.pdf",
     "static/media/j_2019_1.pdf": "/ral_website/static/media/j_2019_1.900c6f42099250afa79f.pdf",
     "static/media/t_2017_1.pdf": "/ral_website/static/media/t_2017_1.7f4513249a812645fc53.pdf",
@@ -15,19 +15,19 @@
     "static/media/c_2016_1.pdf": "/ral_website/static/media/c_2016_1.00bd7949ed5f250abea2.pdf",
     "static/media/j_2021_1.pdf": "/ral_website/static/media/j_2021_1.a24f950c4bb60fc75b06.pdf",
     "static/media/j_2023_2.pdf": "/ral_website/static/media/j_2023_2.8e2130d24078cb2b5e3b.pdf",
-    "static/media/Ilyas.jpg": "/ral_website/static/media/Ilyas.057a66853151859381e5.jpg",
     "static/media/c_2017_1.pdf": "/ral_website/static/media/c_2017_1.d60ed6a742165dec9b09.pdf",
     "static/media/j_2024_4.pdf": "/ral_website/static/media/j_2024_4.e30842cf18f5a3769b78.pdf",
     "static/media/j_2024_5.pdf": "/ral_website/static/media/j_2024_5.a76687cbcfc662b3a71f.pdf",
     "static/media/logo_um.jpg": "/ral_website/static/media/logo_um.3c702fc5d339d6f04406.jpg",
+    "static/media/Ilyas.jpg": "/ral_website/static/media/Ilyas.727f2829ff91fc03390d.jpg",
     "static/media/IlyasResume.pdf": "/ral_website/static/media/IlyasResume.5874754583bf188bfac7.pdf",
     "static/media/logo_light.jpg": "/ral_website/static/media/logo_light.2b133956b7529969f463.jpg",
     "index.html": "/ral_website/index.html",
-    "main.c858c189.css.map": "/ral_website/static/css/main.c858c189.css.map",
-    "main.bd33b3d3.js.map": "/ral_website/static/js/main.bd33b3d3.js.map"
+    "main.4bc743b3.css.map": "/ral_website/static/css/main.4bc743b3.css.map",
+    "main.bd65596b.js.map": "/ral_website/static/js/main.bd65596b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c858c189.css",
-    "static/js/main.bd33b3d3.js"
+    "static/css/main.4bc743b3.css",
+    "static/js/main.bd65596b.js"
   ]
 }
