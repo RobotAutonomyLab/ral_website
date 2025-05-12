@@ -16,6 +16,13 @@ function JoinUs() {
 
                 <div className="JoinUs section">
                     <div className="each-join-section">
+                        <h3>Current Opportunities</h3>
+                        <div>
+                            {/* <p>The <a href="/">Robot Autonomy Lab</a> invites applications for <b>one fully funded PhD position</b> and <b>one fully funded MSc position</b>. We are looking for passionate and driven individuals with a keen interest in robotics, machine learning, and autonomous systems. To apply, please follow the application instructions outlined in the relevant sections above. For more details or to discuss these opportunities, feel free to visit Professor Wang in person at <b>E1-406</b>.</p> */}
+                            <p>At this time, there are <b>no open positions</b> available. Please check back later!</p>
+                        </div>
+                    </div>
+                    <div className="each-join-section">
                         <h3>Postdoctoral Scholars</h3>
                         <div >
                             <p>The <Link to='/'>Robot Autonomy Lab</Link>, led by <Link to='/team'>Professor Jay Wang</Link>, invites applications for a postdoctoral researcher position focused on advancing mobile-robot autonomy. We seek highly motivated candidates who have recently completed or are nearing completion of their doctoral studies in robotics, autonomous systems, machine learning, or related fields. Ideal candidates should have a strong research portfolio with expertise in areas such as mobile robotics, machine learning for robotic systems, multi-physics based modeling, human-robot interaction, or multi-robot coordination and experience in simulation tools.</p>
@@ -53,12 +60,7 @@ function JoinUs() {
                             <p>The lab welcomes visiting PhD and MSc students from other institutions with established visiting scholar programs. If interested, email <a href='mailto:J.Wang@umanitoba.ca'>J.Wang@umanitoba.ca</a> with the subject line <b>"Prospective Visiting Graduate Student - [Your Surname]"</b>. Please include A <b>CV/Resume</b> outlining your research background, a <b>short proposal (1-2 pages)</b> describing the research you plan to conduct in the lab, and a brief explanation of how your work aligns with our research themes.</p>
                         </div>
                     </div>
-                    <div className="each-join-section">
-                        <h3>Current Opportunities</h3>
-                        <div>
-                            <p>The <a href="/">Robot Autonomy Lab</a> invites applications for <b>one fully funded PhD position</b> and <b>one fully funded MSc position</b>. We are looking for passionate and driven individuals with a keen interest in robotics, machine learning, and autonomous systems. To apply, please follow the application instructions outlined in the relevant sections above. For more details or to discuss these opportunities, feel free to visit Professor Wang in person at <b>E1-406</b>.</p>
-                        </div>
-                    </div>
+
                     {/* <div className="each-join-section">
                         <h3>Industrial Collaborations</h3>
                         <div>
