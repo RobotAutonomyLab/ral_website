@@ -4,7 +4,7 @@ import './Robots.scss'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
-import scoutmini from '../data/robots/scoutmini.jpg'
+import scoutmini from '../data/robots/scoutmini.jpeg'
 import go2 from '../data/robots/go2.jpeg'
 import ur5e from '../data/robots/ur5e.jpg'
 import dji_matrice from '../data/robots/dji_matrice.jpeg'
@@ -21,31 +21,35 @@ function Robots() {
 
                 <div className="Robots section">
                     <div className="robots">
-                        <div className="each_robot">
+                        <div className="each_robot reverse">
                             <img src={scoutmini} alt="" />
                             <div>
                                 <h3>AgileX Scout Mini</h3>
                                 <p>Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here </p>
+                                {/* <button>Read More</button> */}
                             </div>
                         </div>
                         <div className="each_robot">
                             <div>
                                 <h3>Unitree Go2</h3>
                                 <p>Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here </p>
+                                {/* <button>Read More</button> */}
                             </div>
                             <img src={go2} alt="" />
                         </div>
-                        <div className="each_robot">
+                        <div className="each_robot reverse">
                             <img src={ur5e} alt="" />
                             <div>
                                 <h3>Universal Robots UR5e</h3>
                                 <p>Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here </p>
+                                {/* <button>Read More</button> */}
                             </div>
                         </div>
                         <div className="each_robot">
                             <div>
                                 <h3>DJI Matrice 350 RTK</h3>
                                 <p>Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here Text about robot here </p>
+                                {/* <button>Read More</button> */}
                             </div>
                             <img src={dji_matrice} alt="" />
                         </div>

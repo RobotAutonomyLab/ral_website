@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import PlaceholderPic from './Placeholder.png'
 
-import ProfPic from './Prof/Prof.jpg'
+import ProfPic from './Prof/Prof.jpeg'
 // import ProfResume from './Prof/ProfResume.pdf'
 
 import IlyasPic from "./Ilyas/Ilyas.jpg"

@@ -1,0 +1,63 @@
+.JoinUs {
+    .section {
+        p {
+            a {
+                font-weight: 900;
+            }
+        }
+
+        .each-join-section {
+            display: flex;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 3rem;
+            gap: 2rem;
+
+            h3 {
+                flex: 1 1 0%;
+            }
+
+            div {
+                flex: 3 1 0%;
+                
+                p {
+                    a, b {
+                        font-weight: 700;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0rem;
+                    }
+                }
+
+                // ul {
+                //     padding-left: 2.5rem;
+        
+                //     p {
+                //         display: list-item;
+        
+                //         // &:last-child {
+                //         //     margin-bottom: 0rem;
+                //         // }
+                //     }
+        
+                //     @media (max-width: 576px) {
+                //         p {
+                //             margin-bottom: 1rem;
+        
+                //             // &:last-child {
+                //                 // margin-bottom: 0rem;
+                //             // }
+                //         }
+                //     }
+                // }
+            }
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 0rem;
+            }
+        }
+    }
+}
