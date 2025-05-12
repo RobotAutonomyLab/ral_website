@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ral_website/static/css/main.b0f037e5.css",
-    "main.js": "/ral_website/static/js/main.324f939e.js",
+    "main.css": "/ral_website/static/css/main.1f26e7c2.css",
+    "main.js": "/ral_website/static/js/main.61711b1b.js",
     "static/media/j_2024_1.pdf": "/ral_website/static/media/j_2024_1.0e3bf0df47387bac77dd.pdf",
     "static/media/j_2019_1.pdf": "/ral_website/static/media/j_2019_1.900c6f42099250afa79f.pdf",
     "static/media/t_2017_1.pdf": "/ral_website/static/media/t_2017_1.7f4513249a812645fc53.pdf",
@@ -9,7 +9,6 @@
     "static/media/j_2024_2.pdf": "/ral_website/static/media/j_2024_2.ccd71f32449bb702310f.pdf",
     "static/media/j_2024_3.pdf": "/ral_website/static/media/j_2024_3.e9c70cd38db54959ddc3.pdf",
     "static/media/c_2020_1.pdf": "/ral_website/static/media/c_2020_1.acce1d029c760f6957ce.pdf",
-    "static/media/Prof.jpg": "/ral_website/static/media/Prof.56fbe0385288da32f7c3.jpg",
     "static/media/c_2019_1.pdf": "/ral_website/static/media/c_2019_1.ce3146ecbf2053932c07.pdf",
     "static/media/j_2023_1.pdf": "/ral_website/static/media/j_2023_1.6ca2ef95514bfe002a05.pdf",
     "static/media/c_2016_1.pdf": "/ral_website/static/media/c_2016_1.00bd7949ed5f250abea2.pdf",
@@ -19,19 +18,20 @@
     "static/media/c_2017_1.pdf": "/ral_website/static/media/c_2017_1.d60ed6a742165dec9b09.pdf",
     "static/media/j_2024_4.pdf": "/ral_website/static/media/j_2024_4.e30842cf18f5a3769b78.pdf",
     "static/media/j_2024_5.pdf": "/ral_website/static/media/j_2024_5.a76687cbcfc662b3a71f.pdf",
+    "static/media/scoutmini.jpeg": "/ral_website/static/media/scoutmini.15677303425e98b7df20.jpeg",
     "static/media/logo_um.jpg": "/ral_website/static/media/logo_um.3c702fc5d339d6f04406.jpg",
     "static/media/Ilyas.jpg": "/ral_website/static/media/Ilyas.727f2829ff91fc03390d.jpg",
-    "static/media/scoutmini.jpg": "/ral_website/static/media/scoutmini.d9850793564e3d420828.jpg",
     "static/media/dji_matrice.jpeg": "/ral_website/static/media/dji_matrice.1bc987df5b156c355e24.jpeg",
     "static/media/ur5e.jpg": "/ral_website/static/media/ur5e.a80e40d2c5214a9e6b54.jpg",
     "static/media/IlyasResume.pdf": "/ral_website/static/media/IlyasResume.5874754583bf188bfac7.pdf",
+    "static/media/Prof.jpeg": "/ral_website/static/media/Prof.2480baabbd87bed25b97.jpeg",
     "static/media/logo_light.jpg": "/ral_website/static/media/logo_light.2b133956b7529969f463.jpg",
     "index.html": "/ral_website/index.html",
-    "main.b0f037e5.css.map": "/ral_website/static/css/main.b0f037e5.css.map",
-    "main.324f939e.js.map": "/ral_website/static/js/main.324f939e.js.map"
+    "main.1f26e7c2.css.map": "/ral_website/static/css/main.1f26e7c2.css.map",
+    "main.61711b1b.js.map": "/ral_website/static/js/main.61711b1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0f037e5.css",
-    "static/js/main.324f939e.js"
+    "static/css/main.1f26e7c2.css",
+    "static/js/main.61711b1b.js"
   ]
 }
