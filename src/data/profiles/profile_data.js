@@ -19,7 +19,7 @@ const profile_data = [
                 ProfilePic: ProfPic,
                 Name: 'Jay Wang',
                 Position: 'Assistant Professor at the University of Manitoba',
-                Biography: 'Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here Prof Biography here ',
+                Biography: 'Dr. Jie Wang is an Assistant Professor in the Department of Mechanical Engineering at the University of Manitoba and Director of the Robot Autonomy Lab. His research advances long-term autonomy for field robots and autonomous vehicles operating in uncertain, unstructured, and harsh environments. He develops learning-based control and physics-informed, data-driven modeling techniques to improve the safety, reliability, and adaptability of autonomous systems. Dr. Wang’s work is supported by NSERC and spans applications in mining automation, autonomous driving, Arctic exploration, and precision agriculture. He received his Ph.D. in Mechanical and Manufacturing Engineering from the University of Calgary and previously held research positions at Queen’s University, the University of Waterloo, and Concordia University.',
                 Education: [
                     { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
                 ],
@@ -35,49 +35,9 @@ const profile_data = [
                 ],
                 Links: [
                     { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
-                    { href: '', icon: faFile, text: 'Resume' },
                     { href: '', icon: faGoogle, text: 'Google Scholar' },
                     { href: '', icon: faLinkedin, text: 'LinkedIn' },
                     { href: '', icon: faGithub, text: 'GitHub' },
-                    { href: '', icon: faUser, text: "Personal Website" }
-                ],
-                Interests: [
-                    'Interest1',
-                    'Interest2',
-                    'Interest3',
-                    'Interest4',
-                ],
-            },
-        ],
-
-        "Engineers": [
-            {
-                ProfileName: 'Ehsan',
-                ProfileLink: "/team/ehsan",
-                ProfilePic: PlaceholderPic,
-                Name: 'Ehsan Jalayeri',
-                Position: 'Technologist',
-                Biography: 'Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here ',
-                Education: [
-                    { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
-                ],
-                Awards: [
-                    '',
-                ],
-                Featured_Publications: [
-                    (
-                        <>
-
-                        </>
-                    ),
-                ],
-                Links: [
-                    { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
-                    { href: '', icon: faFile, text: 'Resume' },
-                    { href: '', icon: faGoogle, text: 'Google Scholar' },
-                    { href: '', icon: faLinkedin, text: 'LinkedIn' },
-                    { href: '', icon: faGithub, text: 'GitHub' },
-                    { href: '', icon: faUser, text: "Personal Website" }
                 ],
                 Interests: [
                     'Interest1',
@@ -217,6 +177,44 @@ const profile_data = [
                 Name: 'Undergraduate Student 3',
                 Position: 'BEng Student',
                 Biography: 'I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. ',
+                Education: [
+                    { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
+                ],
+                Awards: [
+                    '',
+                ],
+                Featured_Publications: [
+                    (
+                        <>
+
+                        </>
+                    ),
+                ],
+                Links: [
+                    { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
+                    { href: '', icon: faFile, text: 'Resume' },
+                    { href: '', icon: faGoogle, text: 'Google Scholar' },
+                    { href: '', icon: faLinkedin, text: 'LinkedIn' },
+                    { href: '', icon: faGithub, text: 'GitHub' },
+                    { href: '', icon: faUser, text: "Personal Website" }
+                ],
+                Interests: [
+                    'Interest1',
+                    'Interest2',
+                    'Interest3',
+                    'Interest4',
+                ],
+            },
+        ],
+
+        "Engineers": [
+            {
+                ProfileName: 'Ehsan',
+                ProfileLink: "/team/ehsan",
+                ProfilePic: PlaceholderPic,
+                Name: 'Ehsan Jalayeri',
+                Position: 'Technologist',
+                Biography: 'Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here ',
                 Education: [
                     { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
                 ],

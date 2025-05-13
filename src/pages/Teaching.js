@@ -22,16 +22,16 @@ function Teaching() {
                 <div className="Teaching section">
                     <h2>MECG 7740 - Mobile Robotics</h2>
                     <p>This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla </p>
-                    <h3>Learning Goals</h3>
+                    {/* <h3>Learning Goals</h3>
                     <ol>
                         <p>Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 </p>
                         <p>Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 </p>
                         <p>Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 </p>
                         <p>Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 </p>
-                    </ol>
+                    </ol> */}
                 </div>
 
-                <div className="Teaching section">
+                {/* <div className="Teaching section">
                     <h2>xxx xxxx - xxxxxxxxxx</h2>
                     <p>This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla This course will teach you bla bla bla </p>
                     <h3>Learning Goals</h3>
@@ -41,7 +41,7 @@ function Teaching() {
                         <p>Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 </p>
                         <p>Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 Learning Goal 1 </p>
                     </ol>
-                </div>
+                </div> */}
             </div>
             <Footer />
         </div>
