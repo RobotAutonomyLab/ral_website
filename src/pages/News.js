@@ -1,8 +1,12 @@
 import React from 'react'
 import './News.scss'
+
 import { Link } from 'react-router-dom'
+
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+
+import news_data from '../data/news/news_data'
 
 function News() {
     return (
@@ -15,7 +19,20 @@ function News() {
                 </div>
 
                 <div className="News section">
-                    
+                    <div className="all_news">
+                        {news_data.map((each_news, index) =>
+                            <div className="each-news-section" key={index}>
+                                <div className="news_img">
+                                    <img src={each_news.newsPic} alt="" />
+                                </div>
+                                <div className='news_data'>
+                                    <h4>{each_news.newsTitle}</h4>
+                                    <span className="caption">{each_news.newsDate}</span>
+                                    <p>{each_news.newsData}</p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
             <Footer />

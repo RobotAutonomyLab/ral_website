@@ -10,6 +10,9 @@ import ProfPic from './Prof/Prof.jpeg'
 import IlyasPic from "./Ilyas/Ilyas.jpg"
 import IlyasResume from "./Ilyas/IlyasResume.pdf"
 
+import AbrahamPic from "./Abraham/Abraham.jpeg"
+// import AbrahamResume from "./Abraham/AbrahamResume.pdf"
+
 const profile_data = [
     {
         "Principal Investigator": [
@@ -101,17 +104,19 @@ const profile_data = [
 
         "Undergraduate Students": [
             {
-                ProfileName: 'UnderGrad1',
-                ProfileLink: "/team/undergrad1",
-                ProfilePic: PlaceholderPic,
-                Name: 'Undergraduate Student 1',
-                Position: 'BEng Student',
-                Biography: 'I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. ',
+                ProfileName: 'Abraham',
+                ProfileLink: "/team/abraham",
+                ProfilePic: AbrahamPic,
+                Name: 'Syed Abraham Ahmed',
+                Position: 'BSc Student',
+                Biography: 'My name is Abraham and I currently am a Computer Engineering Undergraduate student at the University of Manitoba. I am currently interested in topics regarding Deep Learning and Generative Models. My experience is vast with embedded systems, website development, applied machine learning, and systems engineering.',
                 Education: [
-                    { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
+                    { degreeName: 'Bachelor of Science in Computer Engineering, Minor in Computer Science', degreeUniversity: "University of Manitoba", gradYear: "2026" },
                 ],
                 Awards: [
-                    '',
+                    // '1st in Senior Design @ UMEC 2025',
+                    // '1st in Programming @ Canadian Engineering Competition 2024',
+                    // ''
                 ],
                 Featured_Publications: [
                     (
@@ -121,18 +126,22 @@ const profile_data = [
                     ),
                 ],
                 Links: [
-                    { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
-                    { href: '', icon: faFile, text: 'Resume' },
-                    { href: '', icon: faGoogle, text: 'Google Scholar' },
-                    { href: '', icon: faLinkedin, text: 'LinkedIn' },
-                    { href: '', icon: faGithub, text: 'GitHub' },
-                    { href: '', icon: faUser, text: "Personal Website" }
+                    { href: "mailto:ahmeda16@myumanitoba.ca", icon: faEnvelope, text: "Email" },
+                    // { href: '', icon: faFile, text: 'Resume' },
+                    // { href: '', icon: faGoogle, text: 'Google Scholar' },
+                    { href: 'https://www.linkedin.com/in/syed-abraham-ahmed', icon: faLinkedin, text: 'LinkedIn' },
+                    { href: 'https://github.com/ahmeda16', icon: faGithub, text: 'GitHub' },
+                    { href: 'https://ahmeda16.github.io', icon: faUser, text: "Personal Website" }
                 ],
                 Interests: [
-                    'Interest1',
-                    'Interest2',
-                    'Interest3',
-                    'Interest4',
+                    'Machine Learning',
+                    'Deep Learning',
+                    'Robotics',
+                    'Generative AI',
+                    'System Design',
+                    'Embedded Systems',
+                    'Guitar',
+                    'Photography'
                 ],
             },
             {
