@@ -118,7 +118,28 @@ function Home() {
                 </div>
 
                 <div className="Home section">
-
+                    <div className="home_containers">
+                        <div className="each_home_container">
+                            <h2>Browse Our Publications</h2>
+                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <Link to='/publications'>OUR PAPERS</Link>
+                        </div>
+                        <div className="each_home_container">
+                            <h2>Meet Our Team</h2>
+                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <Link to='/team'>OUR TEAM</Link>
+                        </div>
+                        <div className="each_home_container">
+                            <h2>Apply</h2>
+                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <Link to='/join'>JOIN THE LAB</Link>
+                        </div>
+                        <div className="each_home_container">
+                            <h2>Teaching</h2>
+                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <Link to='/teaching'>COURSES TAUGHT</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer />
