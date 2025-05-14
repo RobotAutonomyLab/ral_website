@@ -16,7 +16,7 @@ function Teaching() {
                         <Link to='/team' target='_blank'>
                             Professor Wang
                         </Link>
-                        &nbsp;instructs a range of courses focused on robotics, autonomy, and machine learning, including Introduction to Mobile Robotics, xxxxxx. These courses blend theoretical foundations with hands-on applications, preparing students for real-world challenges in mobile robotic systems design and implementation.</p>
+                        &nbsp;instructs a range of courses focused on robotics, autonomy, and machine learning, such as Mobile Robotics. These courses blend theoretical foundations with hands-on applications, preparing students for real-world challenges in mobile robotic systems design and implementation.</p>
                 </div>
 
                 <div className="Teaching section">

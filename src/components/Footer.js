@@ -12,7 +12,6 @@ function Footer() {
                     <p>at the University of Manitoba</p>
                     <img src={LogoUM} alt="" />
                 </div>
-
                 <div className="Footer-container-middle">
                     <h3>Mailing Address</h3>
                     <p>Robot Autonomy Laboratory</p>
@@ -23,7 +22,6 @@ function Footer() {
                     <p>Winnipeg MB R3T 5V6</p>
                     <p>Canada</p>
                 </div>
-
                 <div className="Footer-container-right">
                     <h3>Quick Links</h3>
                     <Link to='/'>Home</Link>
@@ -35,46 +33,6 @@ function Footer() {
                     <Link to='/join'>Join Us</Link>
                     <Link to='/teaching'>Teaching</Link>
                 </div>
-
-                {/* <div className="left-top">
-                    <h3>Robot Autonomy Laboratory</h3>
-                </div>
-                <div className="middle-left-top">
-                    <h3>Mailing Address</h3>
-                </div>
-                <div className="middle-right-top">
-                    <h3>Contact</h3>
-                </div>
-                <div className="right-top">
-                    <h3>Quick Links</h3>
-                </div>
-                <div className="left-bottom">
-                    <img src={LogoUM} alt="" />
-                </div>
-                <div className="middle-left-bottom">
-                    <p>Robot Autonomy Laboratory</p>
-                    <p>E1-406 EITC</p>
-                    <p>Price Faculty of Engineering</p>
-                    <p>University of Manitoba</p>
-                    <p>75 Chancellors Circle</p>
-                    <p>Winnipeg MB R3T 5V6</p>
-                    <p>Canada</p>
-                </div>
-                <div className="middle-right-bottom">
-                    <p>Phone: <a href="tel:+12044746567" target='_blank' rel="noreferrer">204-474-6567</a></p>
-                    <p>Office Hours: Monday - Friday (9 am to 5 pm)</p>
-                    <p>Email: <a href="mailto:j.wang@umanitoba.ca" target='_blank' rel="noreferrer">Jay Wang</a></p>
-                </div>
-                <div className="right-bottom">
-                    <Link to='/'>Home</Link>
-                    <Link to='/research'>Research</Link>
-                    <Link to='/robots'>Robots</Link>
-                    <Link to='/publications'>Publications</Link>
-                    <Link to='/news'>News</Link>
-                    <Link to='/team'>Our Team</Link>
-                    <Link to='/join'>Join Us</Link>
-                    <Link to='/teaching'>Teaching</Link>
-                </div> */}
             </div>
             <div className="design-bar">
                 <span className="caption left">

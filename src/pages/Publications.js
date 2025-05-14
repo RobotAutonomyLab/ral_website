@@ -172,9 +172,12 @@ function Publications() {
                                                         {paper.authors.map((author, index) => (
                                                             author.link ? (
                                                                 <>
-                                                                    <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
+                                                                    <Link to={author.link} target="_blank" rel="noreferrer" key={index} className="author">
                                                                         {author.name}
-                                                                    </a>
+                                                                    </Link>
+                                                                    {/* <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
+                                                                        {author.name}
+                                                                    </a> */}
                                                                     {index < paper.authors.length - 1 && ',\u00A0'}
                                                                 </>
                                                             ) : (

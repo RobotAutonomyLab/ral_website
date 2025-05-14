@@ -121,22 +121,22 @@ function Home() {
                     <div className="home_containers">
                         <div className="each_home_container">
                             <h2>Browse Our Publications</h2>
-                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <p>Explore groundbreaking robotics research from the Robot Autonomy Lab’s extensive publication collection. Our journal papers, conference presentations, and theses push the boundaries of autonomous systems and intelligent navigation. Delve into our publications to uncover innovative contributions that shape the future of robotics. From advanced control algorithms to robust locomotion strategies, our work drives progress in autonomous technologies. Visit our publications page to access the full scope of our research.</p>
                             <Link to='/publications'>OUR PAPERS</Link>
                         </div>
                         <div className="each_home_container">
                             <h2>Meet Our Team</h2>
-                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <p>Meet the passionate researchers and innovators of the Robot Autonomy Lab at the University of Manitoba. Our diverse team of experts drives advancements in autonomous systems through collaborative and cutting-edge research. From faculty leaders to talented students, each member contributes unique skills to shape the future of robotics. Visit our team page to learn more about our dedicated professionals.</p>
                             <Link to='/team'>OUR TEAM</Link>
                         </div>
                         <div className="each_home_container">
                             <h2>Apply</h2>
-                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <p>Join the Robot Autonomy Lab at the University of Manitoba and contribute to pioneering research in autonomous systems. We welcome motivated students and researchers eager to explore innovative robotics solutions. Collaborate with our dynamic team to develop cutting-edge technologies that shape the future. Visit our Join Us page to discover opportunities and apply.</p>
                             <Link to='/join'>JOIN THE LAB</Link>
                         </div>
                         <div className="each_home_container">
                             <h2>Teaching</h2>
-                            <p>Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here Some text here </p>
+                            <p>Discover the robotics and autonomous systems courses taught by Professor Jay Wang at the University of Manitoba. Our curriculum equips students with cutting-edge knowledge and practical skills in intelligent navigation and control. From foundational principles to advanced applications, these courses inspire innovation in the next generation of engineers. Explore the Teaching page to learn more about our educational offerings.</p>
                             <Link to='/teaching'>COURSES TAUGHT</Link>
                         </div>
                     </div>

@@ -38,7 +38,7 @@ const publications_data = [
                     issue: '',
                     page: '111673',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Zhihao Jiang' },
                         { name: 'Yash Vardhan Pant' },
                     ],
@@ -84,7 +84,7 @@ const publications_data = [
                     issue: '',
                     page: '104600',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Yash Vardhan Pant' },
                         { name: 'Zhihao Jiang' }
                     ],
@@ -131,7 +131,7 @@ const publications_data = [
                     issue: '',
                     page: '',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Yash Vardhan Pant' },
                         { name: 'Lei Zhao' },
                         { name: 'Michał Antkiewicz' },
@@ -178,7 +178,7 @@ const publications_data = [
                     issue: '',
                     page: '',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Youmin Zhang' }
                     ],
                     minRead: "",
@@ -219,7 +219,7 @@ const publications_data = [
                     issue: '',
                     page: '102893',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Krispin Davies' }
                     ],
                     minRead: "",
@@ -267,7 +267,7 @@ const publications_data = [
                     issue: '4',
                     page: '4-11',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                     ],
                     minRead: "",
                     profiles: ["Jay"],
@@ -317,7 +317,7 @@ const publications_data = [
                     issue: '5',
                     page: '1014-1033',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Michael TH Fader' },
                         { name: "Joshua A Marshall" }
                     ],
@@ -369,7 +369,7 @@ const publications_data = [
                     page: '102629',
                     authors: [
                         { name: 'Andrew Farley' },
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Joshua A Marshall' }
                     ],
                     minRead: "",
@@ -417,7 +417,7 @@ const publications_data = [
                     issue: '',
                     page: '',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                     ],
                     minRead: "",
                     profiles: ["Jay"],
@@ -468,7 +468,7 @@ const publications_data = [
                     issue: '18',
                     page: '2155',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: "Sandra Simeonova" },
                         { name: "Mozhdeh Shahbazi" }
                     ],
@@ -524,7 +524,7 @@ const publications_data = [
                         { name: 'Mozhdeh Shahbazi' },
                         { name: 'Sandra Simeonova' },
                         { name: 'Derek Lichti' },
-                        { name: 'Jay Wang', link: '/' }
+                        { name: 'Jay Wang', link: '/team' }
                     ],
                     minRead: "",
                     profiles: ["Jay"],
@@ -616,7 +616,7 @@ const publications_data = [
                     issue: '',
                     page: '531-538',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: "Alex Ramirez-Serrano" }
                     ],
                     minRead: "",
@@ -662,7 +662,7 @@ const publications_data = [
                     issue: '',
                     page: '1448-1453',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                         { name: 'Alex Ramirez-Serrano' }
                     ],
                     minRead: "",
@@ -712,7 +712,7 @@ const publications_data = [
                     issue: '',
                     page: '',
                     authors: [
-                        { name: 'Jay Wang', link: '/' },
+                        { name: 'Jay Wang', link: '/team' },
                     ],
                     minRead: "",
                     profiles: ["Jay"],

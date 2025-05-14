@@ -24,10 +24,21 @@
                 margin-bottom: 0rem;
             }
 
+            p {
+                text-align: left;
+            }
+
             img {
                 width: 200px;
                 height: auto;
                 margin-top: 2rem;
+            }
+        }
+
+        .Footer-container-middle {
+            p {
+                text-align: left;
+                margin-bottom: 0.8rem;
             }
         }
 
@@ -36,6 +47,7 @@
 
             * {
                 display: block;
+                margin-bottom: 0.8rem;
 
                 &:hover {
                     background-color: white;
@@ -46,42 +58,15 @@
             }
         }
 
-        // display: grid;
-        // grid-template-columns: repeat(4, 1fr);
-        // grid-template-rows: repeat(2, auto);
-        // gap: 1.5rem;
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
 
-        // .left-top,
-        // .middle-left-top,
-        // .middle-right-top,
-        // .right-top  {
-        //     h3 {
-        //         font-weight: bold;
-        //     }
-        // }
-
-        // .left-bottom {
-        // img {
-        //     width: 200px;
-        //     height: auto;
-        // }
-        // }
-
-        // .right-bottom {
-            // margin-top: 1rem;
-            // font-size: 1.6rem;
-
-            // * {
-            //     display: block;
-
-            //     &:hover {
-            //         background-color: white;
-            //         padding: 0rem;
-            //         color: black;
-            //         text-decoration: underline;
-            //     }
-            // }
-        // }
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .design-bar {
