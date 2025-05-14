@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ral_website/static/css/main.dff79107.css",
-    "main.js": "/ral_website/static/js/main.3307c06b.js",
+    "main.css": "/ral_website/static/css/main.a559320a.css",
+    "main.js": "/ral_website/static/js/main.298ea328.js",
     "static/media/home3.mp4": "/ral_website/static/media/home3.f1fc655cba07af7a03d1.mp4",
     "static/media/j_2024_1.pdf": "/ral_website/static/media/j_2024_1.0e3bf0df47387bac77dd.pdf",
     "static/media/j_2019_1.pdf": "/ral_website/static/media/j_2019_1.900c6f42099250afa79f.pdf",
@@ -36,11 +36,11 @@
     "static/media/logo_light.jpg": "/ral_website/static/media/logo_light.2b133956b7529969f463.jpg",
     "static/media/collab1.png": "/ral_website/static/media/collab1.67613fe47d86b4254ebb.png",
     "index.html": "/ral_website/index.html",
-    "main.dff79107.css.map": "/ral_website/static/css/main.dff79107.css.map",
-    "main.3307c06b.js.map": "/ral_website/static/js/main.3307c06b.js.map"
+    "main.a559320a.css.map": "/ral_website/static/css/main.a559320a.css.map",
+    "main.298ea328.js.map": "/ral_website/static/js/main.298ea328.js.map"
   },
   "entrypoints": [
-    "static/css/main.dff79107.css",
-    "static/js/main.3307c06b.js"
+    "static/css/main.a559320a.css",
+    "static/js/main.298ea328.js"
   ]
 }
