@@ -121,7 +121,7 @@ function Home() {
                     <div className="home_containers">
                         <div className="each_home_container">
                             <h2>Browse Our Publications</h2>
-                            <p>Check out the research from the Robot Autonomy Lab. Our team publishes journal articles, conference papers, and theses on robotics and autonomous systems. The work covers topics like control algorithms, navigation, and mobility for robots. Visit our publications page to learn more about what we’ve been working on.</p>
+                            <p>Explore the latest research from the Robot Autonomy Lab. Our team publishes journal articles and conference papers on robotics and autonomous systems. Visit our publications page to learn more.</p>
                             <Link to='/publications'>OUR PAPERS</Link>
                         </div>
                         <div className="each_home_container">
