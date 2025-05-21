@@ -10,7 +10,10 @@ function Footer() {
                 <div className="Footer-container-left">
                     <h3>Robot Autonomy Laboratory</h3>
                     <p>at the University of Manitoba</p>
-                    <img src={LogoUM} alt="" />
+                    <a href="https://umanitoba.ca/" target='_blank' rel='noreferrer'><img src={LogoUM} alt="" /></a>
+                    {/* <div className="footer-links">
+
+                    </div> */}
                 </div>
                 <div className="Footer-container-middle">
                     <h3>Mailing Address</h3>
