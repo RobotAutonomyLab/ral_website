@@ -219,7 +219,12 @@
 
                     &:hover {
                         text-decoration: underline;
+                        padding: 1.6rem 0 1.6rem 2.4rem;
                         color: black;
+
+                        &.selected {
+                            color: black;
+                        }
                     }
 
                     &.selected {
