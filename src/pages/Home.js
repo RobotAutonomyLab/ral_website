@@ -72,15 +72,15 @@ function Home() {
                                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                             >
                                 <div className="carousel-item">
-                                    <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
-                                        <source src={home3} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware." />
-                                    </video>
+                                    <img src={home1} alt="Slide 1" />
                                 </div>
                                 <div className="carousel-item">
                                     <img src={home2} alt="Slide 2" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={home1} alt="Slide 1" />
+                                    <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
+                                        <source src={home3} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware." />
+                                    </video>
                                 </div>
                             </div>
                             <button className="carousel-prev" onClick={prevSlide}>
