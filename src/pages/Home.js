@@ -14,7 +14,7 @@ import news_data from '../data/news/news_data'
 
 function Home() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [home3, home2, home1];
+    const slides = [home1, home2, home3];
     const totalSlides = slides.length;
     const timeoutRef = useRef(null);
     const videoRef = useRef(null); // Ref to control video element
@@ -49,7 +49,7 @@ function Home() {
     // Handle video playback
     useEffect(() => {
         if (videoRef.current) {
-            if (currentSlide === 0) {
+            if (currentSlide === 2) {
                 videoRef.current.play().catch((error) => {
                     console.error('Video playback failed:', error);
                 });
@@ -126,7 +126,7 @@ function Home() {
                         </div>
                         <div className="each_home_container">
                             <h2>Meet Our Team</h2>
-                            <p>Our team includes faculty members, graduate students, and researchers working together on robotics and autonomous systems. Each person brings their own skills and ideas to the lab. Visit our team page to learn more about who we are and what we do.</p>
+                            <p>Our team includes faculty members, graduate students, and researchers working together on robotics and autonomous systems. Visit our team page to learn more about who we are and what we do.</p>
                             <Link to='/team'>OUR TEAM</Link>
                         </div>
                         <div className="each_home_container">
@@ -136,8 +136,8 @@ function Home() {
                         </div>
                         <div className="each_home_container">
                             <h2>Teaching</h2>
-                            <p>Professor Jay Wang teaches courses on robotics and autonomous systems at the University of Manitoba. These courses cover both the basics and advanced topics, helping students build strong skills in navigation, control, and intelligent systems. Visit the Teaching page to learn more about the courses offered.</p>
-                            <Link to='/teaching'>COURSES TAUGHT</Link>
+                            <p>Professor Wang teaches courses on robotics and autonomous systems at the University of Manitoba. Visit the Teaching page to learn more about these course.</p>
+                            <Link to='/teaching'>COURSES</Link>
                         </div>
                     </div>
                 </div>

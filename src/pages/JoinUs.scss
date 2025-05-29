@@ -30,27 +30,27 @@
                     }
                 }
 
-                // ul {
-                //     padding-left: 2.5rem;
+                ul {
+                    padding-left: 3.5rem;
         
-                //     p {
-                //         display: list-item;
+                    p {
+                        display: list-item;
         
-                //         // &:last-child {
-                //         //     margin-bottom: 0rem;
-                //         // }
-                //     }
+                        // &:last-child {
+                        //     margin-bottom: 0rem;
+                        // }
+                    }
         
-                //     @media (max-width: 576px) {
-                //         p {
-                //             margin-bottom: 1rem;
+                    @media (max-width: 576px) {
+                        p {
+                            margin-bottom: 1rem;
         
-                //             // &:last-child {
-                //                 // margin-bottom: 0rem;
-                //             // }
-                //         }
-                //     }
-                // }
+                            // &:last-child {
+                                // margin-bottom: 0rem;
+                            // }
+                        }
+                    }
+                }
             }
 
             @media (max-width: 768px) {
