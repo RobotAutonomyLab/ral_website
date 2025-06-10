@@ -20,13 +20,14 @@ function JoinUs() {
                         <div>
                             {/* <p>The <a href="/">Robot Autonomy Lab</a> invites applications for <b>one fully funded PhD position</b> and <b>one fully funded MSc position</b>. We are looking for passionate and driven individuals with a keen interest in robotics, machine learning, and autonomous systems. To apply, please follow the application instructions outlined in the relevant sections above. For more details or to discuss these opportunities, feel free to visit Professor Wang in person at <b>E1-406</b>.</p> */}
                             {/* <p>At this time, there are <b>no open positions</b> available. Please check back later! If you have any questions or are interested please email <a href='mailto:J.Wang@umanitoba.ca'>J.Wang@umanitoba.ca</a> with the subject line <b>"RAL - [Your Surname]"</b>.</p> */}
-                            <p>The <Link to="/">Robot Autonomy Lab</Link> is recruiting motivated graduate students: <b>1 MSc</b> and <b>1 PhD</b> positions for <b>Winter 2026</b> with full scholarships. The application deadlined for international and local students are <b>July 1st, 2025</b> and <b>October 1st, 2025</b>, respectively. Please make sure to follow the procedure by submitting the following documents to <a href="mailto:j.wang@umanitoba.ca">j.wang@umanitoba.ca</a> with the subject line <b>"RAL2025 - [Your Name]"</b>:</p>
+                            <p>The <Link to="/">Robot Autonomy Lab</Link> is currently recruiting <b>one MSc</b> and <b>one PhD</b> student to join our team starting <b>Winter 2026</b>. Both positions comes with <b>full scholarships</b>. To apply, please submit the following documents to <a href="mailto:j.wang@umanitoba.ca">j.wang@umanitoba.ca</a> with the subject line <b>"RAL2026 - [Your Name]"</b>:</p>
                             <ul>
                                 <p>CV <b>(max. 2 pages)</b></p>
                                 <p>Statement of Research Interest <b>(max. 1 page)</b></p>
                                 <p>Academic Transcripts</p>
                                 <p>Relevant <b>Project</b> or <b>Research Experience</b> <b>(max. 1 page)</b></p>
                             </ul>
+                            <p>For application deadlines and program details, please visit <a href="https://umanitoba.ca/explore/programs-of-study/mechanical-engineering-phd" target='_blank' rel='noreferrer'>University of Manitoba - Mechanical Engineering Graduate Programs</a>.</p>
                         </div>
                     </div>
                     {/* <div className="each-join-section">
