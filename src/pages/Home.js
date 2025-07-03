@@ -50,7 +50,7 @@ function Home() {
     // Handle video playback
     useEffect(() => {
         if (videoRef.current) {
-            if (currentSlide === 2) {
+            if (currentSlide === 2 || currentSlide === 3) {
                 videoRef.current.play().catch((error) => {
                     console.error('Video playback failed:', error);
                 });
