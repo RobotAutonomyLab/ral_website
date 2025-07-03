@@ -76,15 +76,18 @@ const profile_data = [
                     { degreeName: 'Bachelor of Engineering (First Class Honours w/ Distinction) in Mechatronics Engineering', degreeUniversity: "Asia Pacific University of Technology & Innovation", gradYear: "2022" },
                 ],
                 Awards: [
-                    '',
+                    { awardName: "University of Manitoba Graduate Fellowship (UMGF)", awardPlace: "University of Manitoba", awardTime: "May 2024" },
+                    { awardName: "International Graduate Student Entrance Scholarship (IGSES)", awardPlace: "University of Manitoba", awardTime: "Jan 2024" },
+                    { awardName: "Outstanding Achievement Award", awardPlace: "Asia Pacific University of Technology & Innovation", awardTime: "May 2022" },
+                    { awardName: "AI4S Program Inception Recipient", awardPlace: "Asia Pacific University of Technology & Innovation", awardTime: "April 2022" },
+                    { awardName: "Valedictorian", awardPlace: "Asia Pacific University of Technology & Innovation", awardTime: "April 2022" }
                 ],
                 Featured_Publications: [
-                    (
-                        <>
-
-                        </>
-                    ),
-                ],
+                    'Talami, R., Hu, X., Dawoodjee, I. and Ghahramani, A., 2025. <a href="https://www.tandfonline.com/doi/abs/10.1080/23744731.2025.2511555" target="_blank" rel="noreferrer">Examining different placement strategies for indoor environmental quality sensors in office environments</a>. Science and Technology for the Built Environment, pp.1-20',
+                    'Dawoodjee, I. and Ghahramani, A., 2025. <a href="https://ieeexplore.ieee.org/abstract/document/10930958" target="_blank" rel="noreferrer">A Flexible Framework for Design and Validation of rPPG Methods</a>. IEEE Access',
+                    'Talami, R., Dawoodjee, I. and Ghahramani, A., 2024. <a href="https://www.sciencedirect.com/science/article/pii/S2666123323000612" target="_blank" rel="noreferrer">Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</a>. Energy and Built Environment, 5(6), pp.878-888',
+                    'Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <a href="https://www.mdpi.com/2075-5309/13/12/2998" target="_blank" rel="noreferrer">Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</a>. Buildings, 13(12), p.2998'
+                ],                
                 Links: [
                     { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "Email" },
                     { href: IlyasResume, icon: faFile, text: 'Resume' },
@@ -103,6 +106,41 @@ const profile_data = [
         ],
 
         "Undergraduate Students": [
+            {
+                ProfileName: 'Parker',
+                ProfileLink: "/team/undergrad3",
+                ProfilePic: PlaceholderPic,
+                Name: 'Parker Prince',
+                Position: 'BEng Student',
+                Biography: 'I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. ',
+                Education: [
+                    { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
+                ],
+                Awards: [
+                    '',
+                ],
+                Featured_Publications: [
+                    (
+                        <>
+
+                        </>
+                    ),
+                ],
+                Links: [
+                    { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
+                    { href: '', icon: faFile, text: 'Resume' },
+                    { href: '', icon: faGoogle, text: 'Google Scholar' },
+                    { href: '', icon: faLinkedin, text: 'LinkedIn' },
+                    { href: '', icon: faGithub, text: 'GitHub' },
+                    { href: '', icon: faUser, text: "Personal Website" }
+                ],
+                Interests: [
+                    'Interest1',
+                    'Interest2',
+                    'Interest3',
+                    'Interest4',
+                ],
+            },
             {
                 ProfileName: 'Abraham',
                 ProfileLink: "/team/abraham",
@@ -145,46 +183,11 @@ const profile_data = [
                 ],
             },
             {
-                ProfileName: 'UnderGrad2',
+                ProfileName: 'Edcel',
                 ProfileLink: "/team/undergrad2",
                 ProfilePic: PlaceholderPic,
-                Name: 'Undergraduate Student 2',
-                Position: 'BEng Student',
-                Biography: 'I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. ',
-                Education: [
-                    { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
-                ],
-                Awards: [
-                    '',
-                ],
-                Featured_Publications: [
-                    (
-                        <>
-
-                        </>
-                    ),
-                ],
-                Links: [
-                    { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
-                    { href: '', icon: faFile, text: 'Resume' },
-                    { href: '', icon: faGoogle, text: 'Google Scholar' },
-                    { href: '', icon: faLinkedin, text: 'LinkedIn' },
-                    { href: '', icon: faGithub, text: 'GitHub' },
-                    { href: '', icon: faUser, text: "Personal Website" }
-                ],
-                Interests: [
-                    'Interest1',
-                    'Interest2',
-                    'Interest3',
-                    'Interest4',
-                ],
-            },
-            {
-                ProfileName: 'UnderGrad3',
-                ProfileLink: "/team/undergrad3",
-                ProfilePic: PlaceholderPic,
-                Name: 'Undergraduate Student 3',
-                Position: 'BEng Student',
+                Name: 'Edcel Abanto',
+                Position: 'BSc Student',
                 Biography: 'I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. I am an Undergraduate studnet doing xyz at xyz. ',
                 Education: [
                     { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },

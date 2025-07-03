@@ -68,13 +68,23 @@ function IndividualProfile() {
                 </div>
 
                 <div className="IndividualProfile section">
-                    <h4>Featured Publications</h4>
-
+                    <h4>Publications</h4>
+                    <ul>
+                        {profile.Featured_Publications.map((highlight, index) => (
+                            <p key={index} dangerouslySetInnerHTML={{ __html: highlight }} />
+                        ))}
+                    </ul>
                 </div>
 
                 <div className="IndividualProfile section">
                     <h4>Awards</h4>
-
+                    <ul>
+                        {profile.Awards.map((highlight, index) => (
+                            <p key={index}>
+                                {highlight.awardName}<br /><b>{highlight.awardPlace}</b> ({highlight.awardTime})
+                            </p>
+                        ))}
+                    </ul>
                 </div>
             </div>
             <Footer />

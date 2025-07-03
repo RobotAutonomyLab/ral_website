@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import home1 from '../data/home1.jpeg';
 import home2 from '../data/home2.jpeg';
 import home3 from '../data/home3.mp4';
+import home4 from '../data/home4.mp4'
 
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ import news_data from '../data/news/news_data'
 
 function Home() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [home1, home2, home3];
+    const slides = [home1, home2, home3, home4];
     const totalSlides = slides.length;
     const timeoutRef = useRef(null);
     const videoRef = useRef(null); // Ref to control video element
@@ -33,7 +34,7 @@ function Home() {
             clearTimeout(timeoutRef.current);
         }
 
-        if (slides[currentSlide] !== home3) {
+        if (slides[currentSlide] !== home3 && slides[currentSlide] !== home4) {
             timeoutRef.current = setTimeout(() => {
                 nextSlide();
             }, 3000);
@@ -79,7 +80,12 @@ function Home() {
                                 </div>
                                 <div className="carousel-item">
                                     <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
-                                        <source src={home3} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware." />
+                                        <source src={home3} type="video/mp4" alt="" />
+                                    </video>
+                                </div>
+                                <div className="carousel-item">
+                                    <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
+                                        <source src={home4} type="video/mp4" alt="" />
                                     </video>
                                 </div>
                             </div>
