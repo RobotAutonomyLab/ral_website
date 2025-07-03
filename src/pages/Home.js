@@ -79,15 +79,20 @@ function Home() {
                                     <img src={home2} alt="Slide 2" />
                                 </div>
                                 <div className="carousel-item">
-                                    <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
-                                        <source src={home3} type="video/mp4" alt="" />
-                                    </video>
+                                    {currentSlide === 2 && (
+                                        <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
+                                            <source src={home3} type="video/mp4" />
+                                        </video>
+                                    )}
                                 </div>
                                 <div className="carousel-item">
-                                    <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
-                                        <source src={home4} type="video/mp4" alt="" />
-                                    </video>
+                                    {currentSlide === 3 && (
+                                        <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
+                                            <source src={home4} type="video/mp4" />
+                                        </video>
+                                    )}
                                 </div>
+
                             </div>
                             <button className="carousel-prev" onClick={prevSlide}>
                                 ❮
