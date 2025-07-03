@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.993b57cc.css",
-    "main.js": "/static/js/main.72674957.js",
+    "main.css": "/static/css/main.ba239468.css",
+    "main.js": "/static/js/main.7db59544.js",
     "static/media/home3.mp4": "/static/media/home3.f1fc655cba07af7a03d1.mp4",
     "static/media/j_2024_1.pdf": "/static/media/j_2024_1.0e3bf0df47387bac77dd.pdf",
     "static/media/j_2019_1.pdf": "/static/media/j_2019_1.900c6f42099250afa79f.pdf",
@@ -11,6 +11,7 @@
     "static/media/j_2024_3.pdf": "/static/media/j_2024_3.e9c70cd38db54959ddc3.pdf",
     "static/media/c_2020_1.pdf": "/static/media/c_2020_1.acce1d029c760f6957ce.pdf",
     "static/media/c_2019_1.pdf": "/static/media/c_2019_1.ce3146ecbf2053932c07.pdf",
+    "static/media/home4.mp4": "/static/media/home4.00fbbfa8f6cffeb50596.mp4",
     "static/media/j_2023_1.pdf": "/static/media/j_2023_1.6ca2ef95514bfe002a05.pdf",
     "static/media/c_2016_1.pdf": "/static/media/c_2016_1.00bd7949ed5f250abea2.pdf",
     "static/media/3.jpg": "/static/media/3.b730a41dfbd56aa73f08.jpg",
@@ -36,11 +37,11 @@
     "static/media/logo_light.jpg": "/static/media/logo_light.2b133956b7529969f463.jpg",
     "static/media/collab1.png": "/static/media/collab1.67613fe47d86b4254ebb.png",
     "index.html": "/index.html",
-    "main.993b57cc.css.map": "/static/css/main.993b57cc.css.map",
-    "main.72674957.js.map": "/static/js/main.72674957.js.map"
+    "main.ba239468.css.map": "/static/css/main.ba239468.css.map",
+    "main.7db59544.js.map": "/static/js/main.7db59544.js.map"
   },
   "entrypoints": [
-    "static/css/main.993b57cc.css",
-    "static/js/main.72674957.js"
+    "static/css/main.ba239468.css",
+    "static/js/main.7db59544.js"
   ]
 }
