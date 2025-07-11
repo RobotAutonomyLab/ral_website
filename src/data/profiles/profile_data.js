@@ -37,10 +37,10 @@ const profile_data = [
                     ),
                 ],
                 Links: [
-                    { href: "mailto:xxx@myumanitoba.ca", icon: faEnvelope, text: "xxx@myumanitoba.ca" },
-                    { href: '', icon: faGoogle, text: 'Google Scholar' },
-                    { href: '', icon: faLinkedin, text: 'LinkedIn' },
-                    { href: '', icon: faGithub, text: 'GitHub' },
+                    { href: "mailto:j.wang@umanitoba.ca", icon: faEnvelope, text: "j.wang@umanitoba.ca" },
+                    { href: 'https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+                    { href: 'https://www.linkedin.com/in/jwangjie/', icon: faLinkedin, text: 'LinkedIn' },
+                    { href: 'https://github.com/jwangjie', icon: faGithub, text: 'GitHub' },
                 ],
                 Interests: [
                     'Interest1',
