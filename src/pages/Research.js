@@ -9,6 +9,10 @@ import Footer from '../components/Footer'
 import collab1 from '../data/collab1.png'
 import collab2 from '../data/collab2.png'
 
+import researchimg1 from '../data/researchimg1.jpeg'
+import researchvid1 from '../data/image8.gif'
+import researchvid2 from '../data/image9.gif'
+
 function Research() {
     return (
         <div className='ResearchPage'>
@@ -23,6 +27,30 @@ function Research() {
                         <p>Arctic exploration and environmental sensing</p>
                         <p>Mining automation and robotics for harsh environments</p>
                     </ul>
+                    <p>We enable mobile robots and autonomous vehicles to navigate safely and efficiently in dynamic, uncertain, and previously unknown environments with full autonomy Improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining adaptability and learning capabilities of Artificial Intelligence reliability and predictability of traditional physics model-based control.</p>
+                </div>
+                <div className="Research section">
+                    <h2>Machine Learning-Based Model Predictive Control</h2>
+                    <div className="research_project_main">
+                        <img src={researchimg1} alt="" />
+                        <ul>
+                            <p>Enhanced <b>Dynamics</b> Modeling: Gaussian Process (GP) machine learning models correct discrepancies in physics-based models using real-world data</p>
+                            <p><b>Uncertainty</b> Quantification: GP estimated uncertainties improve modeling reliability</p>
+                            <p>Improved <b>Safety</b>: Incorporates uncertainty into control decisions</p>
+                            <p><b>Constraint</b> Satisfication: Enforces all input and output constraints withing the Model Predictive Control (MPC)</p>
+                            <p><b>Optimal</b> Control: Achieves efficient and robust system control under uncertainty</p>
+                        </ul>
+                    </div>
+                    <div className="research_project_main">
+                        <div>
+                            <h3>Project 1: Learning-Based Control for Improved Mobile Robot Path Following</h3>
+                            <img src={researchvid1} alt="" />
+                        </div>
+                        <div>
+                            <h3>Project 2: Mixed Human-Driven and Autonomous Vehicle Platooning Safe Control</h3>
+                            <img src={researchvid2} alt="" />
+                        </div>
+                    </div>
                 </div>
                 <div className="Research section">
                     <h2>Ongoing Projects</h2>
