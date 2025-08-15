@@ -1,5 +1,9 @@
 .OurTeam {
     .section {
+        h4 {
+            text-wrap: wrap;   
+        }
+
         .PI {
             display: flex;
             gap: 5rem;

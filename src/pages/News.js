@@ -15,7 +15,7 @@ function News() {
             <div className="News container">
                 <div className="News section">
                     <h1>News</h1>
-                    <p>Stay updated with the latest from the <Link to='/'>Robot Autonomy Lab</Link>! From groundbreaking research breakthroughs to exciting collaborations and events, explore our recent highlights!</p>
+                    <h4>Stay updated with the latest from the <Link to='/'>Robot Autonomy Lab</Link>! From groundbreaking research breakthroughs to exciting collaborations and events, explore our recent highlights!</h4>
                 </div>
 
                 <div className="News section">

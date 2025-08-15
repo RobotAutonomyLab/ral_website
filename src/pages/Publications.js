@@ -116,13 +116,13 @@ function Publications() {
             <div className="Publications container">
                 <div className="Publications section">
                     <h1>Publications</h1>
-                    <p>
+                    <h4>
                         A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our{' '}
                         <a href="https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en" target="_blank" rel="noreferrer">
                             Google Scholar
                         </a>
                         .
-                    </p>
+                    </h4>
                 </div>
 
                 {publications_data.map(pubObj =>

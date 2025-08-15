@@ -40,7 +40,7 @@
 
 @media (min-width: 1500px) {
   :root {
-    --max-width: 1500px;
+    --max-width: 1400px;
     --width: calc(100% - 200px);
     --padding-top-bottom: 2.25rem;
   }
@@ -54,7 +54,7 @@
 }
 
 .section {
-  padding-bottom: 3.3vmax;
+  padding-bottom: clamp(1.5vmax, 2%, 3.3vmax);
 }
 
 *,

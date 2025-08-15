@@ -1,6 +1,6 @@
 .Teaching {
     .section {
-        p {
+        h4 {
             a {
                 font-weight: 900;
             }
@@ -8,6 +8,9 @@
             b {
                 font-weight: 700;
             }
+
+            text-wrap: wrap;
+            text-align: justify;
         }
 
         ol {

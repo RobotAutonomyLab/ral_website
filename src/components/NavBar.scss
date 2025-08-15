@@ -28,7 +28,7 @@
 
 @media (min-width: 1500px) {
     :root {
-        --nav-link-fs: 1.9rem;
+        --nav-link-fs: 2.5rem;
     }
 }
 
@@ -69,7 +69,8 @@
         margin: var(--padding-top-bottom) auto 0rem;
         display: flex;
         align-items: stretch;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
 
         .NavBar-container-left {
             display: flex;
@@ -121,11 +122,13 @@
             a {
                 &:hover{
                     padding: 0rem;
+                    background-color: white;
                 }
                 
                 img {
-                    width: 250px;
+                    width: 300px;
                     height: auto;
+                    padding-bottom: 1rem;
                 }
             }
         }

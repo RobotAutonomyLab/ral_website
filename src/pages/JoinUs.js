@@ -11,7 +11,7 @@ function JoinUs() {
             <div className="JoinUs container">
                 <div className="JoinUs section">
                     <h1>Join Us</h1>
-                    <p>The <Link to='/'>Robot Autonomy Lab</Link> is seeking passionate students, researchers, and engineers to join our mission of advancing mobile-robot autonomy. Opportunities include graduate and undergraduate research positions, internships, and collaborative projects. Check out our other pages or contact us to explore how you can contribute to cutting-edge robotics innovation!</p>
+                    <h4>The <Link to='/'>Robot Autonomy Lab</Link> is seeking passionate students, researchers, and engineers to join our mission of advancing mobile-robot autonomy. Opportunities include graduate and undergraduate research positions, internships, and collaborative projects. Check out our other pages or contact us to explore how you can contribute to cutting-edge robotics innovation!</h4>
                 </div>
 
                 <div className="JoinUs section">
@@ -20,7 +20,7 @@ function JoinUs() {
                         <div>
                             {/* <p>The <a href="/">Robot Autonomy Lab</a> invites applications for <b>one fully funded PhD position</b> and <b>one fully funded MSc position</b>. We are looking for passionate and driven individuals with a keen interest in robotics, machine learning, and autonomous systems. To apply, please follow the application instructions outlined in the relevant sections above. For more details or to discuss these opportunities, feel free to visit Professor Wang in person at <b>E1-406</b>.</p> */}
                             {/* <p>At this time, there are <b>no open positions</b> available. Please check back later! If you have any questions or are interested please email <a href='mailto:J.Wang@umanitoba.ca'>J.Wang@umanitoba.ca</a> with the subject line <b>"RAL - [Your Surname]"</b>.</p> */}
-                            <p>The <Link to="/">Robot Autonomy Lab</Link> is currently recruiting <b>one MSc</b> and <b>one PhD</b> student to join our team starting <b>Winter 2026</b>. Both positions comes with <b>full scholarships</b>. To apply, please submit the following documents to <a href="mailto:j.wang@umanitoba.ca">j.wang@umanitoba.ca</a> with the subject line <b>"RAL2026 - [Your Name]"</b>:</p>
+                            <p>The <Link to="/">Robot Autonomy Lab</Link> is currently recruiting <b>one MSc</b> and <b>one PhD</b> student to join our team starting <b>Fall 2026</b>. Both positions comes with <b>full scholarships</b>. To apply, please submit the following documents to <a href="mailto:j.wang@umanitoba.ca">j.wang@umanitoba.ca</a> with the subject line <b>"RAL2026 - [Your Name]"</b>:</p>
                             <ul>
                                 <p>CV <b>(max. 2 pages)</b></p>
                                 <p>Statement of Research Interest <b>(max. 1 page)</b></p>

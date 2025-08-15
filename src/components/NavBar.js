@@ -35,10 +35,10 @@ function NavBar() {
                     {[
                         ['/', 'Home'],
                         ['/research', 'Research'],
-                        ['/robots', 'Robots'],
-                        ['/publications', 'Publications'],
-                        ['/news', 'News'],
                         ['/team', 'Our Team'],
+                        ['/publications', 'Publications'],
+                        ['/robots', 'Robots'],
+                        ['/news', 'News'],
                         ['/join', 'Join Us'],
                         ['/teaching', 'Teaching'],
                     ].map(([to, label]) => (

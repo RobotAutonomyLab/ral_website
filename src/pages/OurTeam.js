@@ -15,7 +15,7 @@ function OurTeam() {
             <div className="OurTeam container">
                 <div className="OurTeam section">
                     <h1>Our Team</h1>
-                    <p>We are a team of faculty, engineers, and students advancing mobile-robot autonomy in real-world settings through machine learning and physics-based modeling.</p>
+                    <h4>We are a team of faculty, engineers, and students advancing mobile-robot autonomy in real-world settings through machine learning and physics-based modeling.</h4>
                 </div>
 
                 <div className="OurTeam section">
@@ -38,8 +38,8 @@ function OurTeam() {
                         </div>
                         <div className="PI_right">
                             <h2>Meet the PI</h2>
-                            <h3>{PI.Position}</h3>
-                            <p>{PI.Biography}</p>
+                            {/* <h3>{PI.Position}</h3> */}
+                            <p dangerouslySetInnerHTML={{ __html: PI.Biography }} />
                         </div>
                     </div>
                 </div>

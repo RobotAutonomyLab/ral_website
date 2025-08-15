@@ -18,7 +18,7 @@ function Footer() {
                 <div className="Footer-container-middle">
                     <h3>Mailing Address</h3>
                     <p>Robot Autonomy Laboratory</p>
-                    <p>E1-406 EITC</p>
+                    <p>E1-546 EITC</p>
                     <p>Price Faculty of Engineering</p>
                     <p>University of Manitoba</p>
                     <p>75 Chancellors Circle</p>

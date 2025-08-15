@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 
 import collab1 from '../data/collab1.png'
 import collab2 from '../data/collab2.png'
+import collab3 from '../data/collab3.png'
 
 import researchimg1 from '../data/researchimg1.jpeg'
 import researchvid1 from '../data/image8.gif'
@@ -25,10 +26,28 @@ function Research() {
                     <ul>
                         <p>Precision agriculture</p>
                         <p>Arctic exploration and environmental sensing</p>
-                        <p>Mining automation and robotics for harsh environments</p>
+                        <p>Assistive health and mobility in winter environment</p>
                     </ul>
                     <p>We enable mobile robots and autonomous vehicles to navigate safely and efficiently in dynamic, uncertain, and previously unknown environments with full autonomy Improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining adaptability and learning capabilities of Artificial Intelligence reliability and predictability of traditional physics model-based control.</p>
                 </div>
+
+                <div className="Research section">
+                    <h2>Ongoing Projects</h2>
+                    <div className='research_projects'>
+                        <h3>NSERC Discovery Grant - Safe Control in Uncertain Environments</h3>
+                        <p>Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments.</p>
+                    </div>
+                    <div className='research_projects'>
+                        {/* <h3>New Investigator Operating Grant (Research Mantioba) & University Research Grants Program</h3> */}
+                        <h3>University Research Grants Program</h3>
+                        <p><b>Learning-Based Control for Agricultural Robotics</b>: Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments.</p>
+                    </div>
+                    <div className='research_projects'>
+                        <h3>University Start-up Grant - Field Robotics in Arctic Harsh Environments</h3>
+                        <p>Exploration of mobile robotic platforms for sea ice navigation, autonomous environmental sensing, and manipulation tasks under extreme Arctic conditions.</p>
+                    </div>
+                </div>
+                
                 <div className="Research section">
                     <h2>Machine Learning-Based Model Predictive Control</h2>
                     <div className="research_project_main">
@@ -41,7 +60,11 @@ function Research() {
                             <p><b>Optimal</b> Control: Achieves efficient and robust system control under uncertainty</p>
                         </ul>
                     </div>
-                    <div className="research_project_main">
+                </div>
+
+                <div className="Research section">
+                    <h2>Past Projects</h2>
+                    <div className="past_projects">
                         <div>
                             <h3>Project 1: Learning-Based Control for Improved Mobile Robot Path Following</h3>
                             <img src={researchvid1} alt="" />
@@ -52,27 +75,14 @@ function Research() {
                         </div>
                     </div>
                 </div>
-                <div className="Research section">
-                    <h2>Ongoing Projects</h2>
-                    <div className='research_projects'>
-                        <h3>NSERC Discovery Grant – Safe Control in Uncertain Environments</h3>
-                        <p>Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments.</p>
-                    </div>
-                    <div className='research_projects'>
-                        <h3>University Research Grants Program (URGP) – Learning-Based Control for Agricultural Robotics</h3>
-                        <p>Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments.</p>
-                    </div>
-                    <div className='research_projects'>
-                        <h3>University Start-up Grant – Field Robotics in Arctic Harsh Environments</h3>
-                        <p>Exploration of mobile robotic platforms for sea ice navigation, autonomous environmental sensing, and manipulation tasks under extreme Arctic conditions.</p>
-                    </div>
-                </div>
+                
 
                 <div className="Research section">
                     <h2>Sponsors</h2>
                     <div className="research_collaborators">
                         <img src={collab1} alt="" />
                         <img src={collab2} alt="" />
+                        <img src={collab3} alt="" />
                     </div>
                 </div>
             </div>

@@ -1,9 +1,11 @@
 .JoinUs {
     .section {
-        p {
+        h4 {
             a {
                 font-weight: 900;
             }
+            text-wrap: wrap;
+            text-align: justify;
         }
 
         .each-join-section {

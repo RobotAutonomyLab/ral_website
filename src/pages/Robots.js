@@ -16,7 +16,7 @@ function Robots() {
             <div className="Robots container">
                 <div className="Robots section">
                     <h1>Robots</h1>
-                    <p>RAL proudly showcases a cutting-edge collection of recently acquired robots, including the AgileX Scout Mini mobile robot, Go2, Universal Robots UR5e, and DJI Matrice 350 RTK. Stay tuned for more exciting additions!</p>
+                    <h4>RAL proudly showcases a cutting-edge collection of recently acquired robots, including the AgileX Scout Mini mobile robot, Go2, Universal Robots UR5e, and DJI Matrice 350 RTK. Stay tuned for more exciting additions!</h4>
                 </div>
 
                 <div className="Robots section">

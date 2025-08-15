@@ -1,5 +1,10 @@
 .Robots {
     .section {
+
+        h4 {
+            text-wrap: wrap;
+        }
+
         .robots {
             max-width: 992px;
             display: flex;

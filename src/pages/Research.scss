@@ -40,22 +40,23 @@
                 margin: 0rem auto 1rem auto;
             }
 
-            &:nth-of-type(2) {
-                display: flex;
-                flex-direction: row;
-                gap: 2rem;
-        
-                div {
-                    img {
-                        width: 100%;
-                        height: auto;
-                        align-self: center;
-                    }
-                }
+        }
 
-                @media (max-width: 992px) {
-                    flex-direction: column;
+        .past_projects {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+    
+            div {
+                img {
+                    width: 100%;
+                    height: auto;
+                    align-self: center;
                 }
+            }
+
+            @media (max-width: 992px) {
+                flex-direction: column;
             }
         }
 
