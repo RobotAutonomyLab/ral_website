@@ -188,7 +188,8 @@ function Publications() {
                                                                     {index < paper.authors.length - 1 && ',\u00A0'}
                                                                 </>
                                                             )
-                                                        ))} | {paper.minRead}
+                                                        ))} 
+                                                        {/* | {paper.minRead} */}
                                                     </span>
                                                     <p className="pub-links">
                                                         {paper.links.map((link, index) =>
