@@ -26,6 +26,14 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .NavBar {
+        .NavBar-container {
+            flex-direction: column !important;
+        }
+    }
+}
+
 @media (min-width: 1500px) {
     :root {
         --nav-link-fs: 2.5rem;

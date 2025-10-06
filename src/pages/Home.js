@@ -114,14 +114,17 @@ function Home() {
                         <Link to='/news' target='_blank' rel='noreferrer'>View all news ❯</Link>
                     </div>
                     <div className="home_news_section">
-                        {news_data.map((each_news, index) =>
+                        {news_data
+                            .sort((a, b) => new Date(b.newsDate) - new Date(a.newsDate))
+                            .slice(0, 6)
+                            .map((each_news, index) =>
                             <div className="each-news-section" key={index}>
                                 <div className="news_img">
                                     <img src={each_news.newsPic} alt="" />
                                 </div>
                                 <div className='news_data'>
-                                    <h4>{each_news.newsTitle}</h4>
                                     <span className="caption">{each_news.newsDate}</span>
+                                    <h4>{each_news.newsTitle}</h4>
                                 </div>
                             </div>
                         )}

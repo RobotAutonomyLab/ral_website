@@ -28,7 +28,7 @@ function News() {
                                 <div className='news_data'>
                                     <h4>{each_news.newsTitle}</h4>
                                     <span className="caption">{each_news.newsDate}</span>
-                                    <p>{each_news.newsData}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: each_news.newsData }}></p>
                                 </div>
                             </div>
                         )}

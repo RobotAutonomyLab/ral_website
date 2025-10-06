@@ -38,8 +38,8 @@ function Research() {
                         <p>Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments.</p>
                     </div>
                     <div className='research_projects'>
-                        {/* <h3>New Investigator Operating Grant (Research Mantioba) & University Research Grants Program</h3> */}
-                        <h3>University Research Grants Program</h3>
+                        <h3>Research Manitoba New Investigator Operating Grant & University Research Grants Program</h3>
+                        {/* <h3>University Research Grants Program</h3> */}
                         <p><b>Learning-Based Control for Agricultural Robotics</b>: Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments.</p>
                     </div>
                     <div className='research_projects'>

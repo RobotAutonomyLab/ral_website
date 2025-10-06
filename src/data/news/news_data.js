@@ -1,32 +1,49 @@
-import one from './1.png'
+import { Link } from 'react-router-dom'
+import one from './1.jpg'
 import two from './2.png'
-import three from './3.jpg'
+import three from './3.png'
+import four from './4.jpg'
+import five from './5.jpeg'
+import six from './6.jpeg'
 
 const news_data = [
-    // {
-    //     newsTitle: 'RAL Wins Research Manitoba',
-    //     newsDate: '',
-    //     newsPic: three,
-    //     newsData: ''
-    // },
+    {
+        newsTitle: 'RAL Welcomes First PhD Student',
+        newsDate: 'September 1, 2025',
+        newsPic: six,
+        newsData: 'We’re excited to welcome <a href="#/team/wenjie">Wenjie Zhou</a> as the first PhD student in the Robot Autonomy Lab. Wenjie will focus on safety-guaranteed, learning-based navigation for mobile robots in unstructured environments. He holds an M.Sc. in Robotics and Autonomous Systems from the University of Macau and earned his B.Eng. from South China Agricultural University. He recently completed a research internship at Shenzhen University and received the <a href="https://www.fst.um.edu.mo/news/specializing-in-multi-uav-research-zhou-wenjies-journey-in-pursuing-scientific-innovation/" target="_blank">2025 FST Best MSc Student Award</a> and second prize in the Huawei ICT Global Final Competition. Wenjie is a fantastic addition to the team!'
+    },
+    {
+        newsTitle: 'Grant Secured for Safe, Efficient Ag Robotics',
+        newsDate: 'August 13, 2025',
+        newsPic: five,
+        newsData: 'Dr. Wang has received a Research Manitoba New Investigator Operating Grant for “AI-Enhanced Autonomous Agricultural Robotics: Advancing Safety, Efficiency, and Field Deployment.” The project will design and field-test AI-driven robotic systems to improve the safety and productivity of farming operations, with a clear focus on robust performance in real-world conditions.'
+    },
     {
         newsTitle: 'The First Robot Has Arrived at RAL',
         newsDate: 'April 4, 2025',
-        newsPic: three,
+        newsPic: four,
         newsData: 'Meet Mini Niu, our first lab robot at the Robot Autonomy Lab! This AgileX Scout Mini wheeled robot features a 32-beam RS-Helios LiDAR, ZED2i stereo camera, and Fixposition V-RTK2 for precise localization. Powered by an NVIDIA Orin and ROS2, Mini Niu will drive our research in autonomous navigation, control, and perception. Stay tuned for updates!'
     },
     {
         newsTitle: 'RAL Awarded NSERC Discovery Grant',
         newsDate: 'April 9, 2025',
-        newsPic: two,
+        newsPic: three,
         newsData: 'Dr. Jay Wang secured an NSERC Discovery Grant and Launch Supplement for his 5-year program, “Advancing Safe Control of Autonomous Mobile Robots in Uncertain Environments Using Machine Learning.” The research will develop AI-enhanced, physics-informed control strategies with safety guarantees for robots in smart agriculture, Arctic exploration, and mining, supporting graduate training and field experiments.'
     },
     {
         newsTitle: 'RAL Awarded URGP Grant',
-        newsDate: 'Feb. 18, 2025',
-        newsPic: one,
+        newsDate: 'February 18, 2025',
+        newsPic: two,
         newsData: 'Dr. Jay Wang received a University of Manitoba URGP grant for his project, “AI-Enhanced Mobile Robotic Arms for Precision and Efficiency in Greenhouse Harvesting.” The project develops AI-based control systems for mobile robotic arms to enhance precision and efficiency in harvesting delicate crops like tomatoes, advancing smart agriculture.'
+    },
+    {
+        newsTitle: 'RAL Welcomes First MSc Student',
+        newsDate: 'January 1, 2025',
+        newsPic: one,
+        newsData: 'We’re excited to welcome <a href="#/team/ilyas">Ilyas Dawoodjee</a> as the first MSc student in the Robot Autonomy Lab. Ilyas will focus on learning-based control and field-robotics autonomy with applications in agricultural robotics. He holds a B.Eng. in Mechatronics (First Class Honours with Distinction, APU, 2022) and brings prior research experience from the <a href="https://building-robotics-lab.github.io/brlab/" target="_blank">Building Robotics Laboratory</a> at the <a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a>. Supported by the <a href="https://umanitoba.ca/graduate-studies/funding-awards/university-manitoba-graduate-fellowship-umgf" target="_blank">University of Manitoba Graduate Fellowship (UMGF)</a> and International Graduate Student Entrance Scholarship (IGSES) awards, Ilyas is a fantastic addition to the team!',
     },
 ]
 
 export default news_data;
+

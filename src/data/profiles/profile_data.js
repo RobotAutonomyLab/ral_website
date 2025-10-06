@@ -10,6 +10,9 @@ import ProfPic from './Prof/Prof.jpeg'
 import IlyasPic from "./Ilyas/Ilyas.jpg"
 import IlyasResume from "./Ilyas/IlyasResume.pdf"
 
+import WenjiePic from "./Wenjie/Wenjie.jpg"
+// import WenjieResume from "./Wenjie/WenjieResume.pdf"
+
 import AbrahamPic from "./Abraham/Abraham.jpeg"
 // import AbrahamResume from "./Abraham/AbrahamResume.pdf"
 
@@ -22,7 +25,7 @@ const profile_data = [
                 ProfilePic: ProfPic,
                 Name: 'Jay Wang',
                 Position: 'Assistant Professor at the University of Manitoba',
-                Biography: 'Dr. Jay (Jie) Wang is an Assistant Professor in Mechanical Engineering at the University of Manitoba and Director of the Robot Autonomy Lab. His research advances long-term autonomy for field robots and autonomous vehicles in unstructured, uncertain, and dynamic environments. He develops learning-based modeling and control methods that integrate machine learning with physics-informed strategies to enhance safety, robustness, and interpretability. His work supports applications in intelligent agriculture, Arctic exploration, and assistive health and mobility, in collaboration with multidisciplinary partners across engineering, environmental science, and health. <br /><br /> Dr. Wang holds an NSERC Discovery Grant and multiple provincial and university-level awards, including the Research Manitoba New Investigator Operating Grant. He has secured funding for community engagement initiatives to promote STEM education and equity, diversity, and inclusion in underserved communities. His publications appear in leading venues such as the Journal of Field Robotics, IEEE Transactions on Intelligent Transportation Systems, and Transportation Research Part C, and have received top-cited paper awards and other recognitions for impact.',
+                Biography: 'Dr. Jie (Jay) Wang is an Assistant Professor in Mechanical Engineering at the University of Manitoba and Director of the Robot Autonomy Lab. His research advances long-term autonomy for field robots and autonomous vehicles in unstructured, uncertain, and dynamic environments. He develops learning-based modeling and control methods that integrate machine learning with physics-informed strategies to enhance safety, robustness, and interpretability. His work supports applications in intelligent agriculture, Arctic exploration, and assistive health and mobility, in collaboration with multidisciplinary partners across engineering, environmental science, and health. <br /><br /> Dr. Wang holds an NSERC Discovery Grant and multiple provincial and university-level awards, including the Research Manitoba New Investigator Operating Grant. He has secured funding for community engagement initiatives to promote STEM education and equity, diversity, and inclusion in underserved communities. His publications appear in leading venues such as the Journal of Field Robotics, IEEE Transactions on Intelligent Transportation Systems, and Transportation Research Part C, and have received top-cited paper awards and other recognitions for impact.',
                 Education: [
                     { degreeName: 'Bachelor of Engineering in xyz', degreeUniversity: "University of Manitoba", gradYear: "202x" },
                 ],
@@ -37,7 +40,7 @@ const profile_data = [
                     ),
                 ],
                 Links: [
-                    { href: "mailto:j.wang@umanitoba.ca", icon: faEnvelope, text: "j.wang@umanitoba.ca" },
+                    { href: "mailto:j.wang@umanitoba.ca", icon: faEnvelope, text: "Email" },
                     { href: 'https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
                     { href: 'https://www.linkedin.com/in/jwangjie/', icon: faLinkedin, text: 'LinkedIn' },
                     { href: 'https://github.com/jwangjie', icon: faGithub, text: 'GitHub' },
@@ -56,7 +59,42 @@ const profile_data = [
         ],
 
         "Graduate Students (PhD)": [
-
+            {
+                ProfileName: 'Wenjie',
+                ProfileLink: "/team/wenjie",
+                ProfilePic: WenjiePic,
+                Name: 'Wenjie Zhou',
+                Position: 'PhD Student',
+                Biography: (
+                    <>
+                        I am Wenjie Zhou, a Ph.D. student in Mechanical Engineering at the University of Manitoba, where I explore the intersection of machine learning and control for mobile robots in the Robot Autonomy Laboratory (RAL). Previously, I earned my Master’s degree at the University of Macau, working with the <a href='https://www.fst.um.edu.mo/research/laboratories/intelligent-unmanned-systems-laboratory/' target_='blank' rel='noreferrer'>Intelligent Unmanned Systems Lab</a> and later with the Safe and Reliable Flight Group at <a href='https://www.gml.ac.cn' target_='blank' rel='noreferrer'>GuangMing Lab</a>. My passion is bringing autonomous robots out of the lab and into real-world applications.
+                    </>
+                ),
+                Education: [
+                    { degreeName: 'Doctor of Philosophy in Mechanical Engineering', degreeUniversity: "University of Manitoba", gradYear: "2030" },
+                    { degreeName: 'Master of Science in Robotics and Autonomous Systems', degreeUniversity: "University of Macau", gradYear: "2025" },
+                    { degreeName: 'Bachelor of Engineering in Landscape Architecture (Major) & Automation (Minor)', degreeUniversity: "South China Agriculture University", gradYear: "2023" },
+                ],
+                Awards: [
+                    { awardName: "2025 Faculty of Science and Technology (FST) Best MSc Student Award", awardPlace: "University of Macau", awardTime: "Jun 2025" },
+                    { awardName: "Second prize in Huawei ICT Global Final Competition", awardPlace: "Shenzhen, China", awardTime: "May 2024" },
+                ],
+                Featured_Publications: [
+                    'Zhou, W., Chen, S., Li, J., Liu, C., Luo, W., & Liu, J. J. R., 2025. <a href="https://doi.org/10.1016/j.fraope.2025.100267" target="_blank" rel="noreferrer">Obstacle avoidance control for cluster-based unmanned aerial vehicle formation with multiple constraints</a>. Franklin Open',
+                ],
+                Links: [
+                    { href: "mailto:zhouw4@myumanitoba.ca", icon: faEnvelope, text: "Email" },
+                    { href: 'https://www.linkedin.com/in/wenjie-zhou-827b4828b/', icon: faLinkedin, text: 'LinkedIn' },
+                    { href: 'https://github.com/zhouwenjie1124', icon: faGithub, text: 'GitHub' },
+                ],
+                Interests: [
+                    'Robotics',
+                    'Machine Learning',
+                    'Control Theory',
+                    'Autonomous Systems',
+                    'UAV'
+                ],
+            },
         ],
 
         "Graduate Students (MSc)": [
