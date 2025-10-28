@@ -13,12 +13,12 @@ const news_data = [
         newsPic: six,
         newsData: 'We’re excited to welcome <a href="#/team/wenjie">Wenjie Zhou</a> as the first PhD student in the Robot Autonomy Lab. Wenjie will focus on safety-guaranteed, learning-based navigation for mobile robots in unstructured environments. He holds an M.Sc. in Robotics and Autonomous Systems from the University of Macau and earned his B.Eng. from South China Agricultural University. He recently completed a research internship at Shenzhen University and received the <a href="https://www.fst.um.edu.mo/news/specializing-in-multi-uav-research-zhou-wenjies-journey-in-pursuing-scientific-innovation/" target="_blank">2025 FST Best MSc Student Award</a> and second prize in the Huawei ICT Global Final Competition. Wenjie is a fantastic addition to the team!'
     },
-    // {
-    //     newsTitle: 'Grant Secured for Safe, Efficient Ag Robotics',
-    //     newsDate: 'August 13, 2025',
-    //     newsPic: five,
-    //     newsData: 'Dr. Wang has received a Research Manitoba New Investigator Operating Grant for “AI-Enhanced Autonomous Agricultural Robotics: Advancing Safety, Efficiency, and Field Deployment.” The project will design and field-test AI-driven robotic systems to improve the safety and productivity of farming operations, with a clear focus on robust performance in real-world conditions.'
-    // },
+    {
+        newsTitle: 'Grant Secured for Safe, Efficient Ag Robotics',
+        newsDate: 'August 13, 2025',
+        newsPic: five,
+        newsData: 'Dr. Wang has received a Research Manitoba New Investigator Operating Grant for “AI-Enhanced Autonomous Agricultural Robotics: Advancing Safety, Efficiency, and Field Deployment.” The project will design and field-test AI-driven robotic systems to improve the safety and productivity of farming operations, with a clear focus on robust performance in real-world conditions.'
+    },
     {
         newsTitle: 'The First Robot Has Arrived at RAL',
         newsDate: 'April 4, 2025',
