@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.234aa285.css",
-    "main.js": "/static/js/main.35da91cc.js",
+    "main.js": "/static/js/main.d61fcaf3.js",
     "static/media/image9.gif": "/static/media/image9.e2a1f14fa08df071c183.gif",
     "static/media/image8.gif": "/static/media/image8.bd21f3c5f19f2ca6fff9.gif",
     "static/media/j_2024_1.pdf": "/static/media/j_2024_1.0e3bf0df47387bac77dd.pdf",
@@ -12,6 +12,7 @@
     "static/media/j_2024_3.pdf": "/static/media/j_2024_3.e9c70cd38db54959ddc3.pdf",
     "static/media/c_2020_1.pdf": "/static/media/c_2020_1.acce1d029c760f6957ce.pdf",
     "static/media/c_2019_1.pdf": "/static/media/c_2019_1.ce3146ecbf2053932c07.pdf",
+    "static/media/home2.jpeg": "/static/media/home2.77caee8d3e10144f2f22.jpeg",
     "static/media/home4.mp4": "/static/media/home4.00fbbfa8f6cffeb50596.mp4",
     "static/media/j_2023_1.pdf": "/static/media/j_2023_1.6ca2ef95514bfe002a05.pdf",
     "static/media/c_2016_1.pdf": "/static/media/c_2016_1.00bd7949ed5f250abea2.pdf",
@@ -19,15 +20,14 @@
     "static/media/j_2021_1.pdf": "/static/media/j_2021_1.a24f950c4bb60fc75b06.pdf",
     "static/media/j_2023_2.pdf": "/static/media/j_2023_2.8e2130d24078cb2b5e3b.pdf",
     "static/media/go2.jpeg": "/static/media/go2.f67ac68d053a3f0153ee.jpeg",
+    "static/media/home1.jpeg": "/static/media/home1.8ba0226d8f5b2461f3f5.jpeg",
     "static/media/5.jpeg": "/static/media/5.8704588a2a8e8d5d3cbc.jpeg",
     "static/media/c_2017_1.pdf": "/static/media/c_2017_1.d60ed6a742165dec9b09.pdf",
     "static/media/j_2024_4.pdf": "/static/media/j_2024_4.e30842cf18f5a3769b78.pdf",
     "static/media/2.png": "/static/media/2.b6d0a1240af46a03aae6.png",
     "static/media/j_2024_5.pdf": "/static/media/j_2024_5.a76687cbcfc662b3a71f.pdf",
-    "static/media/home1.jpeg": "/static/media/home1.04ba3418e58c5dd79cab.jpeg",
     "static/media/1.jpg": "/static/media/1.75c431805aaac31dbc3a.jpg",
     "static/media/3.png": "/static/media/3.b719c4f41781729291ce.png",
-    "static/media/home2.jpeg": "/static/media/home2.4b91abdc9b50336d7998.jpeg",
     "static/media/scoutmini.jpeg": "/static/media/scoutmini.15677303425e98b7df20.jpeg",
     "static/media/logo_um.jpg": "/static/media/logo_um.3c702fc5d339d6f04406.jpg",
     "static/media/Ilyas.jpg": "/static/media/Ilyas.727f2829ff91fc03390d.jpg",
@@ -45,10 +45,10 @@
     "static/media/Wenjie.jpg": "/static/media/Wenjie.da7f3120e42f711dafc5.jpg",
     "index.html": "/index.html",
     "main.234aa285.css.map": "/static/css/main.234aa285.css.map",
-    "main.35da91cc.js.map": "/static/js/main.35da91cc.js.map"
+    "main.d61fcaf3.js.map": "/static/js/main.d61fcaf3.js.map"
   },
   "entrypoints": [
     "static/css/main.234aa285.css",
-    "static/js/main.35da91cc.js"
+    "static/js/main.d61fcaf3.js"
   ]
 }
