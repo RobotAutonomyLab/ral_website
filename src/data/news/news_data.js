@@ -5,8 +5,15 @@ import three from './3.png'
 import four from './4.jpg'
 import five from './5.jpeg'
 import six from './6.jpeg'
+import seven from './7.jpeg'
 
 const news_data = [
+    {
+        newsTitle: 'Featured on CTV and UM News for our AI-Enhanced Farm Robot',
+        newsDate: 'November 10, 2025',
+        newsPic: seven,
+        newsData: 'Excited to share that our work at the Robot Autonomy Lab was featured today on <a href="https://www.ctvnews.ca/winnipeg/article/u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/">CTV News</a> and <a href="https://news.umanitoba.ca/ctv-news-u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/#:~:text=A%20Manitoba%20professor%20has%20developed,and%20harvesting%20in%20the%20province.">UM News</a> highlighting our AI-enhanced mobile robotics research and how it can support Prairie agriculture. This project is part of our research program on trustworthy AI-enhanced autonomous systems for agricultural applications, funded by Research Manitoba and supported by NSERC.'
+    },
     {
         newsTitle: 'RAL Welcomes First PhD Student',
         newsDate: 'September 1, 2025',
