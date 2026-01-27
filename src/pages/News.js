@@ -21,7 +21,9 @@ function News() {
 
                 <div className="News section">
                     <div className="all_news">
-                        {news_data.map((each_news, index) =>
+                        {news_data
+                            .sort((a, b) => new Date(b.newsDate) - new Date(a.newsDate))
+                            .map((each_news, index) =>
                             <div className="each-news-section" key={index}>
                                 <div className="news_img">
                                     <img 

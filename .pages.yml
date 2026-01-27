@@ -20,7 +20,9 @@ content:
       - name: newsPic
         label: Image
         type: image
+        required: true
         
       - name: newsData
         label: Content
         type: rich-text
+        required: true
