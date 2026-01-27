@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
-import news_data from '../data/news/news_data'
+// import news_data from '../data/news/news_data'
+import news_data from '../data/news.json'
 
 function News() {
     return (
@@ -23,7 +24,11 @@ function News() {
                         {news_data.map((each_news, index) =>
                             <div className="each-news-section" key={index}>
                                 <div className="news_img">
-                                    <img src={each_news.newsPic} alt="" />
+                                    <img 
+                                        src={process.env.PUBLIC_URL + each_news.newsPic}
+                                        alt={each_news.newsTitle}
+                                    />
+                                    {/* <img src={each_news.newsPic} alt="" /> */}
                                 </div>
                                 <div className='news_data'>
                                     <h4>{each_news.newsTitle}</h4>

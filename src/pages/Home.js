@@ -11,7 +11,8 @@ import home4 from '../data/home4.mp4'
 
 import { Link } from 'react-router-dom';
 
-import news_data from '../data/news/news_data'
+// import news_data from '../data/news/news_data'
+import news_data from '../data/news.json'
 
 function Home() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -120,7 +121,11 @@ function Home() {
                             .map((each_news, index) =>
                             <div className="each-news-section" key={index}>
                                 <div className="news_img">
-                                    <img src={each_news.newsPic} alt="" />
+                                    {/* <img src={each_news.newsPic} alt="" /> */}
+                                    <img 
+                                        src={process.env.PUBLIC_URL + each_news.newsPic} 
+                                        alt={each_news.newsTitle} 
+                                    />
                                 </div>
                                 <div className='news_data'>
                                     <span className="caption">{each_news.newsDate}</span>
