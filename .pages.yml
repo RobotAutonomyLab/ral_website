@@ -3,7 +3,7 @@ media: public/news_images
 content:
   - name: news
     label: News
-    type: json
+    type: file
     path: src/data/news.json
     list: true
     fields:
