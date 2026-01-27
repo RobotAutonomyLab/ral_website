@@ -44,7 +44,7 @@
   {
     "newsTitle": "Test",
     "newsDate": "January 10, 2026",
-    "newsPic": "/news_images/1.jpg",
+    "newsPic": "/public/news_images/1.jpg",
     "newsData": "Test text"
   }
 ]
