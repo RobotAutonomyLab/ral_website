@@ -1,13 +1,13 @@
 import React from 'react'
 import './Robots.scss'
 
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
+
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-
-// import scoutmini from '../data/robots/scoutmini.jpeg'
-// import go2 from '../data/robots/go2.jpeg'
-// import ur5e from '../data/robots/ur5e.jpg'
-// import dji_matrice from '../data/robots/dji_matrice.jpeg'
+import MarkdownLink from '../components/HandleMarkdownLinks'
 
 import robots_data from '../data/robots.json'
 
@@ -15,14 +15,23 @@ import robots_data from '../data/robots.json'
 function Robots() {
     const pageTitle = robots_data.robotPageTitle || 'Our Robots'
     const pageSubtitle = robots_data.robotPageSubtitle || ''
-    
+
     return (
         <div className='RobotsPage'>
             <NavBar />
             <div className="Robots container">
                 <div className="Robots section">
-                    <h1>Robots</h1>
-                    <h4>RAL proudly showcases a cutting-edge collection of recently acquired robots, including the AgileX Scout Mini mobile robot, Go2, Universal Robots UR5e, and DJI Matrice 350 RTK. Stay tuned for more exciting additions!</h4>
+                    <h1>{pageTitle}</h1>
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeSanitize]}
+                        components={{
+                            a: MarkdownLink,
+                            p: ({ children }) => <h4>{children}</h4>,
+                        }}
+                    >
+                        {pageSubtitle}
+                    </ReactMarkdown>
                 </div>
 
                 <div className="Robots section">
@@ -37,14 +46,26 @@ function Robots() {
                                         />
                                         <div>
                                             <h3>{each_robot.robotsTitle}</h3>
-                                            <p>{each_robot.robotsData}</p>
+                                            <ReactMarkdown
+                                                remarkPlugins={[remarkGfm]}
+                                                rehypePlugins={[rehypeSanitize]}
+                                                components={{ a: MarkdownLink }}
+                                            >
+                                                {each_robot.robotsData || ''}
+                                            </ReactMarkdown>
                                         </div>
                                     </>
                                 ) : (
                                     <>
                                         <div>
                                             <h3>{each_robot.robotsTitle}</h3>
-                                            <p>{each_robot.robotsData}</p>
+                                            <ReactMarkdown
+                                                remarkPlugins={[remarkGfm]}
+                                                rehypePlugins={[rehypeSanitize]}
+                                                components={{ a: MarkdownLink }}
+                                            >
+                                                {each_robot.robotsData || ''}
+                                            </ReactMarkdown>
                                         </div>
                                         <img
                                             src={process.env.PUBLIC_URL + each_robot.robotsPic.replace('/public', '')}
