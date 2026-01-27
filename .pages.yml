@@ -1,15 +1,41 @@
 media:
+  - name: robot_images
+    label: Robot images
+    input: public/robot_images
+    output: /robot_images
+    categories: [image]
+
   - name: news_images
     label: News images
     input: public/news_images
     output: /news_images
     categories: [image]
 
-  - name: robot_images
-    label: Robot images
-    input: public/robot_images
-    output: /robot_images
-    categories: [image]
+# Robots Page Configuration
+content:
+  - name: robots
+    label: Robots
+    type: file
+    path: src/data/robots.json
+    list: true
+
+    fields:
+      - name: robotsTitle
+        label: Title
+        type: string
+        required: true
+        
+      - name: robotsPic
+        label: Image
+        type: image
+        required: true
+        options:
+          media: robot_images
+        
+      - name: robotsData
+        label: Description
+        type: rich-text
+        required: true
 
 # News Page Configuration
 content:

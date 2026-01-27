@@ -4,10 +4,13 @@ import './Robots.scss'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
-import scoutmini from '../data/robots/scoutmini.jpeg'
-import go2 from '../data/robots/go2.jpeg'
-import ur5e from '../data/robots/ur5e.jpg'
-import dji_matrice from '../data/robots/dji_matrice.jpeg'
+// import scoutmini from '../data/robots/scoutmini.jpeg'
+// import go2 from '../data/robots/go2.jpeg'
+// import ur5e from '../data/robots/ur5e.jpg'
+// import dji_matrice from '../data/robots/dji_matrice.jpeg'
+
+import robots_data from '../data/robots.json'
+
 
 function Robots() {
     return (
@@ -21,19 +24,45 @@ function Robots() {
 
                 <div className="Robots section">
                     <div className="robots">
-                        <div className="each_robot reverse">
+                        {robots_data.map((each_robot, index) => (
+                            <div className={`each_robot ${index % 2 === 0 ? 'reverse' : ''}`} key={index}>
+                                {index % 2 === 0 ? (
+                                    <>
+                                        <img
+                                            src={process.env.PUBLIC_URL + each_robot.robotsPic.replace('/public', '')}
+                                            alt={each_robot.robotsTitle}
+                                        />
+                                        <div>
+                                            <h3>{each_robot.robotsTitle}</h3>
+                                            <p>{each_robot.robotsData}</p>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div>
+                                            <h3>{each_robot.robotsTitle}</h3>
+                                            <p>{each_robot.robotsData}</p>
+                                        </div>
+                                        <img
+                                            src={process.env.PUBLIC_URL + each_robot.robotsPic.replace('/public', '')}
+                                            alt={each_robot.robotsTitle}
+                                        />
+                                    </>
+                                )}
+                            </div>
+                        ))}
+
+                        {/* <div className="each_robot reverse">
                             <img src={scoutmini} alt="" />
                             <div>
                                 <h3>AgileX Scout Mini</h3>
                                 <p>The AgileX Scout Mini is a wheeled mobile robot powered by an NVIDIA Jetson Orin and outfitted with a cutting-edge sensor suite: a 32-beam RS-Helios LiDAR for 360° depth perception, a ZED2i stereo camera for RGB-D imaging, and a Fixposition Vision-RTK2 module for centimeter-level GNSS-RTK localization.</p>
-                                {/* <button>Read More</button> */}
                             </div>
-                        </div>
-                        <div className="each_robot">
+                        </div> */}
+                        {/* <div className="each_robot">
                             <div>
                                 <h3>Unitree Go2</h3>
                                 <p>The Unitree Go2, a four-legged robot, serves as our lab’s versatile platform for locomotion and perception research. With onboard computing, depth cameras, and LiDAR, it runs ROS 2 for real-time SLAM and navigation. Its modular design and open API enable projects from autonomous inspection to agile movement on uneven terrain.</p>
-                                {/* <button>Read More</button> */}
                             </div>
                             <img src={go2} alt="" />
                         </div>
@@ -41,16 +70,16 @@ function Robots() {
                             <img src={ur5e} alt="" />
                             <div>
                                 <h3>Universal Robots UR5e</h3>
-                                <p>The UR5e, a six-axis collaborative robotic arm, is our lab’s primary manipulation platform. With force-torque sensing and ROS 2 interface, it supports vision-guided pick-and-place, adaptive welding, and human-robot studies. Its repeatable motion, lightweight design, and safety features enable rapid, cage-free experiments in precision assembly and reinforcement-learning control.</p>                                {/* <button>Read More</button> */}
+                                <p>The UR5e, a six-axis collaborative robotic arm, is our lab’s primary manipulation platform. With force-torque sensing and ROS 2 interface, it supports vision-guided pick-and-place, adaptive welding, and human-robot studies. Its repeatable motion, lightweight design, and safety features enable rapid, cage-free experiments in precision assembly and reinforcement-learning control.</p>
                             </div>
                         </div>
                         <div className="each_robot">
                             <div>
                                 <h3>DJI Matrice 350 RTK</h3>
-                                <p>The DJI Matrice 350 RTK, our lab’s heavy-lift multirotor, is a weather-sealed, RTK-enabled platform for centimeter-accurate aerial data and autonomous missions. With dual batteries, O3 Enterprise video, and a flexible gimbal for LiDAR or ROS 2 sensors, it excels in mapping, inspection, photogrammetry, SLAM, and search-and-rescue drills.</p>                                {/* <button>Read More</button> */}
+                                <p>The DJI Matrice 350 RTK, our lab’s heavy-lift multirotor, is a weather-sealed, RTK-enabled platform for centimeter-accurate aerial data and autonomous missions. With dual batteries, O3 Enterprise video, and a flexible gimbal for LiDAR or ROS 2 sensors, it excels in mapping, inspection, photogrammetry, SLAM, and search-and-rescue drills.</p>
                             </div>
                             <img src={dji_matrice} alt="" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
