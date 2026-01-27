@@ -121,7 +121,7 @@ content:
         type: rich-text
         required: true
 
-      - name: teachingCourses
+      - name: teachings
         label: Teaching Courses
         type: object
         list:
