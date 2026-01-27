@@ -21,6 +21,11 @@
       "robotsTitle": "DJI Matrice 350 RTK",
       "robotsPic": "/public/robot_images/4.jpeg",
       "robotsData": "The DJI Matrice 350 RTK, our lab’s heavy-lift multirotor, is a weather-sealed, RTK-enabled platform for centimeter-accurate aerial data and autonomous missions. With dual batteries, O3 Enterprise video, and a flexible gimbal for LiDAR or ROS 2 sensors, it excels in mapping, inspection, photogrammetry, SLAM, and search-and-rescue drills."
+    },
+    {
+      "robotsTitle": "Adding a test robot Title here",
+      "robotsPic": "/robot_images/2.jpeg",
+      "robotsData": "This is the spot dot or whatever, testing this here. [Link 1](/team/wenjie) and [Link 2](https://www.google.com) and [Link 3](/news)"
     }
   ]
 }
