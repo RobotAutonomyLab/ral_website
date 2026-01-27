@@ -48,7 +48,7 @@
       "newsTitle": "Testing Test",
       "newsDate": "December 30, 2025",
       "newsPic": "/news_images/2.png",
-      "newsData": "This is a test content. This link goes to [ilyas](/team/ilyas) website, and this link goes to [external](www.google.com) website"
+      "newsData": "This is a test content. This link goes to [ilyas](/team/ilyas) website, and this link goes to [external](https://www.google.com) website"
     }
   ]
 }
