@@ -1,12 +1,12 @@
 {
   "newsPageTitle": "News",
-  "newsPageSubtitle": "Stay updated with the latest from the <a target='_blank' href=\"/\">Robot Autonomy Lab</a>! From groundbreaking research breakthroughs to exciting collaborations and events, explore our recent highlights!",
+  "newsPageSubtitle": "Stay updated with the latest from the [Robot Autonomy Lab](/)! From groundbreaking research breakthroughs to exciting collaborations and events, explore our recent highlights!",
   "news": [
     {
       "newsTitle": "RAL Welcomes First MSc Student",
       "newsDate": "January 1, 2025",
       "newsPic": "/public/news_images/1.jpg",
-      "newsData": "We’re excited to welcome <a target='_blank' href=\"#/team/ilyas\">Ilyas Dawoodjee</a> as the first MSc student in the Robot Autonomy Lab. Ilyas will focus on learning-based control and field-robotics autonomy with applications in agricultural robotics. He holds a B.Eng. in Mechatronics (First Class Honours with Distinction, APU, 2022) and brings prior research experience from the <a target='_blank' href=\"https://building-robotics-lab.github.io/brlab/\" target=\"_blank\">Building Robotics Laboratory</a> at the <a target='_blank' href=\"https://www.nus.edu.sg/\" target=\"_blank\">National University of Singapore</a>. Supported by the <a target='_blank' href=\"https://umanitoba.ca/graduate-studies/funding-awards/university-manitoba-graduate-fellowship-umgf\" target=\"_blank\">University of Manitoba Graduate Fellowship (UMGF)</a> and International Graduate Student Entrance Scholarship (IGSES) awards, Ilyas is a fantastic addition to the team!"
+      "newsData": "We’re excited to welcome [Ilyas Dawoodjee](#/team/ilyas) as the first MSc student in the Robot Autonomy Lab. Ilyas will focus on learning-based control and field-robotics autonomy with applications in agricultural robotics. He holds a B.Eng. in Mechatronics (First Class Honours with Distinction, APU, 2022) and brings prior research experience from the [Building Robotics Laboratory](https://building-robotics-lab.github.io/brlab/) at the [National University of Singapore](https://www.nus.edu.sg/). Supported by the [University of Manitoba Graduate Fellowship (UMGF)](https://umanitoba.ca/graduate-studies/funding-awards/university-manitoba-graduate-fellowship-umgf) and International Graduate Student Entrance Scholarship (IGSES) awards, Ilyas is a fantastic addition to the team!"
     },
     {
       "newsTitle": "RAL Awarded URGP Grant",
@@ -36,13 +36,19 @@
       "newsTitle": "RAL Welcomes First PhD Student",
       "newsDate": "September 1, 2025",
       "newsPic": "/public/news_images/6.jpeg",
-      "newsData": "We’re excited to welcome <a target='_blank' href=\"#/team/wenjie\">Wenjie Zhou</a> as the first PhD student in the Robot Autonomy Lab. Wenjie will focus on safety-guaranteed, learning-based navigation for mobile robots in unstructured environments. He holds an M.Sc. in Robotics and Autonomous Systems from the University of Macau and earned his B.Eng. from South China Agricultural University. He recently completed a research internship at Shenzhen University and received the <a target='_blank' href=\"https://www.fst.um.edu.mo/news/specializing-in-multi-uav-research-zhou-wenjies-journey-in-pursuing-scientific-innovation/\" target=\"_blank\">2025 FST Best MSc Student Award</a> and second prize in the Huawei ICT Global Final Competition. Wenjie is a fantastic addition to the team!"
+      "newsData": "We’re excited to welcome [Wenjie Zhou](#/team/wenjie) as the first PhD student in the Robot Autonomy Lab. Wenjie will focus on safety-guaranteed, learning-based navigation for mobile robots in unstructured environments. He holds an M.Sc. in Robotics and Autonomous Systems from the University of Macau and earned his B.Eng. from South China Agricultural University. He recently completed a research internship at Shenzhen University and received the [2025 FST Best MSc Student Award](https://www.fst.um.edu.mo/news/specializing-in-multi-uav-research-zhou-wenjies-journey-in-pursuing-scientific-innovation/) and second prize in the Huawei ICT Global Final Competition. Wenjie is a fantastic addition to the team!"
     },
     {
       "newsTitle": "Featured on CTV and UM News for our AI-Enhanced Farm Robot",
       "newsDate": "November 10, 2025",
       "newsPic": "/public/news_images/7.jpeg",
-      "newsData": "Excited to share that our work at the Robot Autonomy Lab was featured today on <a target='_blank' href=\"https://www.ctvnews.ca/winnipeg/article/u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/\">CTV News</a> and <a target='_blank' href=\"https://news.umanitoba.ca/ctv-news-u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/#:~:text=A%20Manitoba%20professor%20has%20developed,and%20harvesting%20in%20the%20province.\">UM News</a> highlighting our AI-enhanced mobile robotics research and how it can support Prairie agriculture. This project is part of our research program on trustworthy AI-enhanced autonomous systems for agricultural applications, funded by Research Manitoba and supported by NSERC."
+      "newsData": "Excited to share that our work at the Robot Autonomy Lab was featured today on [CTV News](https://www.ctvnews.ca/winnipeg/article/u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/) and [UM News](https://news.umanitoba.ca/ctv-news-u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/#:~:text=A%20Manitoba%20professor%20has%20developed,and%20harvesting%20in%20the%20province.) highlighting our AI-enhanced mobile robotics research and how it can support Prairie agriculture. This project is part of our research program on trustworthy AI-enhanced autonomous systems for agricultural applications, funded by Research Manitoba and supported by NSERC."
+    },
+    {
+      "newsTitle": "Testing Test",
+      "newsDate": "December 30, 2025",
+      "newsPic": "/news_images/2.png",
+      "newsData": "This is a test content. This link goes to [ilyas](/team/ilyas) website, and this link goes to [external](www.google.com) website"
     }
   ]
 }
