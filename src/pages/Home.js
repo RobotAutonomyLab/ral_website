@@ -115,7 +115,7 @@ function Home() {
                         <Link to='/news' target='_blank' rel='noreferrer'>View all news ❯</Link>
                     </div>
                     <div className="home_news_section">
-                        {news_data
+                        {news_data.news
                             .sort((a, b) => new Date(b.newsDate) - new Date(a.newsDate))
                             .slice(0, 6)
                             .map((each_news, index) =>

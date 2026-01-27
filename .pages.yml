@@ -11,60 +11,93 @@ media:
     output: /news_images
     categories: [image]
 
-
 content:
-  # Robots Page Configuration
-  - name: robots
-    label: Robots
-    type: file
-    path: src/data/robots.json
-    list: true
-
-    fields:
-      - name: robotsTitle
-        label: Title
-        type: string
-        required: true
-        
-      - name: robotsPic
-        label: Image
-        type: image
-        required: true
-        options:
-          media: robot_images
-        
-      - name: robotsData
-        label: Description
-        type: rich-text
-        required: true
-
-  # News Page Configuration
-  - name: news
-    label: News
+  # News Page (single file, with nested list)
+  - name: newsPage
+    label: News Page
     type: file
     path: src/data/news.json
-    list: true
-
+    format: json
     fields:
-      - name: newsTitle
-        label: Title
+      - name: newsPageTitle
+        label: News Page Title
         type: string
         required: true
-        
-      - name: newsDate
-        label: Date
+
+      - name: newsPageSubtitle
+        label: News Page Subtitle
         type: string
         required: true
-        description: "Format: Month Day, Year (e.g. November 12, 2025)"
-        
-      - name: newsPic
-        label: Image
-        type: image
+
+      - name: news
+        label: News Items
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.newsTitle} — {fields.newsDate}"
+        fields:
+          - name: newsTitle
+            label: Title
+            type: string
+            required: true
+
+          - name: newsDate
+            label: Date
+            type: string
+            required: true
+            description: "Format: Month Day, Year (e.g. November 12, 2025)"
+
+          - name: newsPic
+            label: Image
+            type: image
+            required: true
+            options:
+              media: news_images
+
+          - name: newsData
+            label: Content
+            type: rich-text
+            required: true
+
+  # Robots Page (single file, with nested list)
+  - name: robotsPage
+    label: Robots Page
+    type: file
+    path: src/data/robots.json
+    format: json
+    fields:
+      - name: robotPageTitle
+        label: Robot Page Title
+        type: string
         required: true
-        options:
-          media: news_images
-        
-      - name: newsData
-        label: Content
-        type: rich-text
+
+      - name: robotPageSubtitle
+        label: Robot Page Subtitle
+        type: string
         required: true
+
+      - name: robots
+        label: Robots
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.robotsTitle}"
+        fields:
+          - name: robotsTitle
+            label: Title
+            type: string
+            required: true
+
+          - name: robotsPic
+            label: Image
+            type: image
+            required: true
+            options:
+              media: robot_images
+
+          - name: robotsData
+            label: Description
+            type: rich-text
+            required: true
