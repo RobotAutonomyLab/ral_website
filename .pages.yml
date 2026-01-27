@@ -108,7 +108,7 @@ content:
   - name: teachingPage
     label: Teaching Page
     type: file
-    path: src/data/teaching.json
+    path: src/data/teachings.json
     format: json
     fields:
       - name: teachingPageTitle
