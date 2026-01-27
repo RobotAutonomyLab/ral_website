@@ -30,7 +30,6 @@ function News() {
                                         src={process.env.PUBLIC_URL + each_news.newsPic.replace('/public', '')}
                                         alt={each_news.newsTitle}
                                     />
-                                    {/* {console.log(process.env.PUBLIC_URL + each_news.newsPic)} */}
                                     {/* <img src={each_news.newsPic} alt="" /> */}
                                 </div>
                                 <div className='news_data'>
