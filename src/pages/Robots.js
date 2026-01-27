@@ -13,6 +13,9 @@ import robots_data from '../data/robots.json'
 
 
 function Robots() {
+    const pageTitle = robots_data.robotPageTitle || 'Our Robots'
+    const pageSubtitle = robots_data.robotPageSubtitle || ''
+    
     return (
         <div className='RobotsPage'>
             <NavBar />
@@ -24,7 +27,7 @@ function Robots() {
 
                 <div className="Robots section">
                     <div className="robots">
-                        {robots_data.map((each_robot, index) => (
+                        {robots_data.robots.map((each_robot, index) => (
                             <div className={`each_robot ${index % 2 === 0 ? 'reverse' : ''}`} key={index}>
                                 {index % 2 === 0 ? (
                                     <>

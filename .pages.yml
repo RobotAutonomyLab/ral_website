@@ -83,7 +83,7 @@ content:
         list:
           collapsible:
             collapsed: true
-            summary: "{fields.robotsTitle}"
+            summary: "#{index} — {fields.robotsTitle}"
         fields:
           - name: robotsTitle
             label: Title
