@@ -11,8 +11,9 @@ media:
     output: /news_images
     categories: [image]
 
-# Robots Page Configuration
+
 content:
+  # Robots Page Configuration
   - name: robots
     label: Robots
     type: file
@@ -37,8 +38,7 @@ content:
         type: rich-text
         required: true
 
-# News Page Configuration
-content:
+  # News Page Configuration
   - name: news
     label: News
     type: file
