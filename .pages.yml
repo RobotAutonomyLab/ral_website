@@ -134,7 +134,7 @@ content:
             type: string
             required: true
 
-          - name: teachingsDescription
+          - name: teachingsData
             label: Course Description
             type: rich-text
             required: true
