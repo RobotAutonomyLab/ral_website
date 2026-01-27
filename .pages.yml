@@ -35,7 +35,7 @@ content:
         list:
           collapsible:
             collapsed: true
-            summary: "{fields.newsTitle} — {fields.newsDate}"
+            summary: "#{index} — {fields.newsTitle} — {fields.newsDate}"
         fields:
           - name: newsTitle
             label: Title
