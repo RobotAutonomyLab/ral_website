@@ -3,7 +3,7 @@
     "newsTitle": "RAL Welcomes First MSc Student",
     "newsDate": "January 1, 2025",
     "newsPic": "/news_images/1.jpg",
-    "newsData": "We’re excited to welcome [Ilyas Dawoodjee](#/team/ilyas) as the first MSc student in the Robot Autonomy Lab. Ilyas will focus on learning-based control and field-robotics autonomy with applications in agricultural robotics. He holds a B.Eng. in Mechatronics (First Class Honours with Distinction, APU, 2022) and brings prior research experience from the [Building Robotics Laboratory](https://building-robotics-lab.github.io/brlab/) at the [National University of Singapore](https://www.nus.edu.sg/). Supported by the [University of Manitoba Graduate Fellowship (UMGF)](https://umanitoba.ca/graduate-studies/funding-awards/university-manitoba-graduate-fellowship-umgf) and International Graduate Student Entrance Scholarship (IGSES) awards, Ilyas is a fantastic addition to the team!"
+    "newsData": "We’re excited to welcome <a href=\"#/team/ilyas\">Ilyas Dawoodjee</a> as the first MSc student in the Robot Autonomy Lab. Ilyas will focus on learning-based control and field-robotics autonomy with applications in agricultural robotics. He holds a B.Eng. in Mechatronics (First Class Honours with Distinction, APU, 2022) and brings prior research experience from the <a href=\"https://building-robotics-lab.github.io/brlab/\" target=\"_blank\">Building Robotics Laboratory</a> at the <a href=\"https://www.nus.edu.sg/\" target=\"_blank\">National University of Singapore</a>. Supported by the <a href=\"https://umanitoba.ca/graduate-studies/funding-awards/university-manitoba-graduate-fellowship-umgf\" target=\"_blank\">University of Manitoba Graduate Fellowship (UMGF)</a> and International Graduate Student Entrance Scholarship (IGSES) awards, Ilyas is a fantastic addition to the team!"
   },
   {
     "newsTitle": "RAL Awarded URGP Grant",
@@ -44,7 +44,7 @@
   {
     "newsTitle": "Test",
     "newsDate": "January 10, 2026",
-    "newsPic": "/public/news_images/2.png",
+    "newsPic": "/news_images/2.png",
     "newsData": "Test text"
   }
 ]
