@@ -16,6 +16,7 @@ content:
         label: Date
         type: string
         required: true
+        description: "Format: Month Day, Year (e.g. November 12, 2025)"
         
       - name: newsPic
         label: Image
