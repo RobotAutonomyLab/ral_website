@@ -1,4 +1,4 @@
-media: public/news_images
+media: /news_images
 
 content:
   - name: news
