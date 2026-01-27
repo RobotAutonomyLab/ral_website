@@ -1,12 +1,15 @@
-media: public/news_images
-public_path: /news_images
 
+# News Page Configuration
 content:
   - name: news
     label: News
     type: file
     path: src/data/news.json
     list: true
+
+    media: public/news_images
+    public_path: /news_images
+
     fields:
       - name: newsTitle
         label: Title

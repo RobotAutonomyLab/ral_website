@@ -123,7 +123,7 @@ function Home() {
                                 <div className="news_img">
                                     {/* <img src={each_news.newsPic} alt="" /> */}
                                     <img 
-                                        src={process.env.PUBLIC_URL + each_news.newsPic} 
+                                        src={process.env.PUBLIC_URL + each_news.newsPic.replace('/public', '')} 
                                         alt={each_news.newsTitle} 
                                     />
                                 </div>
