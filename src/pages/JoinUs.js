@@ -42,13 +42,13 @@ function JoinUs() {
                                 {section.joinusData?.map((block, bidx) => {
                                     if (block.type === "paragraph") {
                                         return (
-                                            <ReactMarkdown
+                                            <ReactMarkdown 
                                                 remarkPlugins={[remarkGfm]}
                                                 rehypePlugins={[rehypeSanitize]}
                                                 components={{ a: MarkdownLink }}
                                             >
                                                 {block.text || ''}
-                                            </ReactMarkdown>
+                                            </ReactMarkdown>   
                                         );
                                     }
 
@@ -56,18 +56,13 @@ function JoinUs() {
                                         return (
                                             <ul key={bidx}>
                                                 {block.items?.map((item, i) => (
-                                                    <li key={i}>
-                                                        <ReactMarkdown
-                                                            remarkPlugins={[remarkGfm]}
-                                                            rehypePlugins={[rehypeSanitize]}
-                                                            components={{
-                                                                a: MarkdownLink,
-                                                                p: ({ children }) => <>{children}</>, // <- no <p> inside <li>
-                                                            }}
-                                                        >
-                                                            {item || ""}
-                                                        </ReactMarkdown>
-                                                    </li>
+                                                    <ReactMarkdown 
+                                                        remarkPlugins={[remarkGfm]}
+                                                        rehypePlugins={[rehypeSanitize]}
+                                                        components={{ a: MarkdownLink }}
+                                                    >
+                                                        {item}
+                                                    </ReactMarkdown>  
                                                 ))}
                                             </ul>
                                         );
