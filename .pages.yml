@@ -3,7 +3,7 @@ media:
     label: Publications files
     input: public/publications_files
     output: /publications_files
-    categories: [pdf]
+    categories: [document]
 
   - name: robot_images
     label: Robot images
