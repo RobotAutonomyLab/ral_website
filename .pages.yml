@@ -134,9 +134,10 @@ content:
 
           - name: joinusData
             label: Content Blocks
-            type: block  # <--- CHANGED from 'object' to 'block'
-            list: true   # Keep this true so you can have multiple blocks
-            blockKey: type # This tells PagesCMS to use your existing "type" field to save the choice
+            type: block 
+            list: true
+            blockKey: type
+            collapsed: true
             blocks:
               - name: paragraph
                 label: Paragraph
