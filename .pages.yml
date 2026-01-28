@@ -134,39 +134,26 @@ content:
 
           - name: joinusData
             label: Content Blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "#{index} — {fields.type}"
-            fields:
-              - name: type
-                label: Block Type
-                description: "If you are writing a paragraph, enter `paragraph`. If you are writing a bullet list, enter `bullet-list`"
-                type: string
-                required: true
-                options:
-                  list: true
-                ui:
-                  component: select
-                options:
-                  - paragraph
-                  - bullet-list
+            type: block  # <--- CHANGED from 'object' to 'block'
+            list: true   # Keep this true so you can have multiple blocks
+            blockKey: type # This tells PagesCMS to use your existing "type" field to save the choice
+            blocks:
+              - name: paragraph
+                label: Paragraph
+                fields:
+                  - name: text
+                    label: Paragraph Text
+                    type: rich-text
+                    required: true
 
-              - name: text
-                label: Paragraph Text
-                type: rich-text
-                required: false
-                ui:
-                  condition: "fields.type === 'paragraph'"
-
-              - name: items
-                label: Bullet Items
-                type: rich-text
-                list: true
-                required: false
-                ui:
-                  condition: "fields.type === 'bullet-list'"
+              - name: bullet-list
+                label: Bullet List
+                fields:
+                  - name: items
+                    label: Bullet Items
+                    type: string
+                    list: true
+                    required: true
 
 
   # Teaching Page Configuration
