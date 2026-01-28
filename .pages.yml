@@ -1,4 +1,10 @@
 media:
+  - name: publications_files
+    label: Publications files
+    input: public/publications_files
+    output: /publications_files
+    categories: [file]
+
   - name: robot_images
     label: Robot images
     input: public/robot_images
@@ -12,6 +18,23 @@ media:
     categories: [image]
 
 content:
+  # Publications Page Configuration
+  - name: publicationsPage
+    label: Publications Page
+    type: file
+    src: src/data/publications.json
+    format: json
+    fields:
+      - name: publicationsPageTitle
+        label: Publications Page Title
+        type: string
+        required: true
+
+      - name: publicationsPageSubtitle
+        label: Publications Page Subtitle
+        type: rich-text
+        required: true
+
   # Robots Page Configuration
   - name: robotsPage
     label: Robots Page
