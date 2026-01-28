@@ -122,7 +122,7 @@ content:
                     list:
                       collapsible:
                         collapsed: true
-                        summary: "#{index} — {fields.name}"
+                        summary: "#{index} — {blocks.name}"
                     blockKey: type
                     blocks:
                       # PDF: show file picker ONLY (no URL field)
