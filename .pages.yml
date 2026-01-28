@@ -139,14 +139,23 @@ content:
                       # Everything else: show URL ONLY (no upload/select)
                       - name: Cite
                         label: Cite
-                        description: "No action needed — the URL is set automatically."
                         fields:
+                          - name: note
+                            label: Info
+                            type: string
+                            default: "No action needed — the URL is set automatically."
+                            required: true
+                            description: "This is automatic (leave as-is)."
+                            pattern:
+                              regex: '^No action needed — the URL is set automatically\.$'
+                              message: "This message is fixed."
+
                           - name: url
                             label: URL
                             type: string
                             required: true
                             default: "/"
-                            # hidden: true
+                            hidden: true
 
                       - name: DOI
                         label: DOI
