@@ -18,7 +18,7 @@ media:
     categories: [image]
 
 content:
-  # Publications Page Configuration
+    # Publications Page Configuration
   - name: publicationsPage
     label: Publications Page
     type: file
@@ -47,6 +47,126 @@ content:
             label: Section Title
             type: string
             required: true
+
+          # NEW: Years under each section (e.g., Journal Papers -> 2024)
+          - name: years
+            label: Years
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.year}"
+            fields:
+              - name: year
+                label: Year
+                type: string
+                required: true
+
+              # NEW: Papers inside each year
+              - name: papers
+                label: Papers
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "#{index} — {fields.title}"
+                fields:
+                  - name: title
+                    label: Title
+                    type: string
+                    required: true
+
+                  - name: journal
+                    label: Journal
+                    type: string
+                    required: true
+
+                  - name: volume
+                    label: Volume
+                    type: string
+                    required: false
+
+                  - name: issue
+                    label: Issue
+                    type: string
+                    required: false
+
+                  - name: page
+                    label: Page
+                    type: string
+                    required: false
+
+                  # Authors (items) — keep minimal for now
+                  - name: authors
+                    label: Authors
+                    type: object
+                    list: true
+                    fields:
+                      - name: name
+                        label: Name
+                        type: string
+                        required: true
+
+                      - name: link
+                        label: Link
+                        type: string
+                        required: false
+
+                  # Links list: PDF, Cite, DOI, Code, Video, Data
+                  - name: links
+                    label: Links
+                    type: object
+                    list: true
+                    fields:
+                      - name: type
+                        label: Type
+                        type: select
+                        required: true
+                        options:
+                          values:
+                            - PDF
+                            - Cite
+                            - DOI
+                            - Code
+                            - Video
+                            - Data
+
+                      - name: url
+                        label: URL
+                        type: string
+                        required: true
+
+                  # Keywords (items)
+                  - name: keywords
+                    label: Keywords
+                    type: string
+                    list: true
+                    required: false
+
+                  # Highlights (items)
+                  - name: highlights
+                    label: Highlights
+                    type: string
+                    list: true
+                    required: false
+
+                  - name: abstract
+                    label: Abstract
+                    type: text
+                    required: false
+
+                  # Keep blank for now (optional)
+                  - name: citationLink
+                    label: Citation Link
+                    type: string
+                    required: false
+
+                  # Keep blank for now (optional)
+                  - name: citation
+                    label: Citation
+                    type: text
+                    required: false
+
 
   # Robots Page Configuration
   - name: robotsPage
