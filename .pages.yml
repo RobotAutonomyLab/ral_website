@@ -50,8 +50,11 @@ content:
 
           - name: years
             label: Years
-            type: string
-            required: true
+            type: block
+            list:
+              collapsible:
+                collapsed: true
+                summary: "#{index} - {fields.year}"
 
   # Robots Page Configuration
   - name: robotsPage
