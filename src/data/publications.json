@@ -1,86 +1,138 @@
 {
-    "publicationsPageTitle": "Publications",
-    "publicationsPageSubtitle": "A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our [Google Scholar](https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en).",
-    "publications": [
+  "publicationsPageTitle": "Publications",
+  "publicationsPageSubtitle": "A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our [Google Scholar](https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en).",
+  "publications": [
+    {
+      "sectionTitle": "Under Review"
+    },
+    {
+      "sectionTitle": "Journal Papers",
+      "years": [
         {
-            "sectionTitle": "Under Review",
-            "years": []
-        },
-        {
-            "sectionTitle": "Journal Papers",
-            "years": [
+          "year": "2024",
+          "papers": [
+            {
+              "title": "Improving safety in mixed traffic: A learning-based model predictive control for autonomous and human-driven vehicle platooning",
+              "journal": "Knowledge-Based Systems",
+              "volume": "293",
+              "page": "111673",
+              "authors": [
                 {
-                    "year": "2024",
-                    "papers": [
-                        {
-                            "title": "Improving safety in mixed traffic: A learning-based model predictive control for autonomous and human-driven vehicle platooning",
-                            "journal": "Knowledge-Based Systems",
-                            "volume": "293",
-                            "issue": "",
-                            "page": "111673",
-                            "authors": [
-                                {
-                                    "name": "Jay Wang",
-                                    "link": "/team"
-                                },
-                                {
-                                    "name": "Zhihao Jiang"
-                                },
-                                {
-                                    "name": "Yash Vardhan Pant"
-                                }
-                            ],
-                            "links": [
-                                {
-                                    "type": "PDF",
-                                    "url": "/public/publications_files/Journal Papers/j_2024_5.pdf"
-                                },
-                                {
-                                    "type": "Cite",
-                                    "url": "/"
-                                },
-                                {
-                                    "type": "DOI",
-                                    "url": "https://www.sciencedirect.com/science/article/pii/S0950705124003083"
-                                },
-                                {
-                                    "type": "Code",
-                                    "url": "https://github.com/CL2-UWaterloo/GP-MPC-of-Platooning"
-                                }
-                            ],
-                            "keywords": [
-                                "Autonomous vehicle",
-                                "Human-driven vehicle",
-                                "Mixed-vehicle platooning",
-                                "Gaussian process",
-                                "Model predictive control"
-                            ],
-                            "highlights": [
-                                "Introduces a hybrid human‑vehicle model that combines a first‑principles car‑following law with a Gaussian‑process learner trained on human‑in‑the‑loop data.",
-                                "Reduces human‑vehicle speed‑prediction root‑mean‑square error by 35.6 % compared to the first‑principles model alone.",
-                                "Develops a Gaussian‑Process–enhanced Model Predictive Control (GP‑MPC) policy that explicitly accounts for HV uncertainty in mixed platoons.",
-                                "Demonstrates superior safety and smoother spacing in emergency‑braking simulations versus baseline MPC control.",
-                                "Shows that GP‑MPC simultaneously improves safety and traffic efficiency for autonomous–human mixed‑traffic platoons."
-                            ],
-                            "abstract": "As autonomous vehicles (AVs) become more common on public roads, their interaction with human-driven vehicles (HVs) in mixed traffic is inevitable. This requires new control strategies for AVs to handle the unpredictable nature of HVs. This study focused on safe control in mixed-vehicle platoons consisting of both AVs and HVs, particularly during longitudinal car-following scenarios. We introduce a novel model that combines a conventional first-principles model with a Gaussian process (GP) machine learning-based model to better predict HV behavior. Our results showed a significant improvement in predicting HV speed, with a 35.64% reduction in the root mean square error compared with the use of the first-principles model alone. We developed a new control strategy called GP-MPC, which uses the proposed HV model for safer distance management between vehicles in the mixed platoon. The GP-MPC strategy effectively utilizes the capacity of the GP model to assess uncertainties, thereby significantly enhancing safety in challenging traffic scenarios, such as emergency braking scenarios. In simulations, the GP-MPC strategy outperformed the baseline MPC method, offering better safety and more efficient vehicle movement in mixed traffic.",
-                            "citationLink": "wang2024improving",
-                            "citation": "@article{wang2017autonomous,\n  title={Autonomous locomotion mode transition of ground hybrid robots},\n  author={Wang, Jie},\n  year={2017}\n}"
-                        }
-                    ]
+                  "name": "Jay Wang",
+                  "link": "/team"
+                },
+                {
+                  "name": "Zhihao Jiang"
+                },
+                {
+                  "name": "Yash Vardhan Pant"
                 }
-            ]
-        },
-        {
-            "sectionTitle": "Conferences",
-            "years": []
-        },
-        {
-            "sectionTitle": "Theses",
-            "years": []
-        },
-        {
-            "sectionTitle": "Patents",
-            "years": []
+              ],
+              "links": [
+                {
+                  "type": "PDF",
+                  "url": "/public/publications_files/Journal Papers/j_2024_5.pdf"
+                },
+                {
+                  "type": "Cite",
+                  "url": "/"
+                },
+                {
+                  "type": "DOI",
+                  "url": "https://www.sciencedirect.com/science/article/pii/S0950705124003083"
+                },
+                {
+                  "type": "Code",
+                  "url": "https://github.com/CL2-UWaterloo/GP-MPC-of-Platooning"
+                }
+              ],
+              "keywords": [
+                "Autonomous vehicle",
+                "Human-driven vehicle",
+                "Mixed-vehicle platooning",
+                "Gaussian process",
+                "Model predictive control"
+              ],
+              "highlights": [
+                "Introduces a hybrid human‑vehicle model that combines a first‑principles car‑following law with a Gaussian‑process learner trained on human‑in‑the‑loop data.",
+                "Reduces human‑vehicle speed‑prediction root‑mean‑square error by 35.6 % compared to the first‑principles model alone.",
+                "Develops a Gaussian‑Process–enhanced Model Predictive Control (GP‑MPC) policy that explicitly accounts for HV uncertainty in mixed platoons.",
+                "Demonstrates superior safety and smoother spacing in emergency‑braking simulations versus baseline MPC control.",
+                "Shows that GP‑MPC simultaneously improves safety and traffic efficiency for autonomous–human mixed‑traffic platoons."
+              ],
+              "abstract": "As autonomous vehicles (AVs) become more common on public roads, their interaction with human-driven vehicles (HVs) in mixed traffic is inevitable. This requires new control strategies for AVs to handle the unpredictable nature of HVs. This study focused on safe control in mixed-vehicle platoons consisting of both AVs and HVs, particularly during longitudinal car-following scenarios. We introduce a novel model that combines a conventional first-principles model with a Gaussian process (GP) machine learning-based model to better predict HV behavior. Our results showed a significant improvement in predicting HV speed, with a 35.64% reduction in the root mean square error compared with the use of the first-principles model alone. We developed a new control strategy called GP-MPC, which uses the proposed HV model for safer distance management between vehicles in the mixed platoon. The GP-MPC strategy effectively utilizes the capacity of the GP model to assess uncertainties, thereby significantly enhancing safety in challenging traffic scenarios, such as emergency braking scenarios. In simulations, the GP-MPC strategy outperformed the baseline MPC method, offering better safety and more efficient vehicle movement in mixed traffic.",
+              "citationLink": "wang2024improving",
+              "citation": "@article{wang2017autonomous,\n  title={Autonomous locomotion mode transition of ground hybrid robots},\n  author={Wang, Jie},\n  year={2017}\n}"
+            },
+            {
+              "title": "Learning-based modeling of human-autonomous vehicle interaction for improved safety in mixed-vehicle platooning control",
+              "journal": "Transportation Research Part C: Emerging Technologies",
+              "volume": "162",
+              "page": "104600",
+              "authors": [
+                {
+                  "name": "Jay Wang",
+                  "link": "/team"
+                },
+                {
+                  "name": "Yash Vardhan Pant"
+                },
+                {
+                  "name": "Zhihao Jiang"
+                }
+              ],
+              "links": [
+                {
+                  "type": "PDF",
+                  "url": "/publications_files/Journal Papers/j_2024_4.pdf"
+                },
+                {
+                  "type": "Cite",
+                  "url": "/"
+                },
+                {
+                  "type": "DOI",
+                  "url": "https://www.sciencedirect.com/science/article/pii/S0968090X24001219"
+                },
+                {
+                  "type": "Code",
+                  "url": "https://github.com/CL2-UWaterloo/GP-MPC-of-Platooning"
+                },
+                {
+                  "type": "Video",
+                  "url": "https://youtu.be/mfPzYDQrvV4"
+                }
+              ],
+              "keywords": [
+                "Human-Autonomous vehicle interaction",
+                "Modeling uncertainty",
+                "Mixed vehicle platoon",
+                "Gaussian process",
+                "Model predictive control"
+              ],
+              "highlights": [
+                "Proposes a hybrid human‑vehicle model that pairs a first‑principles car‑following law with a Gaussian‑process learner to predict velocity and quantify uncertainty.",
+                "Introduces a Gaussian‑Process–based Model Predictive Control (GP‑MPC) scheme that injects these uncertainty bounds into distance constraints for mixed‑platoon safety.",
+                "Uses sparse GP regression and dynamic prediction caching to slash GP‑MPC computation time—making it only slightly slower than standard MPC and roughly 100 × faster than earlier GP controllers.",
+                "Simulation results confirm GP‑MPC maintains safer headways and smoother traffic flow than conventional MPC in autonomous–human mixed platoons.",
+                "Demonstrates the broader value of learning‑based HV modeling for boosting both safety and efficiency in real‑world mixed‑traffic scenarios."
+              ],
+              "abstract": "The rising presence of autonomous vehicles (AVs) on public roads necessitates the development of advanced control strategies that account for the unpredictable nature of human-driven vehicles (HVs). This study introduces a learning-based method for modeling HV behavior, combining a traditional first-principles approach with a Gaussian process (GP) learning component. This hybrid model enhances the accuracy of velocity predictions and provides measurable uncertainty estimates. We leverage this model to develop a GP-based model predictive control (GP-MPC) strategy to improve safety in mixed vehicle platoons by integrating uncertainty assessments into distance constraints. Comparative simulations between our GP-MPC approach and a conventional model predictive control (MPC) strategy reveal that the GP-MPC ensures safer distancing and more efficient travel within the mixed platoon. By incorporating sparse GP modeling for HVs and a dynamic GP prediction in MPC, we significantly reduce the computation time of GP-MPC, making it only marginally longer than standard MPC and approximately 100 times faster than previous models not employing these techniques. Our findings underscore the effectiveness of learning-based HV modeling in enhancing safety and efficiency in mixed-traffic environments involving AV and HV interactions.",
+              "citationLink": "wang2024learning",
+              "citation": "@article{wang2024learning,\n  title={Learning-based modeling of human-autonomous vehicle interaction for improved safety in mixed-vehicle platooning control},\n  author={Wang, Jie and Pant, Yash Vardhan and Jiang, Zhihao},\n  journal={Transportation Research Part C: Emerging Technologies},\n  volume={162},\n  pages={104600},\n  year={2024},\n  publisher={Elsevier}\n}"
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "sectionTitle": "Conferences"
+    },
+    {
+      "sectionTitle": "Theses"
+    },
+    {
+      "sectionTitle": "Patents"
+    }
+  ]
 }
