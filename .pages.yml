@@ -115,26 +115,62 @@ content:
                   # Links list: PDF, Cite, DOI, Code, Video, Data
                   - name: links
                     label: Links
-                    type: object
+                    type: block
                     list: true
-                    fields:
-                      - name: type
-                        label: Type
-                        type: select
-                        required: true
-                        options:
-                          values:
-                            - PDF
-                            - Cite
-                            - DOI
-                            - Code
-                            - Video
-                            - Data
+                    blockKey: type
+                    blocks:
+                      # PDF: show file picker ONLY (no URL field)
+                      - name: PDF
+                        label: PDF
+                        fields:
+                          - name: url
+                            label: PDF File
+                            type: file
+                            required: true
+                            options:
+                              media: publications_files
 
-                      - name: url
-                        label: URL
-                        type: string
-                        required: true
+                      # Everything else: show URL ONLY (no upload/select)
+                      - name: Cite
+                        label: Cite
+                        fields:
+                          - name: url
+                            label: URL
+                            type: string
+                            required: true
+
+                      - name: DOI
+                        label: DOI
+                        fields:
+                          - name: url
+                            label: URL
+                            type: string
+                            required: true
+
+                      - name: Code
+                        label: Code
+                        fields:
+                          - name: url
+                            label: URL
+                            type: string
+                            required: true
+
+                      - name: Video
+                        label: Video
+                        fields:
+                          - name: url
+                            label: URL
+                            type: string
+                            required: true
+
+                      - name: Data
+                        label: Data
+                        fields:
+                          - name: url
+                            label: URL
+                            type: string
+                            required: true
+
 
                   # Keywords (items)
                   - name: keywords
