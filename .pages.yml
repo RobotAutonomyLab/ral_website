@@ -154,14 +154,14 @@ content:
 
               - name: text
                 label: Paragraph Text
-                type: rich-text
+                type: text
                 required: false
                 ui:
                   condition: "{{fields.type}} === 'paragraph'"
 
               - name: items
                 label: Bullet Items
-                type: string
+                type: text
                 list: true
                 required: false
                 ui:
