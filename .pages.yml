@@ -138,7 +138,7 @@ content:
 
                       # Everything else: show URL ONLY (no upload/select)
                       - name: Cite
-                        label: Cite (You don't need to enter URL; it will be generated automatically)
+                        label: Cite (No action needed — the URL is set automatically)
                         fields:
                           - name: url
                             label: URL
