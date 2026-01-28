@@ -146,7 +146,7 @@ content:
                             type: string
                             required: true
                             default: "/"
-                            hidden: true
+                            # hidden: true
 
                       - name: DOI
                         label: DOI
