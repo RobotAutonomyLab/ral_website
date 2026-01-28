@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import './Publications.scss';
-import publications_data from '../data/papers/publications_data';
+
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw'
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import MarkdownLink from '../components/HandleMarkdownLinks'
+
+import publications_data from '../data/publications.json';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -110,22 +116,28 @@ function Publications() {
         };
     }, [isPopupOpen]);
 
+    const pageTitle = publications_data.publicationsPageTitle
+    const pageSubtitle = publications_data.publicationsPageSubtitle
+
     return (
         <div className="PublicationsPage">
             <NavBar />
             <div className="Publications container">
                 <div className="Publications section">
-                    <h1>Publications</h1>
-                    <h4>
-                        A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our{' '}
-                        <a href="https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en" target="_blank" rel="noreferrer">
-                            Google Scholar
-                        </a>
-                        .
-                    </h4>
+                    <h1>{pageTitle}</h1>
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                        components={{
+                            a: MarkdownLink,
+                            p: ({ children }) => <h4>{children}</h4>,
+                        }}
+                    >
+                        {pageSubtitle}
+                    </ReactMarkdown>
                 </div>
 
-                {publications_data.map(pubObj =>
+                {/* {publications_data.map(pubObj =>
                     Object.entries(pubObj)
                         .filter(([_, years]) => Object.keys(years).length > 0)
                         .map(([sectionName, years]) => (
@@ -175,9 +187,6 @@ function Publications() {
                                                                     <Link to={author.link} target="_blank" rel="noreferrer" key={index} className="author">
                                                                         {author.name}
                                                                     </Link>
-                                                                    {/* <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
-                                                                        {author.name}
-                                                                    </a> */}
                                                                     {index < paper.authors.length - 1 && ',\u00A0'}
                                                                 </>
                                                             ) : (
@@ -188,8 +197,7 @@ function Publications() {
                                                                     {index < paper.authors.length - 1 && ',\u00A0'}
                                                                 </>
                                                             )
-                                                        ))} 
-                                                        {/* | {paper.minRead} */}
+                                                        ))}
                                                     </span>
                                                     <p className="pub-links">
                                                         {paper.links.map((link, index) =>
@@ -214,7 +222,7 @@ function Publications() {
                                 ))}
                             </div>
                         ))
-                )}
+                )} */}
 
             </div>
 
