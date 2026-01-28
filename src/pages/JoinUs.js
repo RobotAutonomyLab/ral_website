@@ -74,20 +74,6 @@ function JoinUs() {
                             </div>
                         </div>
                     ))}
-
-                    {/* <div className="each-join-section">
-                        <h3>Current Opportunities</h3>
-                        <div>
-                            <p>The <Link to="/">Robot Autonomy Lab</Link> is currently recruiting <b>one MSc</b> and <b>one PhD</b> student to join our team starting <b>Fall 2026</b>. Both positions comes with <b>full scholarships</b>. To apply, please submit the following documents to <a href="mailto:j.wang@umanitoba.ca">j.wang@umanitoba.ca</a> with the subject line <b>"RAL2026 - [Your Name]"</b>:</p>
-                            <ul>
-                                <p>CV <b>(max. 2 pages)</b></p>
-                                <p>Statement of Research Interest <b>(max. 1 page)</b></p>
-                                <p>Academic Transcripts</p>
-                                <p>Relevant <b>Project</b> or <b>Research Experience</b> <b>(max. 1 page)</b></p>
-                            </ul>
-                            <p>For application deadlines and program details, please visit <a href="https://umanitoba.ca/explore/programs-of-study/mechanical-engineering-phd" target='_blank' rel='noreferrer'>University of Manitoba - Mechanical Engineering Graduate Programs</a>.</p>
-                        </div>
-                    </div> */}
                 </div>
 
             </div>

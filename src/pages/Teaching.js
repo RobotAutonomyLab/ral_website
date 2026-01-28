@@ -4,6 +4,7 @@ import './Teaching.scss'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw'
 
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
@@ -23,7 +24,7 @@ function Teaching() {
                     <h1>{pageTitle}</h1>
                     <ReactMarkdown
                         remarkPlugins={[remarkGfm]}
-                        rehypePlugins={[rehypeSanitize]}
+                        rehypePlugins={[rehypeRaw, rehypeSanitize]}
                         components={{
                             a: MarkdownLink,
                             p: ({ children }) => <h4>{children}</h4>,
@@ -38,7 +39,7 @@ function Teaching() {
                         <h2>{each_teaching.teachingsTitle}</h2>
                         <ReactMarkdown 
                             remarkPlugins={[remarkGfm]}
-                            rehypePlugins={[rehypeSanitize]}
+                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
                             components={{ a: MarkdownLink }}
                         >
                             {each_teaching.teachingsData || ''}
