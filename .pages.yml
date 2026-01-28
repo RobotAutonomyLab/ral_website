@@ -135,9 +135,11 @@ content:
           - name: joinusData
             label: Content Blocks
             type: block 
-            list: true
+            list: 
+              collapsible:
+                collapsed: true
+                summary: "#{index} — {fields.type}"
             blockKey: type
-            collapsed: true
             blocks:
               - name: paragraph
                 label: Paragraph
