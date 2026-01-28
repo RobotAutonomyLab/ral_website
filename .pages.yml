@@ -103,6 +103,70 @@ content:
             required: true
 
   # Join Us Page Configuration
+  - name: joinUsPage
+    label: Join Us Page
+    type: file
+    path: src/data/joinus.json
+    format: json
+    fields:
+      - name: joinusPageTitle
+        label: Join Us Page Title
+        type: string
+        required: true
+
+      - name: joinusPageSubtitle
+        label: Join Us Page Subtitle
+        type: rich-text
+        required: true
+
+      - name: joinus
+        label: Join Sections
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "#{index} — {fields.joinusTitle}"
+        fields:
+          - name: joinusTitle
+            label: Section Title
+            type: string
+            required: true
+
+          - name: joinusData
+            label: Content Blocks
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "#{index} — {fields.type}"
+            fields:
+              - name: type
+                label: Block Type
+                type: string
+                required: true
+                options:
+                  list: true
+                ui:
+                  component: select
+                options:
+                  - p
+                  - ul
+
+              - name: text
+                label: Paragraph Text
+                type: rich-text
+                required: false
+                ui:
+                  condition: "{{fields.type}} === 'p'"
+
+              - name: items
+                label: Bullet Items
+                type: string
+                list: true
+                required: false
+                ui:
+                  condition: "{{fields.type}} === 'ul'"
+
 
   # Teaching Page Configuration
   - name: teachingPage
