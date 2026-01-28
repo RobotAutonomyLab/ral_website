@@ -230,7 +230,7 @@ function Publications() {
                                                                     </a>
                                                                 ) : link.type === "PDF" ? (
                                                                     <a
-                                                                        href={link.url.replace('/public', '')}
+                                                                        href={process.env.PUBLIC_URL + link.url.replace('/public', '')}
                                                                         key={`${link.type}-${index}`}
                                                                         target="_blank"
                                                                         rel="noreferrer"
