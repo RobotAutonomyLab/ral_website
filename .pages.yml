@@ -48,15 +48,6 @@ content:
             type: string
             required: true
 
-          - name: years
-            label: Years
-            type: block
-            list:
-              collapsible:
-                collapsed: true
-                summary: "#{index} - {fields.year}"
-            blockKey: year
-
   # Robots Page Configuration
   - name: robotsPage
     label: Robots Page
