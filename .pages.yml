@@ -139,11 +139,7 @@ content:
                       # Everything else: show URL ONLY (no upload/select)
                       - name: Cite
                         label: Cite
-                        fields:
-                          - name: url
-                            label: URL
-                            type: string
-                            required: true
+                        fields: []
 
                       - name: DOI
                         label: DOI

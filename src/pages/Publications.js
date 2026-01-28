@@ -216,12 +216,14 @@ function Publications() {
 
                                                     {(paper.links ?? []).length > 0 && (
                                                         <p className="pub-links">
-                                                            {paper.links.map((link, index) =>
-                                                                link.type === "Cite" ? (
+                                                            {paper.links.map((link, index) => {
+                                                                const url = link.type === "Cite" ? "/" : link.url;
+
+                                                                return link.type === "Cite" ? (
                                                                     <a
-                                                                        href="#"
+                                                                        href={url}
                                                                         key={`${link.type}-${index}`}
-                                                                        onClick={e => {
+                                                                        onClick={(e) => {
                                                                             e.preventDefault();
                                                                             handleCiteClick(paper.citation, paper.citationLink);
                                                                         }}
@@ -230,7 +232,7 @@ function Publications() {
                                                                     </a>
                                                                 ) : link.type === "PDF" ? (
                                                                     <a
-                                                                        href={link.url.replace('/public', '')}
+                                                                        href={url.replace("/public", "")}
                                                                         key={`${link.type}-${index}`}
                                                                         target="_blank"
                                                                         rel="noreferrer"
@@ -239,15 +241,15 @@ function Publications() {
                                                                     </a>
                                                                 ) : (
                                                                     <a
-                                                                        href={link.url}
+                                                                        href={url}
                                                                         key={`${link.type}-${index}`}
                                                                         target="_blank"
                                                                         rel="noreferrer"
                                                                     >
                                                                         {link.type}
                                                                     </a>
-                                                                )
-                                                            )}
+                                                                );
+                                                            })}
                                                         </p>
                                                     )}
                                                 </div>
