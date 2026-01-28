@@ -48,6 +48,11 @@ content:
             type: string
             required: true
 
+          - name: years
+            label: Years
+            type: string
+            required: true
+
   # Robots Page Configuration
   - name: robotsPage
     label: Robots Page
