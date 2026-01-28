@@ -137,7 +137,129 @@ function Publications() {
                     </ReactMarkdown>
                 </div>
 
-                {/* {publications_data.map(pubObj =>
+                {publications_data.publications
+                    // keep only sections that actually have at least one paper somewhere
+                    .filter(section => (section.years ?? []).some(y => (y.papers ?? []).length > 0))
+                    .map(section => (
+                        <div className="Publications section" key={section.sectionTitle}>
+                            <h2>{section.sectionTitle}</h2>
+
+                            {(section.years ?? [])
+                                .filter(y => (y.papers ?? []).length > 0)
+                                .sort((a, b) => Number(b.year) - Number(a.year))
+                                .map(yearObj => (
+                                    <div className="pub-each-year" key={yearObj.year}>
+                                        <h3>{yearObj.year}</h3>
+
+                                        <div className="pub-each-paper">
+                                            {(yearObj.papers ?? []).map((paper, i) => (
+                                                <div key={`${paper.title}-${i}`}>
+                                                    <h4>
+                                                        {paper.citationLink ? (
+                                                            <Link to={`/publications/${paper.citationLink}`} target="_blank">
+                                                                <span className="title-text">{paper.title}</span>
+                                                            </Link>
+                                                        ) : (
+                                                            <span className="title-text">{paper.title}</span>
+                                                        )}
+                                                    </h4>
+
+                                                    <p>
+                                                        {paper.journal && <span className="journal">{paper.journal}</span>}
+
+                                                        {paper.volume && (
+                                                            <>
+                                                                {paper.journal && ", "}
+                                                                <span className="volume">
+                                                                    {paper.volume}
+                                                                    {paper.issue && `(${paper.issue})`}
+                                                                </span>
+                                                            </>
+                                                        )}
+
+                                                        {!paper.volume && paper.issue && (
+                                                            <>
+                                                                {paper.journal && ", "}
+                                                                <span className="issue">{paper.issue}</span>
+                                                            </>
+                                                        )}
+
+                                                        {paper.page && (
+                                                            <>
+                                                                {(paper.journal || paper.volume || paper.issue) && ", "}
+                                                                <span className="page">{paper.page}</span>
+                                                            </>
+                                                        )}
+                                                    </p>
+
+                                                    {(paper.authors ?? []).length > 0 && (
+                                                        <span className="caption">
+                                                            {paper.authors.map((author, index) => (
+                                                                <React.Fragment key={`${author.name}-${index}`}>
+                                                                    {author.link ? (
+                                                                        <Link
+                                                                            to={author.link}
+                                                                            target="_blank"
+                                                                            rel="noreferrer"
+                                                                            className="author"
+                                                                        >
+                                                                            {author.name}
+                                                                        </Link>
+                                                                    ) : (
+                                                                        <span className="not_author">{author.name}</span>
+                                                                    )}
+                                                                    {index < paper.authors.length - 1 && ",\u00A0"}
+                                                                </React.Fragment>
+                                                            ))}
+                                                        </span>
+                                                    )}
+
+                                                    {(paper.links ?? []).length > 0 && (
+                                                        <p className="pub-links">
+                                                            {paper.links.map((link, index) =>
+                                                                link.type === "Cite" ? (
+                                                                    <a
+                                                                        href="#"
+                                                                        key={`${link.type}-${index}`}
+                                                                        onClick={e => {
+                                                                            e.preventDefault();
+                                                                            handleCiteClick(paper.citation, paper.citationLink);
+                                                                        }}
+                                                                    >
+                                                                        Cite
+                                                                    </a>
+                                                                ) : link.type === "PDF" ? (
+                                                                    <a
+                                                                        href={link.url.replace('/public', '')}
+                                                                        key={`${link.type}-${index}`}
+                                                                        target="_blank"
+                                                                        rel="noreferrer"
+                                                                    >
+                                                                        {link.type}
+                                                                    </a>
+                                                                ) : (
+                                                                    <a
+                                                                        href={link.url}
+                                                                        key={`${link.type}-${index}`}
+                                                                        target="_blank"
+                                                                        rel="noreferrer"
+                                                                    >
+                                                                        {link.type}
+                                                                    </a>
+                                                                )
+                                                            )}
+                                                        </p>
+                                                    )}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                        </div>
+                    ))}
+
+
+                {/* {publications_data.publications.map(pubObj =>
                     Object.entries(pubObj)
                         .filter(([_, years]) => Object.keys(years).length > 0)
                         .map(([sectionName, years]) => (
@@ -223,6 +345,8 @@ function Publications() {
                             </div>
                         ))
                 )} */}
+
+
 
             </div>
 
