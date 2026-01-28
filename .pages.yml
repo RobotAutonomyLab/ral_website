@@ -145,8 +145,7 @@ content:
                             type: string
                             required: true
                             default: "/"
-                            ui:
-                              component: hidden
+                            hidden: true
 
                       - name: DOI
                         label: DOI
