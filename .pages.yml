@@ -41,9 +41,9 @@ content:
         list:
           collapsible:
             collapsed: true
-            summary: "#{index} - {fields.publicationsSectionTitle}"
+            summary: "#{index} - {fields.sectionTitle}"
         fields:
-          - name: publicationsSectionTitle
+          - name: sectionTitle
             label: Section Title
             type: string
             required: true
