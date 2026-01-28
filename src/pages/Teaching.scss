@@ -13,6 +13,10 @@
             text-align: justify;
         }
 
+        strong {
+            font-weight: 700;
+        }
+
         ol {
             list-style: none;
             counter-reset: my-counter;

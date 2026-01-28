@@ -93,6 +93,10 @@
             text-wrap: wrap;
             text-align: justify;
         }
+        
+        strong {
+            font-weight: 700;
+        }
 
         .all_news {
             display: grid;
