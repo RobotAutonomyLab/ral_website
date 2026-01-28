@@ -158,7 +158,7 @@ content:
                 type: rich-text
                 required: false
                 ui:
-                  condition: "{{fields.type}} === 'paragraph'"
+                  condition: "fields.type === 'paragraph'"
 
               - name: items
                 label: Bullet Items
@@ -166,7 +166,7 @@ content:
                 list: true
                 required: false
                 ui:
-                  condition: "{{fields.type}} === 'bullet-list'"
+                  condition: "fields.type === 'bullet-list'"
 
 
   # Teaching Page Configuration
