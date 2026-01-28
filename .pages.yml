@@ -100,7 +100,10 @@ content:
                   - name: authors
                     label: Authors
                     type: object
-                    list: true
+                    list:
+                      collapsible:
+                        collapsed: true
+                        summary: "#{index} — {fields.name}"
                     fields:
                       - name: name
                         label: Name
