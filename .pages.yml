@@ -131,25 +131,10 @@ content:
                             - Video
                             - Data
 
-                      # If PDF -> use a document/file picker from publications_files
-                      - name: pdfFile
-                        label: PDF File
-                        type: file
-                        required: false
-                        options:
-                          media: publications_files
-                        condition:
-                          field: type
-                          equals: PDF
-
-                      # If not PDF -> normal URL string
                       - name: url
                         label: URL
                         type: string
-                        required: false
-                        condition:
-                          field: type
-                          notEquals: PDF
+                        required: true
 
                   # Keywords (items)
                   - name: keywords
