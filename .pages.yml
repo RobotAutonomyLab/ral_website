@@ -22,7 +22,7 @@ content:
   - name: publicationsPage
     label: Publications Page
     type: file
-    src: src/data/publications.json
+    path: src/data/publications.json
     format: json
     fields:
       - name: publicationsPageTitle
