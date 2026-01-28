@@ -154,7 +154,7 @@ content:
                 fields:
                   - name: items
                     label: Bullet Items
-                    type: string
+                    type: rich-text
                     list: true
                     required: true
 
