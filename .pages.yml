@@ -142,6 +142,7 @@ content:
             fields:
               - name: type
                 label: Block Type
+                description: "If you are writing a paragraph, enter `paragraph`. If you are writing a bullet list, enter `bullet-list`"
                 type: string
                 required: true
                 options:
