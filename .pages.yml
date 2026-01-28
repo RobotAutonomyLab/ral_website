@@ -149,15 +149,15 @@ content:
                 ui:
                   component: select
                 options:
-                  - p
-                  - ul
+                  - paragraph
+                  - bullet-list
 
               - name: text
                 label: Paragraph Text
                 type: rich-text
                 required: false
                 ui:
-                  condition: "{{fields.type}} === 'p'"
+                  condition: "{{fields.type}} === 'paragraph'"
 
               - name: items
                 label: Bullet Items
@@ -165,7 +165,7 @@ content:
                 list: true
                 required: false
                 ui:
-                  condition: "{{fields.type}} === 'ul'"
+                  condition: "{{fields.type}} === 'bullet-list'"
 
 
   # Teaching Page Configuration

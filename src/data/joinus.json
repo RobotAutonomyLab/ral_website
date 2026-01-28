@@ -6,11 +6,11 @@
             "joinusTitle": "Current Opportunities",
             "joinusData": [
                 {
-                    "type": "p",
+                    "type": "paragraph",
                     "text": "The [Robot Autonomy Lab](/) is currently recruiting **one MSc** and **one PhD** student to join our team starting **Fall 2026**. Both positions comes with **full scholarships**. To apply, please submit the following documents to [j.wang@umanitoba.ca](mailto:j.wang@umanitoba.ca) with the subject line **\"RAL2026 - [Your Name]\"**:"
                 },
                 {
-                    "type": "ul",
+                    "type": "bullet-list",
                     "items": [
                         "CV **(max. 2 pages)**",
                         "Statement of Research Interest **(max. 1 page)**",
@@ -19,7 +19,7 @@
                     ]
                 },
                 {
-                    "type": "p",
+                    "type": "paragraph",
                     "text": "For application deadlines and program details, please visit [University of Manitoba - Mechanical Engineering Graduate Programs](https://umanitoba.ca/explore/programs-of-study/mechanical-engineering-phd)."
                 }
             ]
