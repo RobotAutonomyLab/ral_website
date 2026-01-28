@@ -23,8 +23,13 @@
           "text": "For application deadlines and program details, please visit [University of Manitoba - Mechanical Engineering Graduate Programs](https://umanitoba.ca/explore/programs-of-study/mechanical-engineering-phd)."
         },
         {
-          "type": "paragraph",
-          "text": "**testing**, 1, 2, 2"
+          "type": "bullet-list",
+          "items": [
+            "testing 1, 2, 3",
+            "1",
+            "2",
+            "3"
+          ]
         }
       ]
     }
