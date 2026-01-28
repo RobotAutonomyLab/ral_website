@@ -2,7 +2,7 @@ media:
   - name: publications_files
     label: Publications files
     input: public/publications_files
-    output: /publications_files
+    output: /public/publications_files
     categories: [document]
 
   - name: robot_images
