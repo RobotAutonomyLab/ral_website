@@ -139,7 +139,14 @@ content:
                       # Everything else: show URL ONLY (no upload/select)
                       - name: Cite
                         label: Cite
-                        fields: []
+                        fields:
+                          - name: url
+                            label: URL
+                            type: string
+                            required: true
+                            default: "/"
+                            ui:
+                              component: hidden
 
                       - name: DOI
                         label: DOI
