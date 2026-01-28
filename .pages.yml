@@ -139,13 +139,8 @@ content:
                       # Everything else: show URL ONLY (no upload/select)
                       - name: Cite
                         label: Cite
+                        description: "No action needed — the URL is set automatically."
                         fields:
-                          - name: note
-                            label: Note
-                            type: string
-                            default: "No action needed — the URL is set automatically."
-                            required: false
-
                           - name: url
                             label: URL
                             type: string
