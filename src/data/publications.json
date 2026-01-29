@@ -3,7 +3,8 @@
   "publicationsPageSubtitle": "A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our [Google Scholar](https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en).",
   "publications": [
     {
-      "sectionTitle": "Under Review"
+      "sectionTitle": "Under Review",
+      "years": []
     },
     {
       "sectionTitle": "Journal Papers",
