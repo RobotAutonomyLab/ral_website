@@ -104,7 +104,6 @@ publications_data.publications.forEach((publications) => {
     publications.years.forEach((eachYear) => {
         eachYear.papers.forEach((pub) => {
             pub.id = generateId(pub.title, eachYear.year);
-            console.log(`Generated ID for publication: ${pub.id}`)
         })
     })
 });
