@@ -3,7 +3,8 @@
   "publicationsPageSubtitle": "A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our [Google Scholar](https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en).",
   "publications": [
     {
-      "sectionTitle": "Under Review"
+      "sectionTitle": "Under Review",
+      "years": []
     },
     {
       "sectionTitle": "Journal Papers",
@@ -15,6 +16,7 @@
               "title": "Improving safety in mixed traffic: A learning-based model predictive control for autonomous and human-driven vehicle platooning",
               "journal": "Knowledge-Based Systems",
               "volume": "293",
+              "issue": "",
               "page": "111673",
               "authors": [
                 {
@@ -62,12 +64,13 @@
               ],
               "abstract": "As autonomous vehicles (AVs) become more common on public roads, their interaction with human-driven vehicles (HVs) in mixed traffic is inevitable. This requires new control strategies for AVs to handle the unpredictable nature of HVs. This study focused on safe control in mixed-vehicle platoons consisting of both AVs and HVs, particularly during longitudinal car-following scenarios. We introduce a novel model that combines a conventional first-principles model with a Gaussian process (GP) machine learning-based model to better predict HV behavior. Our results showed a significant improvement in predicting HV speed, with a 35.64% reduction in the root mean square error compared with the use of the first-principles model alone. We developed a new control strategy called GP-MPC, which uses the proposed HV model for safer distance management between vehicles in the mixed platoon. The GP-MPC strategy effectively utilizes the capacity of the GP model to assess uncertainties, thereby significantly enhancing safety in challenging traffic scenarios, such as emergency braking scenarios. In simulations, the GP-MPC strategy outperformed the baseline MPC method, offering better safety and more efficient vehicle movement in mixed traffic.",
               "citationLink": "wang2024improving",
-              "citation": "@article{de2013robust,\n  title={Robust pulse rate from chrominance-based rPPG},\n  author={De Haan, Gerard and Jeanne, Vincent},\n  journal={IEEE transactions on biomedical engineering},\n  volume={60},\n  number={10},\n  pages={2878--2886},\n  year={2013},\n  publisher={IEEE}\n}"
+              "citation": "@article{wang2024improving,\n  title={Improving safety in mixed traffic: A learning-based model predictive control for autonomous and human-driven vehicle platooning},\n  author={Wang, Jie and Jiang, Zhihao and Pant, Yash Vardhan},\n  journal={Knowledge-Based Systems},\n  volume={293},\n  pages={111673},\n  year={2024},\n  publisher={Elsevier}\n}"
             },
             {
               "title": "Learning-based modeling of human-autonomous vehicle interaction for improved safety in mixed-vehicle platooning control",
               "journal": "Transportation Research Part C: Emerging Technologies",
               "volume": "162",
+              "issue": "",
               "page": "104600",
               "authors": [
                 {
@@ -124,6 +127,9 @@
             {
               "title": "Enhancing safety in mixed traffic: Learning-based modeling and efficient control of autonomous and human-driven vehicles",
               "journal": "IEEE Transactions on Intelligent Transportation Systems",
+              "volume": "",
+              "issue": "",
+              "page": "",
               "authors": [
                 {
                   "name": "Jay Wang",
@@ -184,6 +190,10 @@
             },
             {
               "title": "A Tutorial on Gaussian Process Learning-based Model Predictive Control",
+              "journal": "",
+              "volume": "",
+              "issue": "",
+              "page": "",
               "authors": [
                 {
                   "name": "Jay Wang",
@@ -229,6 +239,7 @@
               "title": "Autonomous locomotion mode transition in quadruped track-legged robots: A simulation-based analysis for step negotiation",
               "journal": "Simulation Modelling Practice and Theory",
               "volume": "132",
+              "issue": "",
               "page": "102893",
               "authors": [
                 {
@@ -402,6 +413,7 @@
               "title": "How to pick a mobile robot simulator: A quantitative comparison of CoppeliaSim, Gazebo, MORSE and Webots with a focus on accuracy of motion",
               "journal": "Simulation Modelling Practice and Theory",
               "volume": "120",
+              "issue": "",
               "page": "102629",
               "authors": [
                 {
@@ -459,6 +471,10 @@
           "papers": [
             {
               "title": "An intuitive tutorial to Gaussian processes regression",
+              "journal": "",
+              "volume": "",
+              "issue": "",
+              "page": "",
               "authors": [
                 {
                   "name": "Jay Wang",
@@ -581,6 +597,7 @@
               "title": "Vehicle Tracking and Speed Estimation from Unmanned Aerial Videos",
               "journal": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
               "volume": "43",
+              "issue": "",
               "page": "623-630",
               "authors": [
                 {
@@ -639,6 +656,7 @@
               "title": "Mapping Quality Evaluation of Monocular Slam Solutions for Micro Aerial Vehicles",
               "journal": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
               "volume": "42",
+              "issue": "",
               "page": "413-420",
               "authors": [
                 {
@@ -689,6 +707,8 @@
             {
               "title": "Locomotion mode transition study of ground hybrid robots",
               "journal": "Advances in Cooperative Robotics",
+              "volume": "",
+              "issue": "",
               "page": "531-538",
               "authors": [
                 {
@@ -740,6 +760,8 @@
             {
               "title": "Stair-climbing and energy consumption evaluation of a leg-tracked quadruped robot",
               "journal": "2016 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)",
+              "volume": "",
+              "issue": "",
               "page": "1448-1453",
               "authors": [
                 {
@@ -797,6 +819,9 @@
             {
               "title": "Autonomous Locomotion Mode Transition of Ground Hybrid Robots",
               "journal": "University of Calgary",
+              "volume": "",
+              "issue": "",
+              "page": "",
               "authors": [
                 {
                   "name": "Jay Wang",
@@ -837,7 +862,8 @@
       ]
     },
     {
-      "sectionTitle": "Patents"
+      "sectionTitle": "Patents",
+      "years": []
     }
   ]
 }
