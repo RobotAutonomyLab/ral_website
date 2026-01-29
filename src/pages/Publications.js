@@ -100,13 +100,14 @@ const slugify = (str, words = 6) =>
 
 const generateId = (title, year) => `${year}_${slugify(title)}`;
 
-publications_data.publications.forEach((publications) => {
-    publications.years.forEach((eachYear) => {
-        eachYear.papers.forEach((pub) => {
-            pub.id = generateId(pub.title, eachYear.year);
-        })
-    })
+(publications_data.publications ?? []).forEach((section) => {
+  (section.years ?? []).forEach((eachYear) => {
+    (eachYear.papers ?? []).forEach((pub) => {
+      pub.id = pub.id ?? pub.citationLink ?? generateId(pub.title ?? "", eachYear.year ?? "");
+    });
+  });
 });
+
 
 function Publications() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
