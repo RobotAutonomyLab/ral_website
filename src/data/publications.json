@@ -3,8 +3,7 @@
   "publicationsPageSubtitle": "A collection of papers, articles, journals, conferences, and theses from the Robot Autonomy Lab. To see a full list of our publications, please visit our [Google Scholar](https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en).",
   "publications": [
     {
-      "sectionTitle": "Under Review",
-      "years": []
+      "sectionTitle": "Under Review"
     },
     {
       "sectionTitle": "Journal Papers",
@@ -13,7 +12,7 @@
           "year": "2024",
           "papers": [
             {
-              "title": "Improving safety in mixed traffic: A learning-based model predictive control for autonomous and human-driven vehicle platooning",
+              "title": "I2mproving safety in mixed traffic: A learning-based model predictive control for autonomous and human-driven vehicle platooning",
               "journal": "Knowledge-Based Systems",
               "volume": "293",
               "page": "111673",
