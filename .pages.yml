@@ -79,7 +79,7 @@ content:
                   - name: journal
                     label: Journal
                     type: string
-                    required: true
+                    required: false
 
                   - name: volume
                     label: Volume
