@@ -89,6 +89,26 @@ function CitationPopup({ isOpen, onClose, citation, citation_link }) {
     );
 }
 
+// Turn any string into a clean slug
+const slugify = (str, words = 6) =>
+    str
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, "")         // strip punctuation
+        .split(/\s+/)
+        .slice(0, words)
+        .join("_");
+
+const generateId = (title, year) => `${year}_${slugify(title)}`;
+
+publications_data.publications.forEach((publications) => {
+    publications.years.forEach((eachYear) => {
+        eachYear.papers.forEach((pub) => {
+            pub.id = generateId(pub.title, eachYear.year);
+            console.log(`Generated ID for publication: ${pub.id}`)
+        })
+    })
+});
+
 function Publications() {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [selectedCitation, setSelectedCitation] = useState('');
@@ -155,13 +175,9 @@ function Publications() {
                                             {(yearObj.papers ?? []).map((paper, i) => (
                                                 <div key={`${paper.title}-${i}`}>
                                                     <h4>
-                                                        {paper.citationLink ? (
-                                                            <Link to={`/publications/${paper.citationLink}`} target="_blank">
-                                                                <span className="title-text">{paper.title}</span>
-                                                            </Link>
-                                                        ) : (
+                                                        <Link to={`/publications/${paper.id}`} target="_blank">
                                                             <span className="title-text">{paper.title}</span>
-                                                        )}
+                                                        </Link>
                                                     </h4>
 
                                                     <p>

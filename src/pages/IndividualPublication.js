@@ -2,10 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './IndividualPublication.scss';
+import { Link } from 'react-router-dom';
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import publications_data from '../data/papers/publications_data';
+import publications_data from '../data/publications.json';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -83,22 +84,58 @@ function CitationPopup({ isOpen, onClose, citation, citation_link }) {
     );
 }
 
-// quick lookup helper
+// quick lookup helper (matches your JSON structure)
 const findPublicationById = (id) => {
-    for (const section of publications_data) {
-        for (const category of Object.values(section)) {
-            if (category && typeof category === 'object') {
-                for (const papers of Object.values(category)) {
-                    if (Array.isArray(papers)) {
-                        const hit = papers.find((p) => p.id === id);
-                        if (hit) return hit;
-                    }
-                }
+    const sections = publications_data?.publications;
+    if (!Array.isArray(sections) || !id) return null;
+
+    const needle = String(id).toLowerCase();
+
+    for (const section of sections) {
+        const years = section?.years;
+        if (!Array.isArray(years)) continue;
+
+        for (const y of years) {
+            const papers = y?.papers;
+            if (!Array.isArray(papers)) continue;
+
+            const hit = papers.find((p) => {
+                const key = p.id ?? p.citationLink; // fall back to citationLink
+                return key && String(key).toLowerCase() === needle;
+            });
+
+            if (hit) {
+                // ensure `publication.id` exists for anything else you rely on
+                return { ...hit, id: hit.id ?? hit.citationLink };
             }
         }
     }
+
     return null;
 };
+
+const getWordsPerMinute = (title, keyword, abstract) => {
+    let title_word_count = title.split(' ').length;
+    let keyword_word_count = keyword.length;
+    let abstract_word_count = abstract.split(' ').length;
+
+    const wordCount = title_word_count + keyword_word_count + abstract_word_count;
+    const wordsPerMinute = 200;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+
+    return readingTime;
+}
+
+(publications_data.publications || []).forEach((section) => {
+    (section.years || []).forEach((yearBlock) => {
+        (yearBlock.papers || []).forEach((pub) => {
+            const readingTime = getWordsPerMinute(pub.title, pub.keywords, pub.abstract);
+            pub.minRead = `${readingTime}-min read`;
+        });
+    });
+});
+
+
 
 function IndividualPublication() {
     const { id } = useParams();
@@ -140,9 +177,17 @@ function IndividualPublication() {
                         {publication.authors.map((author, index) => (
                             author.link ? (
                                 <>
-                                    <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
+                                    <Link
+                                        to={author.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="author"
+                                    >
                                         {author.name}
-                                    </a>
+                                    </Link>
+                                    {/* <a href={author.link} target="_blank" rel="noreferrer" key={index} className="author">
+                                        {author.name}
+                                    </a> */}
                                     {index < publication.authors.length - 1 && ',\u00A0'}
                                 </>
                             ) : (
@@ -163,6 +208,10 @@ function IndividualPublication() {
                                     handleCiteClick(publication.citation, publication.citationLink);
                                 }}>
                                     Cite
+                                </a>
+                            ) : link.type === "PDF" ? (
+                                <a href={link.url.replace('/public', '')} key={index} target="_blank" rel="noreferrer">
+                                    {link.type}
                                 </a>
                             ) : (
                                 <a href={link.url} key={index} target="_blank" rel="noreferrer">
