@@ -22,7 +22,7 @@ function typeOfLink(type, link) {
 
     let iconFA;
     let iconLink = link;
-    
+
     switch (type) {
         case 'Email':
             iconFA = faEnvelope;
@@ -98,6 +98,49 @@ function OurTeam() {
                         </div>
                     </div>
                 </div>
+
+                {profile_data.ourTeam
+                    .slice(1)
+                    .filter(section =>
+                        section.teamMembers?.some(member => member && member.Name) // or member.ProfileName
+                    )
+                    .map((section, sectionIndex) => (
+                        <div className="OurTeam section" key={sectionIndex}>
+                            <h2>{section.sectionTitle}</h2>
+                            
+                            {/* <h2>{eachPeopleIndex}</h2>
+                            <div className="OurTeam-each">
+                                {pubObj[eachPeopleIndex].map((eachPeople, i) => (
+                                    <div className='OurTeam-each-person' key={i}>
+                                        <img src={eachPeople.ProfilePic} alt="" />
+                                        <h4>
+                                            <Link to={eachPeople.ProfileLink} target="_blank">
+                                                <span className="title-text">
+                                                    {eachPeople.ProfileName}
+                                                </span>
+                                            </Link>
+                                        </h4>
+                                        <span className="caption">
+                                            {eachPeople.Position}
+                                        </span>
+                                        <div className="each_person_links">
+                                            {eachPeople.Links.map((highlight, index) => (
+                                                <a
+                                                    href={highlight.href}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    data-tooltip={highlight.text}
+                                                    key={index}
+                                                >
+                                                    <FontAwesomeIcon icon={highlight.icon} />
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div> */}
+                        </div>
+                    ))}
 
                 {/* {profile_data.map(pubObj =>
                     Object.entries(pubObj)
