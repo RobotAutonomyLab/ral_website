@@ -14,12 +14,48 @@ import MarkdownLink from '../components/HandleMarkdownLinks'
 import profile_data from '../data/ourteam.json'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faUser, faTemperatureHalf, faPerson, faS, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { icon } from 'leaflet';
+
+function typeOfLink(type, link) {
+
+    let iconFA;
+    let iconLink = link;
+    
+    switch (type) {
+        case 'Email':
+            iconFA = faEnvelope;
+            break;
+        case 'Google Scholar':
+            iconFA = faGoogle;
+            break;
+        case 'LinkedIn':
+            iconFA = faLinkedin;
+            break;
+        case 'GitHub':
+            iconFA = faGithub;
+            break;
+        case 'Resume':
+            iconFA = faFile;
+            iconLink = link.replace('/public', '');
+            break;
+        case 'Personal Website':
+            iconFA = faUser;
+            break;
+    }
+
+    return (
+        <a href={iconLink} target='_blank' data-tooltip={type} rel='noreferrer'>
+            <FontAwesomeIcon icon={iconFA} />
+        </a>
+    )
+}
 
 function OurTeam() {
     const pageTitle = profile_data.ourTeamPageTitle
     const pageSubtitle = profile_data.ourTeamPageSubtitle
 
-    // const PI = profile_data[0]['Principal Investigator'][0]
     const PI = profile_data.ourTeam[0].teamMembers[0]
 
     return (
@@ -51,10 +87,8 @@ function OurTeam() {
                                 <img src={PI.ProfilePic.replace('/public', '')} alt="" />
                             </div>
                             <div className="PI_Links">
-                                {PI.Links.map((highlight, index) => (
-                                    <a href={highlight.href} target='_blank' data-tooltip={highlight.text} rel='noreferrer'>
-                                        <FontAwesomeIcon icon={highlight.icon} />
-                                    </a>
+                                {PI.Links.map((highlight) => (
+                                    typeOfLink(highlight.type, highlight.link)
                                 ))}
                             </div>
                         </div>
