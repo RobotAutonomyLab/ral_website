@@ -1,0 +1,227 @@
+{
+    "ourTeamPageTitle": "Our Team",
+    "ourTeamPageSubtitle": "We are a team of faculty, engineers, and students advancing mobile-robot autonomy in real-world settings through machine learning and physics-based modeling.",
+    "ourTeam": [
+        {
+            "sectionTitle": "Principle Investigator",
+            "teamMembers": [
+                {
+                    "ProfileName": "Meet the PI",
+                    "ProfileLink": "/team",
+                    "ProfilePic": "/public/our_team_files/Prof/Prof.jpeg",
+                    "Name": "Jie (Jay) Wang",
+                    "Position": "Assistant Professor at the University of Manitoba",
+                    "Biography": "Dr. Jie (Jay) Wang is an Assistant Professor in Mechanical Engineering at the University of Manitoba and Director of the Robot Autonomy Lab. His research advances long-term autonomy for field robots and autonomous vehicles in unstructured, uncertain, and dynamic environments. He develops learning-based modeling and control methods that integrate machine learning with physics-informed strategies to enhance safety, robustness, and interpretability. His work supports applications in intelligent agriculture, Arctic exploration, and assistive health and mobility, in collaboration with multidisciplinary partners across engineering, environmental science, and health.\n\nDr. Wang holds an NSERC Discovery Grant and multiple provincial and university-level awards, including the Research Manitoba New Investigator Operating Grant. He has secured funding for community engagement initiatives to promote STEM education and equity, diversity, and inclusion in underserved communities. His publications appear in leading venues such as the Journal of Field Robotics, IEEE Transactions on Intelligent Transportation Systems, and Transportation Research Part C, and have received top-cited paper awards and other recognitions for impact.",
+                    "Education": [],
+                    "Awards": [],
+                    "Featured_Publications": [],
+                    "Links": [
+                        {
+                            "type": "Email",
+                            "link": "mailto:j.wang@umanitoba.ca"
+                        },
+                        {
+                            "type": "Google Scholar",
+                            "link": "https://scholar.google.ca/citations?user=BI7jiWQAAAAJ&hl=en"
+                        },
+                        {
+                            "type": "LinkedIn",
+                            "link": "https://www.linkedin.com/in/jwangjie/"
+                        },
+                        {
+                            "type": "GitHub",
+                            "link": "https://github.com/jwangjie"
+                        }
+                    ],
+                    "Interests": []
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Postdoctoral Researchers",
+            "teamMembers": [
+                {}
+            ]
+        },
+        {
+            "sectionTitle": "Graduate Students (PhD)",
+            "teamMembers": [
+                {
+                    "ProfileName": "Wenjie",
+                    "ProfileLink": "/team/wenjie",
+                    "ProfilePic": "/public/our_team_files/Wenjie/Wenjie.jpg",
+                    "Name": "Wenjie Zhou",
+                    "Position": "PhD Student",
+                    "Biography": "I am Wenjie Zhou, a Ph.D. student in Mechanical Engineering at the University of Manitoba, where I explore the intersection of machine learning and control for mobile robots in the Robot Autonomy Laboratory (RAL). Previously, I earned my Master’s degree at the University of Macau, working with the [Intelligent Unmanned Systems Lab](https://www.fst.um.edu.mo/research/laboratories/intelligent-unmanned-systems-laboratory/) and later with the Safe and Reliable Flight Group at [GuangMing Lab](https://www.gml.ac.cn). My passion is bringing autonomous robots out of the lab and into real-world applications.",
+                    "Education": [
+                        {
+                            "degreeName": "Doctor of Philosophy in Mechanical Engineering",
+                            "degreeUniversity": "University of Manitoba",
+                            "gradYear": "2030"
+                        },
+                        {
+                            "degreeName": "Master of Science in Robotics and Autonomous Systems",
+                            "degreeUniversity": "University of Macau",
+                            "gradYear": "2025"
+                        },
+                        {
+                            "degreeName": "Bachelor of Engineering in Landscape Architecture (Major) & Automation (Minor)",
+                            "degreeUniversity": "South China Agriculture University",
+                            "gradYear": "2023"
+                        }
+                    ],
+                    "Awards": [
+                        {
+                            "awardName": "2025 Faculty of Science and Technology (FST) Best MSc Student Award",
+                            "awardPlace": "University of Macau",
+                            "awardTime": "Jun 2025"
+                        },
+                        {
+                            "awardName": "Second prize in Huawei ICT Global Final Competition",
+                            "awardPlace": "Shenzhen, China",
+                            "awardTime": "May 2024"
+                        }
+                    ],
+                    "Featured_Publications": [
+                        "Zhou, W., Chen, S., Li, J., Liu, C., Luo, W., & Liu, J. J. R., 2025. [Obstacle avoidance control for cluster-based unmanned aerial vehicle formation with multiple constraints](https://doi.org/10.1016/j.fraope.2025.100267). Franklin Open"
+                    ],
+                    "Links": [
+                        {
+                            "type": "Email",
+                            "link": "mailto:zhouw4@myumanitoba.ca"
+                        },
+                        {
+                            "type": "LinkedIn",
+                            "link": "https://www.linkedin.com/in/wenjie-zhou-827b4828b/"
+                        },
+                        {
+                            "type": "GitHub",
+                            "link": "https://github.com/zhouwenjie1124"
+                        }
+                    ],
+                    "Interests": [
+                        "Robotics",
+                        "Machine Learning",
+                        "Control Theory",
+                        "Autonomous Systems",
+                        "UAV"
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Graduate Students (MSc)",
+            "teamMembers": [
+                {
+                    "ProfileName": "Ilyas",
+                    "ProfileLink": "/team/ilyas",
+                    "ProfilePic": "/public/our_team_files/Ilyas/Ilyas.jpg",
+                    "Name": "Ilyas Dawoodjee",
+                    "Position": "MSc Student",
+                    "Biography": "I am [Ilyas Dawoodjee](https://blank-ed.github.io/ilyas_dawoodjee/), currently a MSc Mechanical Engineering student at University of Manitoba where I research in the Robot Autonomy Laboratory (RAL). My area of research involves learning-based mobile robots that integrates machine learning with physics-informed modelllings. I have experience involving the detection of physiological signals using computer vision and digial signal processing. I previously worked as a Research Engineer in the [Building Robotics Laboratory](https://building-robotics-lab.github.io/brlab/) at the [National University of Singapore (NUS)](http://www.nus.edu.sg/). I am constantly trying to learn new things and expand my knowledge base. My main language is Python.",
+                    "Education": [
+                        {
+                            "degreeName": "Master of Science in Mechanical Engineering",
+                            "degreeUniversity": "University of Manitoba",
+                            "gradYear": "2026"
+                        },
+                        {
+                            "degreeName": "Bachelor of Engineering (First Class Honours w/ Distinction) in Mechatronics Engineering",
+                            "degreeUniversity": "Asia Pacific University of Technology & Innovation",
+                            "gradYear": "2022"
+                        }
+                    ],
+                    "Awards": [
+                        {
+                            "awardName": "Faculty of Graduate Studies Research Completion Scholarship",
+                            "awardPlace": "University of Manitoba",
+                            "awardTime": "December 2025"
+                        },
+                        {
+                            "awardName": "University of Manitoba Graduate Fellowship (UMGF)",
+                            "awardPlace": "University of Manitoba",
+                            "awardTime": "May 2024"
+                        },
+                        {
+                            "awardName": "International Graduate Student Entrance Scholarship (IGSES)",
+                            "awardPlace": "University of Manitoba",
+                            "awardTime": "Jan 2024"
+                        },
+                        {
+                            "awardName": "Outstanding Achievement Award",
+                            "awardPlace": "Asia Pacific University of Technology & Innovation",
+                            "awardTime": "May 2022"
+                        },
+                        {
+                            "awardName": "AI4S Program Inception Recipient",
+                            "awardPlace": "Asia Pacific University of Technology & Innovation",
+                            "awardTime": "April 2022"
+                        },
+                        {
+                            "awardName": "Valedictorian",
+                            "awardPlace": "Asia Pacific University of Technology & Innovation",
+                            "awardTime": "April 2022"
+                        }
+                    ],
+                    "Featured_Publications": [
+                        "Talami, R., Hu, X., Dawoodjee, I. and Ghahramani, A., 2025. [Examining different placement strategies for indoor environmental quality sensors in office environments](https://www.tandfonline.com/doi/abs/10.1080/23744731.2025.2511555). Science and Technology for the Built Environment, pp.1-20",
+                        "Dawoodjee, I. and Ghahramani, A., 2025. [A Flexible Framework for Design and Validation of rPPG Methods](https://ieeexplore.ieee.org/abstract/document/10930958). IEEE Access",
+                        "Talami, R., Dawoodjee, I. and Ghahramani, A., 2024. [Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability](https://www.sciencedirect.com/science/article/pii/S2666123323000612). Energy and Built Environment, 5(6), pp.878-888",
+                        "Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. [Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns](https://www.mdpi.com/2075-5309/13/12/2998). Buildings, 13(12), p.2998"
+                    ],
+                    "Links": [
+                        {
+                            "type": "Email",
+                            "link": "mailto:dawoodji@myumanitoba.ca"
+                        },
+                        {
+                            "type": "Resume",
+                            "link": "/public/our_team_files/Ilyas/IlyasResume.pdf"
+                        },
+                        {
+                            "type": "Google Scholar",
+                            "link": "https://scholar.google.com/citations?user=FlonsoAAAAAJ&hl=en"
+                        },
+                        {
+                            "type": "LinkedIn",
+                            "link": "https://www.linkedin.com/in/ilyas-dawoodjee-858011195"
+                        },
+                        {
+                            "type": "GitHub",
+                            "link": "https://github.com/blank-ed"
+                        },
+                        {
+                            "type": "Personal Website",
+                            "link": "https://blank-ed.github.io/ilyas_dawoodjee/"
+                        }
+                    ],
+                    "Interests": [
+                        "Computer Vision",
+                        "Machine Learning",
+                        "Deep Learning",
+                        "Robotics",
+                        "Control Theory"
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Undergraduate Students",
+            "teamMembers": [
+                {}
+            ]
+        },
+        {
+            "sectionTitle": "Engineers",
+            "teamMembers": [
+                {}
+            ]
+        },
+        {
+            "sectionTitle": "Alumni",
+            "teamMembers": [
+                {}
+            ]
+        }
+    ]
+}

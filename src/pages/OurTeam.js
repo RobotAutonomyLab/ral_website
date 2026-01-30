@@ -1,21 +1,43 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './OurTeam.scss'
-import profile_data from '../data/profiles/profile_data'
-import { Link } from 'react-router-dom'
+
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw'
+
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import MarkdownLink from '../components/HandleMarkdownLinks'
+
+import profile_data from '../data/ourteam.json'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function OurTeam() {
-    const PI = profile_data[0]['Principal Investigator'][0]
+    const pageTitle = profile_data.ourTeamPageTitle
+    const pageSubtitle = profile_data.ourTeamPageSubtitle
+
+    // const PI = profile_data[0]['Principal Investigator'][0]
+    const PI = profile_data.ourTeam[0].teamMembers[0]
 
     return (
         <div className='OurTeamPage'>
             <NavBar />
             <div className="OurTeam container">
                 <div className="OurTeam section">
-                    <h1>Our Team</h1>
-                    <h4>We are a team of faculty, engineers, and students advancing mobile-robot autonomy in real-world settings through machine learning and physics-based modeling.</h4>
+                    <h1>{pageTitle}</h1>
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                        components={{
+                            a: MarkdownLink,
+                            p: ({ children }) => <h4>{children}</h4>,
+                        }}
+                    >
+                        {pageSubtitle}
+                    </ReactMarkdown>
                 </div>
 
                 <div className="OurTeam section">
@@ -38,13 +60,12 @@ function OurTeam() {
                         </div>
                         <div className="PI_right">
                             <h2>Meet the PI</h2>
-                            {/* <h3>{PI.Position}</h3> */}
                             <p dangerouslySetInnerHTML={{ __html: PI.Biography }} />
                         </div>
                     </div>
                 </div>
 
-                {profile_data.map(pubObj =>
+                {/* {profile_data.map(pubObj =>
                     Object.entries(pubObj)
                         .filter(([_, people]) => Object.keys(people).length > 0)
                         .slice(1)
@@ -83,7 +104,7 @@ function OurTeam() {
                                 </div>
                             </div>
                         ))
-                )}
+                )} */}
             </div>
             <Footer />
         </div>
