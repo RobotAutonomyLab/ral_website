@@ -1,5 +1,10 @@
 media:
-  
+  - name: out_team_files
+    label: Our team files
+    input: public/our_team_files
+    output: /public/our_team_files
+    categories: [document, image]
+
   - name: publications_files
     label: Publications files
     input: public/publications_files
@@ -20,7 +25,21 @@ media:
 
 content:
   # Our Team Page Configuration
+  - name: ourTeamPage
+    label: Our Team Page
+    type: file
+    path: src/data/ourteam.json
+    format: json
+    fields:
+      - name: ourTeamPageTitle
+        label: Our Team Page Title
+        type: string
+        required: true
 
+      - name: ourTeamPageSubtitle
+        label: Our Team Page Subtitle
+        type: rich-text
+        required: true
 
   # Publications Page Configuration
   - name: publicationsPage
@@ -192,11 +211,6 @@ content:
                   - name: abstract
                     label: Abstract
                     type: text
-                    required: false
-
-                  - name: citationLink
-                    label: Citation Link
-                    type: string
                     required: false
 
                   - name: citation

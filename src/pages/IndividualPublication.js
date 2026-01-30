@@ -100,7 +100,7 @@ const findPublicationById = (id) => {
             if (!Array.isArray(papers)) continue;
 
             const hit = papers.find((p) => {
-                const key = p.id ?? p.citationLink; // fall back to citationLink
+                const key = p.id;
                 return key && String(key).toLowerCase() === needle;
             });
 
