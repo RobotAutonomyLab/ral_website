@@ -48,7 +48,7 @@ function OurTeam() {
                         </div>
                         <div className="PI_left">
                             <div className="PI_Image">
-                                <img src={PI.ProfilePic} alt="" />
+                                <img src={PI.ProfilePic.replace('/public', '')} alt="" />
                             </div>
                             <div className="PI_Links">
                                 {PI.Links.map((highlight, index) => (
