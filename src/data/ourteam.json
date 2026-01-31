@@ -217,6 +217,12 @@
               "degreeUniversity": "University of xyz",
               "gradYear": 2022
             }
+          ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "Ehsan.Jalayeri@umanitoba.ca"
+            }
           ]
         }
       ]
