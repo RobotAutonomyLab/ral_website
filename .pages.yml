@@ -228,8 +228,12 @@ content:
                         type: string
                         required: true
               
-
-
+              - name: Interests
+                label: Interests
+                type: string
+                list: true
+                required true
+              
   # Publications Page Configuration
   - name: publicationsPage
     label: Publications Page
