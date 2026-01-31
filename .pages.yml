@@ -74,10 +74,10 @@ content:
               
               - name: ProfilePic
                 label: Profile Picture
-                type: file
+                type: image
                 required: true
                 options:
-                  media: publications_files
+                  media: our_team_files
 
               - name: Name
                 label: Full Name
