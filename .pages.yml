@@ -47,7 +47,7 @@ content:
         list:
           collapsible:
             collapsed: true
-            summary: "#{index} - {fields.teamMembers}"
+            summary: "#{index} - {fields.sectionTitle}"
 
   # Publications Page Configuration
   - name: publicationsPage
