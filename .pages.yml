@@ -147,6 +147,13 @@ content:
                     required: true
                     description: Enter month, and year you received this award (e.g., June 2025)
 
+              - name: Featured_Publications
+                label: Featured Publications
+                type: rich-text
+                list: true
+                required false
+                
+
   # Publications Page Configuration
   - name: publicationsPage
     label: Publications Page
