@@ -275,6 +275,23 @@
               "gradYear": 2026
             }
           ],
+          "Awards": [
+            {
+              "awardName": "1st in Senior Design @ UMEC 2025",
+              "awardPlace": "University of Manitoba",
+              "awardTime": "October 2025"
+            },
+            {
+              "awardName": "1st in Programming @ Canadian Engineering Competition 2024",
+              "awardPlace": "Canadian Federation of Engineering Students",
+              "awardTime": "March 2024"
+            },
+            {
+              "awardName": "2nd in Programming @ Western Engineering Competition 2024",
+              "awardPlace": "Western Engineering Student Societies' Team 2024",
+              "awardTime": "January 2024"
+            }
+          ],
           "Links": [
             {
               "type": "Email",
