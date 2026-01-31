@@ -107,12 +107,10 @@ function OurTeam() {
                     .map((section, sectionIndex) => (
                         <div className="OurTeam section" key={sectionIndex}>
                             <h2>{section.sectionTitle}</h2>
-                            
-                            {/* <h2>{eachPeopleIndex}</h2>
                             <div className="OurTeam-each">
-                                {pubObj[eachPeopleIndex].map((eachPeople, i) => (
-                                    <div className='OurTeam-each-person' key={i}>
-                                        <img src={eachPeople.ProfilePic} alt="" />
+                                {section.teamMembers.map((eachPeople, eachPeopleIndex) => (
+                                    <div className='OurTeam-each-person' key={eachPeopleIndex}>
+                                        <img src={eachPeople.ProfilePic.replace('/public', '')} alt="" />
                                         <h4>
                                             <Link to={eachPeople.ProfileLink} target="_blank">
                                                 <span className="title-text">
@@ -125,63 +123,14 @@ function OurTeam() {
                                         </span>
                                         <div className="each_person_links">
                                             {eachPeople.Links.map((highlight, index) => (
-                                                <a
-                                                    href={highlight.href}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    data-tooltip={highlight.text}
-                                                    key={index}
-                                                >
-                                                    <FontAwesomeIcon icon={highlight.icon} />
-                                                </a>
+                                                typeOfLink(highlight.type, highlight.link)
                                             ))}
                                         </div>
                                     </div>
                                 ))}
-                            </div> */}
+                            </div>
                         </div>
                     ))}
-
-                {/* {profile_data.map(pubObj =>
-                    Object.entries(pubObj)
-                        .filter(([_, people]) => Object.keys(people).length > 0)
-                        .slice(1)
-                        .map(([eachPeopleIndex, people]) => (
-                            <div className="OurTeam section" key={eachPeopleIndex}>
-                                <h2>{eachPeopleIndex}</h2>
-                                <div className="OurTeam-each">
-                                    {pubObj[eachPeopleIndex].map((eachPeople, i) => (
-                                        <div className='OurTeam-each-person' key={i}>
-                                            <img src={eachPeople.ProfilePic} alt="" />
-                                            <h4>
-                                                <Link to={eachPeople.ProfileLink} target="_blank">
-                                                    <span className="title-text">
-                                                        {eachPeople.ProfileName}
-                                                    </span>
-                                                </Link>
-                                            </h4>
-                                            <span className="caption">
-                                                {eachPeople.Position}
-                                            </span>
-                                            <div className="each_person_links">
-                                                {eachPeople.Links.map((highlight, index) => (
-                                                    <a
-                                                        href={highlight.href}
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                        data-tooltip={highlight.text}
-                                                        key={index}
-                                                    >
-                                                        <FontAwesomeIcon icon={highlight.icon} />
-                                                    </a>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))
-                )} */}
             </div>
             <Footer />
         </div>

@@ -3,24 +3,74 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './IndividualProfile.scss';
 
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw'
+
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import profile_data from '../data/profiles/profile_data'
+import MarkdownLink from '../components/HandleMarkdownLinks'
+
+// import profile_data from '../data/profiles/profile_data'
+import profile_data from '../data/ourteam.json'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faUser, faTemperatureHalf, faPerson, faS, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { icon } from 'leaflet';
+import { type } from '@testing-library/user-event/dist/type';
 
 const findProfileById = (id) => {
-    for (const section of profile_data) {
-        for (const category of Object.values(section)) {
-            if (Array.isArray(category)) {
-                const profile = category.find(
-                    (p) => p.ProfileName.toLowerCase() === id.toLowerCase()
-                );
-                if (profile) return profile;
-            }
-        }
+    if (!id) return null;
+
+    for (const section of profile_data.ourTeam) {
+        const members = section.teamMembers;
+        if (!Array.isArray(members)) continue;
+
+        const profile = members.find(
+            (p) => p?.ProfileName && p.ProfileName.toLowerCase() === id.toLowerCase()
+        );
+
+        if (profile) return profile;
     }
+
     return null;
 };
+
+function typeOfLink(type, link) {
+
+    let iconFA;
+    let iconLink = link;
+
+    switch (type) {
+        case 'Email':
+            iconFA = faEnvelope;
+            break;
+        case 'Google Scholar':
+            iconFA = faGoogle;
+            break;
+        case 'LinkedIn':
+            iconFA = faLinkedin;
+            break;
+        case 'GitHub':
+            iconFA = faGithub;
+            break;
+        case 'Resume':
+            iconFA = faFile;
+            iconLink = link.replace('/public', '');
+            break;
+        case 'Personal Website':
+            iconFA = faUser;
+            break;
+    }
+
+    return (
+        <a href={iconLink} target='_blank' data-tooltip={type} rel='noreferrer'>
+            <FontAwesomeIcon icon={iconFA} /> {type}
+        </a>
+    )
+}
 
 function IndividualProfile() {
     const { id } = useParams();
@@ -32,7 +82,7 @@ function IndividualProfile() {
             <div className="IndividualProfile container">
                 <div className="IndividualProfile section">
                     <div className="hero_section">
-                        <img src={profile.ProfilePic} alt="" />
+                        <img src={profile.ProfilePic.replace('/public', '')} alt="" />
                         <div>
                             <h2>{profile.Name}</h2>
                             <h3>{profile.Position}</h3>
@@ -40,9 +90,7 @@ function IndividualProfile() {
                     </div>
                     <p className="pub-links">
                         {profile.Links.map((link, index) =>
-                            <a href={link.href} key={index} target="_blank" rel="noreferrer">
-                                <FontAwesomeIcon icon={link.icon} /> {link.text}
-                            </a>
+                            typeOfLink(link.type, link.link)
                         )}
                     </p>
                     <div className="keywords">
@@ -55,7 +103,16 @@ function IndividualProfile() {
                 </div>
 
                 <div className="IndividualProfile section">
-                    <p className='bio'>{profile.Biography}</p>
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                        components={{
+                            a: MarkdownLink,
+                            p: ({ children }) => <p className='bio'>{children}</p>,
+                        }}
+                    >
+                        {profile.Biography}
+                    </ReactMarkdown>
                 </div>
 
                 <div className="IndividualProfile section">
@@ -71,7 +128,17 @@ function IndividualProfile() {
                     <h4>Publications</h4>
                     <ul>
                         {profile.Featured_Publications.map((highlight, index) => (
-                            <p key={index} dangerouslySetInnerHTML={{ __html: highlight }} />
+                            <ReactMarkdown
+                                remarkPlugins={[remarkGfm]}
+                                rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                components={{
+                                    a: MarkdownLink,
+                                    p: ({ children }) => <p>{children}</p>,
+                                }}
+                            >
+                                {highlight}
+                            </ReactMarkdown>
+                            // <p key={index} dangerouslySetInnerHTML={{ __html: highlight }} />
                         ))}
                     </ul>
                 </div>
