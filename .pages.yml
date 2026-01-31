@@ -347,16 +347,6 @@ content:
                             options:
                               media: publications_files
 
-                      # - name: Cite
-                      #   label: Cite (No action needed — URL set automatically!)
-                      #   fields:
-                      #     - name: url
-                      #       label: URL
-                      #       type: string
-                      #       required: true
-                      #       default: "/"
-                      #       hidden: true
-
                       - name: DOI
                         label: DOI
                         fields:
@@ -556,7 +546,6 @@ content:
                     type: rich-text
                     list: true
                     required: true
-
 
   # Teaching Page Configuration
   - name: teachingPage
