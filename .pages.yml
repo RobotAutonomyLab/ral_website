@@ -119,7 +119,7 @@ content:
 
                   - name: gradYear
                     label: Graduation Year
-                    type: int
+                    type: number
                     required: true
                     description: Enter your graduation or expected graduation year
 
