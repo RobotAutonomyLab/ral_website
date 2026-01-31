@@ -45,6 +45,7 @@ function typeOfLink(type, link) {
 
     switch (type) {
         case 'Email':
+            iconLink = link.startsWith('mailto:') ? link : `mailto:${link}`;
             iconFA = faEnvelope;
             break;
         case 'Google Scholar':
@@ -138,7 +139,6 @@ function IndividualProfile() {
                             >
                                 {highlight}
                             </ReactMarkdown>
-                            // <p key={index} dangerouslySetInnerHTML={{ __html: highlight }} />
                         ))}
                     </ul>
                 </div>
