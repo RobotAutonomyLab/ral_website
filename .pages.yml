@@ -54,6 +54,36 @@ content:
             type: string
             required: true
 
+          - name: teamMembers
+            label: Team Members
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.Name}"
+            fields:
+              - name: ProfileName
+                label: Profile Name
+                type: string
+                required: true
+
+              - name: ProfileLink
+                label: Profile Link
+                type: string
+                required: true
+              
+              - name: ProfilePic
+                label: Profile Picture
+                type: file
+                required: true
+                options:
+                  media: publications_files
+
+              - name: Name
+                label: Full Name
+                type: string
+                required: true
+
   # Publications Page Configuration
   - name: publicationsPage
     label: Publications Page
