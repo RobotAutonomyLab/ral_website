@@ -212,7 +212,21 @@ content:
                         type: string
                         required: true
                   
+                  - name: ORCID
+                    label: ORCID
+                    fields:
+                      - name: link
+                        label: ORCID
+                        type: string
+                        required: true
 
+                  - name: Research Gate
+                    label: Research Gate
+                    fields:
+                      - name: link
+                        label: Research Gate
+                        type: string
+                        required: true
               
 
 
