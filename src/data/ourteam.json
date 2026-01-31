@@ -202,7 +202,24 @@
       "sectionTitle": "Undergraduate Students"
     },
     {
-      "sectionTitle": "Engineers"
+      "sectionTitle": "Engineers",
+      "teamMembers": [
+        {
+          "ProfileName": "Ehsan",
+          "ProfileLink": "/team/ehsan",
+          "ProfilePic": "/public/our_team_files/Placeholder.png",
+          "Name": "Ehsan Jalayeri",
+          "Position": "Technologist",
+          "Biography": "Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here",
+          "Education": [
+            {
+              "degreeName": "Bachelor of Engineering in xyz",
+              "degreeUniversity": "University of xyz",
+              "gradYear": 2022
+            }
+          ]
+        }
+      ]
     },
     {
       "sectionTitle": "Alumni"
