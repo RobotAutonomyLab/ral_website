@@ -231,7 +231,37 @@
       ]
     },
     {
-      "sectionTitle": "Alumni"
+      "sectionTitle": "Alumni",
+      "teamMembers": [
+        {
+          "ProfileName": "Parker",
+          "ProfileLink": "/team/parker",
+          "ProfilePic": "/public/our_team_files/Parker/Parker.jpg",
+          "Name": "Parker Prince",
+          "Position": "BEng Student",
+          "Biography": "My name is Parker Prince and I am an undergraduate mechanical engineering student at the University of Manitoba. I am completing my first Co-op work term in the Robot Autonomy Lab as a research assistant where I am researching machine learning applications in mobile robots. My aim is to apply the skills and knowledge gain ed in this role to continue to contribute to innovative projects.",
+          "Education": [
+            {
+              "degreeName": "Bachelor of Science in Mechanical Engineering",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": 2028
+            }
+          ],
+          "Awards": [
+            {
+              "awardName": "Undergraduate Research Award",
+              "awardPlace": "University of Manitoba",
+              "awardTime": "April 2025"
+            }
+          ],
+          "Links": [
+            {
+              "type": "LinkedIn",
+              "link": "https://www.linkedin.com/in/parker-prince-803b36372"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
