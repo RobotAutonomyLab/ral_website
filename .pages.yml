@@ -2,7 +2,7 @@ media:
   - name: out_team_files
     label: Our team files
     input: public/our_team_files
-    output: /public/our_team_files
+    output: /our_team_files
     categories: [document, image]
 
   - name: publications_files
