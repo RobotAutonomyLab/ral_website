@@ -25,6 +25,7 @@ function typeOfLink(type, link) {
 
     switch (type) {
         case 'Email':
+            iconLink = link.startsWith('mailto:') ? link : `mailto:${link}`;
             iconFA = faEnvelope;
             break;
         case 'Google Scholar':
