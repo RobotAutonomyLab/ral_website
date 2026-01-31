@@ -320,6 +320,42 @@
             "Guitar",
             "Photography"
           ]
+        },
+        {
+          "ProfileName": "Edcel",
+          "ProfileLink": "/team/edcel",
+          "ProfilePic": "/public/our_team_files/Edcel/Edcel.jpg",
+          "Name": "Edcel Abanto",
+          "Position": "BSc Student",
+          "Biography": "My name is Edcel Abanto, and I am an undergraduate Electrical Engineering student at the University of Manitoba. I currently serve as the Team Lead of the University of Manitoba Robotics Team (2025) (UMRT Link: [https://umrt.ca/](https://umrt.ca/)).\n\nMy technical experience spans both software and hardware. On the software side, I primarily work with Python, C++, and ROS 2. On the hardware side, I have hands-on experience with brushed motor systems, safety-critical kill switch implementations, and camera-based vision systems.\n\nMy interests include Robotics, Swarm Robotics, Computer Vision, Machine Learning, and Generative AI. I am especially interested in integrating these fields—for example, using Generative AI to enhance swarm behavior and coordination in multi-agent robotic systems.\n\nIn one of my recent capstone projects, I helped develop a gesture-based control system for managing a swarm of robots, including both drones and ground vehicles.\n\nLooking ahead, I hope to pursue a Master’s degree in Robotics to deepen my expertise and contribute meaningfully to the advancement of the field.",
+          "Education": [
+            {
+              "degreeName": "Bachelor of Science in Electrical Engineering (Focus Area in Mechatronics), Minor in Computer Science",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": 2026
+            }
+          ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "abantoe@myumanitoba.ca"
+            },
+            {
+              "type": "GitHub",
+              "link": "https://github.com/edcela"
+            },
+            {
+              "type": "LinkedIn",
+              "link": "https://www.linkedin.com/in/edcel-abanto-88695b2a8/"
+            }
+          ],
+          "Interests": [
+            "Robotics",
+            "Swarm Robotics",
+            "Computer Vision",
+            "Machine Learning",
+            "Generative AI"
+          ]
         }
       ]
     }
