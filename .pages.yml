@@ -343,15 +343,15 @@ content:
                             options:
                               media: publications_files
 
-                      - name: Cite
-                        label: Cite (No action needed — URL set automatically!)
-                        fields:
-                          - name: url
-                            label: URL
-                            type: string
-                            required: true
-                            default: "/"
-                            hidden: true
+                      # - name: Cite
+                      #   label: Cite (No action needed — URL set automatically!)
+                      #   fields:
+                      #     - name: url
+                      #       label: URL
+                      #       type: string
+                      #       required: true
+                      #       default: "/"
+                      #       hidden: true
 
                       - name: DOI
                         label: DOI
