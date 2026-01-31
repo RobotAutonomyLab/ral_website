@@ -99,6 +99,30 @@ content:
                 required: true
                 description: Short biography about yourself (a few sentences)
 
+              - name: Education
+                label: Education
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "#{index} - {fields.degreeName}"
+                fields:
+                  - name: degreeName
+                    label: Degree Name
+                    type: string
+                    required: true
+
+                  - name: degreeUniversity
+                    label: Name of University
+                    type: string
+                    required: true
+
+                  - name: gradYear
+                    label: Graduation Year
+                    type: int
+                    required: true
+                    description: Enter your graduation or expected graduation year
+
   # Publications Page Configuration
   - name: publicationsPage
     label: Publications Page
