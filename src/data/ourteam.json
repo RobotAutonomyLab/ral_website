@@ -260,6 +260,49 @@
               "link": "https://www.linkedin.com/in/parker-prince-803b36372"
             }
           ]
+        },
+        {
+          "ProfileName": "Abraham",
+          "ProfileLink": "/team/abraham",
+          "ProfilePic": "/public/our_team_files/Abraham/Abraham.jpeg",
+          "Name": "Syed Abraham Ahmed",
+          "Position": "BSc Student",
+          "Biography": "My name is Abraham and I currently am a Computer Engineering Undergraduate student at the University of Manitoba. I am currently interested in topics regarding Deep Learning and Generative Models. My experience is vast with embedded systems, website development, applied machine learning, and systems engineering.",
+          "Education": [
+            {
+              "degreeName": "Bachelor of Science in Computer Engineering, Minor in Computer Science",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": 2026
+            }
+          ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "ahmeda16@myumanitoba.ca"
+            },
+            {
+              "type": "LinkedIn",
+              "link": "https://www.linkedin.com/in/syed-abraham-ahmed"
+            },
+            {
+              "type": "Personal Website",
+              "link": "https://github.com/ahmeda16"
+            },
+            {
+              "type": "Personal Website",
+              "link": "https://ahmeda16.github.io"
+            }
+          ],
+          "Interests": [
+            "Machine Learning",
+            "Deep Learning",
+            "Robotics",
+            "Generative AI",
+            "System Design",
+            "Embedded Systems",
+            "Guitar",
+            "Photography"
+          ]
         }
       ]
     }
