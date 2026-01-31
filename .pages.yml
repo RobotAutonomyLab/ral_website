@@ -41,13 +41,18 @@ content:
         type: rich-text
         required: true
 
-      # - name: ourTeam
-      #   label: Our Team
-      #   type: object
-      #   list:
-      #     collapsible:
-      #       collapsed: true
-      #       summary: "#{index} - {fields.sectionTitle}"
+      - name: ourTeam
+        label: Our Team
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "#{index} - {fields.sectionTitle}"
+        fields:
+          - name: sectionTitle
+            label: Section Title
+            type: string
+            required: true
 
   # Publications Page Configuration
   - name: publicationsPage
