@@ -44,6 +44,12 @@ function typeOfLink(type, link) {
         case 'Personal Website':
             iconFA = faUser;
             break;
+        case 'Research Gate':
+            iconFA = faResearchgate;
+            break;
+        case 'ORCID':
+            iconFA = faOrcid;
+            break;
     }
 
     return (

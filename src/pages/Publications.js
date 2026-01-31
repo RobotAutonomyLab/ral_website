@@ -158,7 +158,6 @@ function Publications() {
                 </div>
 
                 {publications_data.publications
-                    // keep only sections that actually have at least one paper somewhere
                     .filter(section => (section.years ?? []).some(y => (y.papers ?? []).length > 0))
                     .map(section => (
                         <div className="Publications section" key={section.sectionTitle}>
@@ -233,18 +232,7 @@ function Publications() {
                                                     {(paper.links ?? []).length > 0 && (
                                                         <p className="pub-links">
                                                             {paper.links.map((link, index) =>
-                                                                link.type === "Cite" ? (
-                                                                    <a
-                                                                        href="#"
-                                                                        key={`${link.type}-${index}`}
-                                                                        onClick={e => {
-                                                                            e.preventDefault();
-                                                                            handleCiteClick(paper.citation, paper.citationLink);
-                                                                        }}
-                                                                    >
-                                                                        Cite
-                                                                    </a>
-                                                                ) : link.type === "PDF" ? (
+                                                                link.type === "PDF" ? (
                                                                     <a
                                                                         href={link.url.replace('/public', '')}
                                                                         key={`${link.type}-${index}`}
@@ -263,6 +251,17 @@ function Publications() {
                                                                         {link.type}
                                                                     </a>
                                                                 )
+                                                            )}
+                                                            {paper.citation && (
+                                                                <a
+                                                                    href="#"
+                                                                    onClick={e => {
+                                                                        e.preventDefault();
+                                                                        handleCiteClick(paper.citation, paper.title);
+                                                                    }}
+                                                                >
+                                                                    Cite
+                                                                </a>
                                                             )}
                                                         </p>
                                                     )}

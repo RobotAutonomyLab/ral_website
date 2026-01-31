@@ -202,14 +202,7 @@ function IndividualPublication() {
                     </span>
                     <p className="pub-links">
                         {publication.links.map((link, index) =>
-                            link.type === "Cite" ? (
-                                <a href="#" key={index} onClick={(e) => {
-                                    e.preventDefault();
-                                    handleCiteClick(publication.citation, publication.citationLink);
-                                }}>
-                                    Cite
-                                </a>
-                            ) : link.type === "PDF" ? (
+                            link.type === "PDF" ? (
                                 <a href={link.url.replace('/public', '')} key={index} target="_blank" rel="noreferrer">
                                     {link.type}
                                 </a>
@@ -218,6 +211,17 @@ function IndividualPublication() {
                                     {link.type}
                                 </a>
                             )
+                        )}
+                        {publication.citation && (
+                            <a
+                                href="#"
+                                onClick={e => {
+                                    e.preventDefault();
+                                    handleCiteClick(publication.citation, publication.title);
+                                }}
+                            >
+                                Cite
+                            </a>
                         )}
                     </p>
                     <div className="keywords">
