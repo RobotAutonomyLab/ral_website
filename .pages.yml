@@ -169,6 +169,50 @@ content:
                         label: Email Address
                         type: string
                         required: true
+
+                  - name: Resume
+                    label: Resume
+                    fields:
+                      - name: link
+                        label: Resume
+                        type: file
+                        required: true
+                        options:
+                          media: our_team_files
+
+                  - name: Google Scholar
+                    label: Google Scholar
+                    fields:
+                      - name: link
+                        label: Google Scholar
+                        type: string
+                        required: true
+                  
+                  - name: LinkedIn
+                    label: LinkedIn
+                    fields:
+                      - name: link
+                        label: LinkedIn
+                        type: string
+                        required: true
+                  
+                  - name: GitHub
+                    label: GitHub
+                    fields:
+                      - name: link
+                        label: GitHub
+                        type: string
+                        required: true
+                  
+                  - name: Personal Website
+                    label: Personal Website
+                    fields:
+                      - name: link
+                        label: Personal Website
+                        type: string
+                        required: true
+                  
+
               
 
 
