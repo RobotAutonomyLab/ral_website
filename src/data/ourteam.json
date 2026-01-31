@@ -82,7 +82,9 @@
                             "awardTime": "May 2024"
                         }
                     ],
-                    
+                    "Featured_Publications": [
+                        "Zhou, W., Chen, S., Li, J., Liu, C., Luo, W., & Liu, J. J. R., 2025. [Obstacle avoidance control for cluster-based unmanned aerial vehicle formation with multiple constraints](https://doi.org/10.1016/j.fraope.2025.100267). Franklin Open"
+                    ],
                     "Links": [
                         {
                             "type": "Email",

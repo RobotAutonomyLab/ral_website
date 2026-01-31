@@ -129,35 +129,40 @@ function IndividualProfile() {
                         ))}
                     </ul>
                 </div>
+                
+                {profile.Featured_Publications && (
+                    <div className="IndividualProfile section">
+                        <h4>Publications</h4>
+                        <ul>
+                            {profile.Featured_Publications.map((highlight, index) => (
+                                <ReactMarkdown
+                                    remarkPlugins={[remarkGfm]}
+                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                    components={{
+                                        a: MarkdownLink,
+                                        p: ({ children }) => <p>{children}</p>,
+                                    }}
+                                >
+                                    {highlight}
+                                </ReactMarkdown>
+                            ))}
+                        </ul>
+                    </div>
+                )}
 
-                <div className="IndividualProfile section">
-                    <h4>Publications</h4>
-                    <ul>
-                        {profile.Featured_Publications.map((highlight, index) => (
-                            <ReactMarkdown
-                                remarkPlugins={[remarkGfm]}
-                                rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                components={{
-                                    a: MarkdownLink,
-                                    p: ({ children }) => <p>{children}</p>,
-                                }}
-                            >
-                                {highlight}
-                            </ReactMarkdown>
-                        ))}
-                    </ul>
-                </div>
+                {profile.Awards && (
+                    <div className="IndividualProfile section">
+                        <h4>Awards</h4>
+                        <ul>
+                            {profile.Awards.map((highlight, index) => (
+                                <p key={index}>
+                                    {highlight.awardName}<br /><b>{highlight.awardPlace}</b> ({highlight.awardTime})
+                                </p>
+                            ))}
+                        </ul>
+                    </div>
+                )}
 
-                <div className="IndividualProfile section">
-                    <h4>Awards</h4>
-                    <ul>
-                        {profile.Awards.map((highlight, index) => (
-                            <p key={index}>
-                                {highlight.awardName}<br /><b>{highlight.awardPlace}</b> ({highlight.awardTime})
-                            </p>
-                        ))}
-                    </ul>
-                </div>
             </div>
             <Footer />
         </div>
