@@ -66,11 +66,13 @@ content:
                 label: Profile Name
                 type: string
                 required: true
+                description: "Enter your first name (e.g., Ilyas)"
 
               - name: ProfileLink
                 label: Profile Link
                 type: string
                 required: true
+                description: "Format: /team/<first-name> (e.g., /team/ilyas)"
               
               - name: ProfilePic
                 label: Profile Picture
@@ -83,6 +85,19 @@ content:
                 label: Full Name
                 type: string
                 required: true
+                description: "Your full name"
+
+              - name: Position
+                label: Position
+                type: string
+                required: true
+                description: "Your position/title (see the current Our Team page for examples)."
+
+              - name: Biography
+                label: Biography
+                type: rich-text
+                required: true
+                description: Short biography about yourself (a few sentences)
 
   # Publications Page Configuration
   - name: publicationsPage
