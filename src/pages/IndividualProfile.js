@@ -99,13 +99,15 @@ function IndividualProfile() {
                             typeOfLink(link.type, link.link)
                         )}
                     </p>
-                    <div className="keywords">
-                        {profile.Interests.map((link, index) =>
-                            <span key={index} className="caption">
-                                {link}
-                            </span>
-                        )}
-                    </div>
+                    {profile.Interests && (
+                        <div className="keywords">
+                            {profile.Interests.map((link, index) =>
+                                <span key={index} className="caption">
+                                    {link}
+                                </span>
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 <div className="IndividualProfile section">
