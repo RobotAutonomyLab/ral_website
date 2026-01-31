@@ -152,7 +152,25 @@ content:
                 type: rich-text
                 list: true
                 required false
-                
+              
+              - name: Links
+                label: Links
+                type: block
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "#{index} - {fields.type}"
+                blockKey: type
+                blocks:
+                  - name: Email
+                    label: Email
+                    fields:
+                      - name: link
+                        label: Email Address
+                        type: string
+                        required: true
+              
+
 
   # Publications Page Configuration
   - name: publicationsPage
