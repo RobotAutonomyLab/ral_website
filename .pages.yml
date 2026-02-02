@@ -41,6 +41,7 @@ content:
         label: Home Page Media
         type: object
         list: true
+        required: true
         fields:
           - name: type
             label: Type
