@@ -33,7 +33,7 @@ content:
   # Home Page Configuration
   - name: homePage
     label: Home Page
-    type: files
+    type: file
     path: src/data/home.json
     format: json
 
