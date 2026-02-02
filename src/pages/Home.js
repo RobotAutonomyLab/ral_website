@@ -152,26 +152,13 @@ function Home() {
 
                 <div className="Home section">
                     <div className="home_containers">
-                        <div className="each_home_container">
-                            <h2>Browse Our Publications</h2>
-                            <p>Explore the latest research from the Robot Autonomy Lab. Our team publishes journal articles and conference papers on robotics and autonomous systems. Visit our publications page to learn more.</p>
-                            <Link to='/publications'>OUR PAPERS</Link>
-                        </div>
-                        <div className="each_home_container">
-                            <h2>Meet Our Team</h2>
-                            <p>Our team includes faculty members, graduate students, and researchers working together on robotics and autonomous systems. Visit our team page to learn more about who we are and what we do.</p>
-                            <Link to='/team'>OUR TEAM</Link>
-                        </div>
-                        <div className="each_home_container">
-                            <h2>Apply</h2>
-                            <p>Interested in robotics and AI? We’re looking for motivated students and researchers to work with us on exciting AI-driven robotics projects. Visit our Join Us page to see current opportunities and learn how to apply.</p>
-                            <Link to='/join'>JOIN THE LAB</Link>
-                        </div>
-                        <div className="each_home_container">
-                            <h2>Teaching</h2>
-                            <p>Professor Wang teaches courses on robotics and autonomous systems at the University of Manitoba. Visit the Teaching page to learn more about these course.</p>
-                            <Link to='/teaching'>COURSES</Link>
-                        </div>
+                        {home_data.homePageBlocks.map((value, index) => 
+                            <div className="each_home_container">
+                                <h2>{value.title}</h2>
+                                <p>{value.subtitle}</p>
+                                <Link to={value.link}>{value.linkText}</Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

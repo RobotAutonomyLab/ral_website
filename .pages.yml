@@ -60,6 +60,32 @@ content:
         type: rich-text
         required: true
 
+      - name: homePageBlocks
+        label: Home Page Blocks
+        type: object
+        list: true
+        required: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+
+          - name: subtitle
+            label: Subtitle
+            type: string
+            required: true
+
+          - name: linkText
+            label: Link Text
+            type: string
+            required: true
+
+          - name: link
+            label: Link
+            type: string
+            required: true
+
   # Our Team Page Configuration
   - name: ourTeamPage
     label: Our Team Page
