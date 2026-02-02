@@ -40,7 +40,9 @@ content:
       - name: homePageMedia
         label: Home Page Media
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
         required: true
         fields:
           - name: type
@@ -63,7 +65,9 @@ content:
       - name: homePageBlocks
         label: Home Page Blocks
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
         required: true
         fields:
           - name: title
