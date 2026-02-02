@@ -1,41 +1,49 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Home.scss';
 
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw'
+
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-
-import home1 from '../data/home1.jpeg';
-import home2 from '../data/home2.jpeg';
-// import home3 from '../data/home3.mp4';
-import home4 from '../data/home4.mp4'
+import MarkdownLink from '../components/HandleMarkdownLinks'
 
 import { Link } from 'react-router-dom';
 
-// import news_data from '../data/news/news_data'
+import home_data from '../data/home.json';
 import news_data from '../data/news.json'
 
 function Home() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [home1, home2, home4];
+    const homeSubtitle = home_data.homePageSubtitle
+
+    const slides = home_data.homePageMedia || [];
     const totalSlides = slides.length;
+
+    const [currentSlide, setCurrentSlide] = useState(0);
     const timeoutRef = useRef(null);
-    const videoRef = useRef(null); // Ref to control video element
+    const videoRef = useRef(null);
 
     const nextSlide = () => {
+        if (totalSlides === 0) return;
         setCurrentSlide((prev) => (prev + 1) % totalSlides);
     };
 
     const prevSlide = () => {
+        if (totalSlides === 0) return;
         setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
     };
 
     // Handle auto-advance for images
     useEffect(() => {
+        if (!totalSlides) return;
+
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
         }
 
-        if (slides[currentSlide] !== home4) {
+        if (slides[currentSlide]?.type === 'image') {
             timeoutRef.current = setTimeout(() => {
                 nextSlide();
             }, 3000);
@@ -46,21 +54,23 @@ function Home() {
                 clearTimeout(timeoutRef.current);
             }
         };
-    }, [currentSlide]);
+    }, [currentSlide, totalSlides, slides]);
 
     // Handle video playback
     useEffect(() => {
+        if (!totalSlides) return;
+
         if (videoRef.current) {
-            if (currentSlide === 2) {
+            if (slides[currentSlide]?.type === 'video') {
                 videoRef.current.play().catch((error) => {
                     console.error('Video playback failed:', error);
                 });
             } else {
                 videoRef.current.pause();
-                videoRef.current.currentTime = 0; // Reset video to start
+                videoRef.current.currentTime = 0;
             }
         }
-    }, [currentSlide]);
+    }, [currentSlide, totalSlides, slides]);
 
     return (
         <div className='HomePage'>
@@ -73,27 +83,32 @@ function Home() {
                                 className="carousel-inner"
                                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                             >
-                                <div className="carousel-item">
-                                    <img src={home1} alt="Slide 1" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={home2} alt="Slide 2" />
-                                </div>
-                                {/* <div className="carousel-item">
-                                    {currentSlide === 2 && (
-                                        <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
-                                            <source src={home3} type="video/mp4" />
-                                        </video>
-                                    )}
-                                </div> */}
-                                <div className="carousel-item">
-                                    {currentSlide === 2 && (
-                                        <video ref={videoRef} playsInline muted controls preload="metadata" onEnded={nextSlide}>
-                                            <source src={home4} type="video/mp4" />
-                                        </video>
-                                    )}
-                                </div>
-
+                                {slides.map((slide, index) => (
+                                    <div className="carousel-item" key={index}>
+                                        {slide.type === 'image' ? (
+                                            <img
+                                                src={process.env.PUBLIC_URL + slide.src.replace('/public', '')}
+                                                alt={`Slide ${index + 1}`}
+                                            />
+                                        ) : (
+                                            currentSlide === index && (
+                                                <video
+                                                    ref={videoRef}
+                                                    playsInline
+                                                    muted
+                                                    controls
+                                                    preload="metadata"
+                                                    onEnded={nextSlide}
+                                                >
+                                                    <source
+                                                        src={process.env.PUBLIC_URL + slide.src.replace('/public', '')}
+                                                        type="video/mp4"
+                                                    />
+                                                </video>
+                                            )
+                                        )}
+                                    </div>
+                                ))}
                             </div>
                             <button className="carousel-prev" onClick={prevSlide}>
                                 ❮
@@ -106,7 +121,7 @@ function Home() {
                 </div>
 
                 <div className="Home section">
-                    <h3>Our long-term vision is to empower mobile robots with <b>safe</b>, <b>efficient</b>, and <b>fully autonomous operation</b> in dynamic, uncertain, and previously unexplored environments—enabling true <b>long-term autonomy</b> and bridging the gap between theoretical advances and real-world deployment.</h3>
+                    <h3>{homeSubtitle}</h3>
                 </div>
 
                 <div className="Home section">
@@ -119,20 +134,19 @@ function Home() {
                             .sort((a, b) => new Date(b.newsDate) - new Date(a.newsDate))
                             .slice(0, 6)
                             .map((each_news, index) =>
-                            <div className="each-news-section" key={index}>
-                                <div className="news_img">
-                                    {/* <img src={each_news.newsPic} alt="" /> */}
-                                    <img 
-                                        src={process.env.PUBLIC_URL + each_news.newsPic.replace('/public', '')} 
-                                        alt={each_news.newsTitle} 
-                                    />
+                                <div className="each-news-section" key={index}>
+                                    <div className="news_img">
+                                        <img
+                                            src={process.env.PUBLIC_URL + each_news.newsPic.replace('/public', '')}
+                                            alt={each_news.newsTitle}
+                                        />
+                                    </div>
+                                    <div className='news_data'>
+                                        <span className="caption">{each_news.newsDate}</span>
+                                        <h4>{each_news.newsTitle}</h4>
+                                    </div>
                                 </div>
-                                <div className='news_data'>
-                                    <span className="caption">{each_news.newsDate}</span>
-                                    <h4>{each_news.newsTitle}</h4>
-                                </div>
-                            </div>
-                        )}
+                            )}
                     </div>
                 </div>
 

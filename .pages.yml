@@ -37,10 +37,19 @@ content:
     path: src/data/home.json
     format: json
     fields:
-      # - name: robotPageTitle
-      #   label: Robot Page Title
-      #   type: string
-      #   required: true
+      - name: videos
+        label: Videos
+        type: file
+        list: true
+        options:
+          media: home_page_media
+
+      - name: images
+        label: Images
+        type: image
+        list: true
+        options:
+          media: home_page_media
 
       - name: homePageSubtitle
         label: Home Page Subtitle
