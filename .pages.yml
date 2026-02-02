@@ -37,19 +37,22 @@ content:
     path: src/data/home.json
     format: json
     fields:
-      - name: videos
-        label: Videos
-        type: file
+      - name: homePageMedia
+        label: Home Page Media
+        type: object
         list: true
-        options:
-          media: home_page_media
+        fields:
+          - name: type
+            label: Type
+            type: string
+            required: true
 
-      - name: images
-        label: Images
-        type: image
-        list: true
-        options:
-          media: home_page_media
+          - name: src
+            label: Source
+            type: file
+            required: true
+            options:
+              media: home_page_media
 
       - name: homePageSubtitle
         label: Home Page Subtitle
