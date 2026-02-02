@@ -2,7 +2,7 @@ media:
   - name: home_page_media
     label: Home page media
     input: public/home_page_media
-    output: /home_page_media
+    output: public/home_page_media
     categories: [image, video]
 
   - name: our_team_files
