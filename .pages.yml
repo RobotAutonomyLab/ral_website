@@ -1,4 +1,10 @@
 media:
+  - name: home_page_media
+    label: Home page media
+    input: public/home_page_media
+    output: /home_page_media
+    categories: [image, video]
+
   - name: our_team_files
     label: Our team files
     input: public/our_team_files
@@ -24,6 +30,13 @@ media:
     categories: [image]
 
 content:
+  # Home Page Configuration
+  - name: homePage
+    label: Home Page
+    type: files
+    path: src/data/home.json
+    format: json
+
   # Our Team Page Configuration
   - name: ourTeamPage
     label: Our Team Page
