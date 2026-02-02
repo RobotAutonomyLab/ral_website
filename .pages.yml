@@ -90,6 +90,9 @@ content:
             type: string
             required: true
 
+  # Research Page Configuration
+  
+
   # Our Team Page Configuration
   - name: ourTeamPage
     label: Our Team Page
