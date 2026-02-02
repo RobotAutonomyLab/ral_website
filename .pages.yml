@@ -36,6 +36,16 @@ content:
     type: file
     path: src/data/home.json
     format: json
+    fields:
+      # - name: robotPageTitle
+      #   label: Robot Page Title
+      #   type: string
+      #   required: true
+
+      - name: homePageSubtitle
+        label: Home Page Subtitle
+        type: rich-text
+        required: true
 
   # Our Team Page Configuration
   - name: ourTeamPage
