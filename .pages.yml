@@ -8,7 +8,7 @@ media:
   - name: research_page_media
     label: Research page media
     input: public/research_page_media
-    output: /research_page_media
+    output: /public/research_page_media
     categories: [image, video]
 
   - name: our_team_files
