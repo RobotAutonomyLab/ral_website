@@ -110,9 +110,9 @@ content:
 
       - name: researchPageSubtitle
         label: Research Page Subtitle
-        type: object
-        blockKey: type
+        type: block
         list: true
+        blockKey: type
         blocks:
           - name: paragraph
             label: Paragraph
