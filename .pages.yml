@@ -56,7 +56,10 @@ content:
             type: string
             required: true
             options:
-              list: [image, video]
+              - label: Image
+                value: image
+              - label: Video
+                value: video
 
           - name: src
             label: Source
