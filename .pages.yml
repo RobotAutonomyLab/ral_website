@@ -80,8 +80,8 @@ content:
       - name: homePageBlocks
         label: Home Page Blocks
         type: object
+        allow_add: false
         list:
-          allow_add: false
           collapsible:
             collapsed: true
         required: true
