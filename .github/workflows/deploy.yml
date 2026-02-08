@@ -16,6 +16,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install and Build 🔧
+        env:
+          CI: false
         run: |
           npm ci
           npm run build
