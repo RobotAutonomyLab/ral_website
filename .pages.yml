@@ -80,10 +80,9 @@ content:
       - name: homePageBlocks
         label: Home Page Blocks
         type: object
-        allow_add: false
-        allow_delete: false
-        allow_reorder: false
         list:
+          min: 4
+          max: 4
           collapsible:
             collapsed: true
         required: true
