@@ -110,7 +110,7 @@ content:
 
       - name: researchPageSubtitle
         label: Research Page Subtitle
-        type: block
+        type: block 
         list: 
           collapsible:
             collapsed: true
@@ -133,6 +133,140 @@ content:
                 type: rich-text
                 list: true
                 required: true
+
+      - name: onGoingProjectsTitle
+        label: Ongoing Projects Title
+        type: string
+        required: true
+
+      - name: onGoingProjectsData
+        label: Ongoing Projects Data
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "#{index} — {fields.projectTitle}"
+        required: true
+        fields:
+          - name: projectTitle
+            label: Project Title
+            type: string
+            required: true
+
+          - name: projectDescription
+            label: Project Description
+            type: block 
+            list: 
+              collapsible:
+                collapsed: true
+                summary: "#{index} — {fields.type}"
+            blockKey: type
+            blocks:
+              - name: paragraph
+                label: Paragraph
+                fields:
+                  - name: text
+                    label: Paragraph Text
+                    type: rich-text
+                    required: true
+
+              - name: bullet-list
+                label: Bullet List
+                fields:
+                  - name: items
+                    label: Bullet Items
+                    type: rich-text
+                    list: true
+                    required: true
+
+      - name: researchProjects
+        label: Research Projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "#{index} — {fields.sectionTitle}"
+        required: true
+        fields:
+          - name: sectionTitle
+            label: Section Title
+            type: string
+            required: true
+
+          - name: sectionData
+            label: Section Data
+            type: block 
+            list: 
+              collapsible:
+                collapsed: true
+                summary: "#{index} — {fields.type}"
+            blockKey: type
+            blocks:
+              - name: paragraph
+                label: Paragraph
+                fields:
+                  - name: text
+                    label: Paragraph Text
+                    type: rich-text
+                    required: true
+
+              - name: bullet-list
+                label: Bullet List
+                fields:
+                  - name: items
+                    label: Bullet Items
+                    type: rich-text
+                    list: true
+                    required: true
+
+              - name: image
+                label: Image
+                fields:
+                  - name: src
+                    label: Image File
+                    type: image
+                    required: true
+                    options:
+                      media: research_page_media
+
+      - name: pastProjectsTitle
+        label: Past Projects Title
+        type: string
+        required: true
+
+      - name: pastProjectsData
+        label: Past Projects Data
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "#{index} — {fields.projectTitle}"
+        required: true
+        fields:
+          - name: projectTitle
+            label: Project Title
+            type: string
+            required: true
+
+          - name: projectImage
+            label: Project Image
+            type: image
+            required: true
+            options:
+              media: research_page_media
+
+      - name: SponsorsTitle
+        label: Sponsors Title
+        type: string
+        required: true
+
+      - name: SponsorsData
+        label: Sponsors Data
+        type: image
+        list: true
+        required: true
+        options:
+          media: research_page_media
 
   # Our Team Page Configuration
   - name: ourTeamPage
