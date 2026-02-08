@@ -55,6 +55,8 @@ content:
             label: Type
             type: string
             required: true
+            options:
+              list: [image, video]
 
           - name: src
             label: Source
