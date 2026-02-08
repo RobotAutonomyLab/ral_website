@@ -112,6 +112,7 @@ content:
         label: Research Page Subtitle
         type: object
         blockKey: type
+        list: true
         blocks:
           - name: paragraph
             label: Paragraph
