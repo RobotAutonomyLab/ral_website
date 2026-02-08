@@ -81,6 +81,8 @@ content:
         label: Home Page Blocks
         type: object
         allow_add: false
+        allow_delete: false
+        allow_reorder: false
         list:
           collapsible:
             collapsed: true
