@@ -110,8 +110,25 @@ content:
 
       - name: researchPageSubtitle
         label: Research Page Subtitle
-        type: rich-text
-        required: true
+        type: object
+        blockKey: type
+        blocks:
+          - name: paragraph
+            label: Paragraph
+            fields:
+              - name: text
+                label: Paragraph Text
+                type: rich-text
+                required: true
+
+          - name: bullet-list
+            label: Bullet List
+            fields:
+              - name: items
+                label: Bullet Items
+                type: rich-text
+                list: true
+                required: true
 
   # Our Team Page Configuration
   - name: ourTeamPage
