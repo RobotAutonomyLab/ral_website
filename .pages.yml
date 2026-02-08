@@ -81,6 +81,7 @@ content:
         label: Home Page Blocks
         type: object
         list:
+          allow_add: false
           collapsible:
             collapsed: true
         required: true
