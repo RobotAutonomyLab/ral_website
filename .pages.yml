@@ -110,7 +110,7 @@ content:
 
       - name: researchPageSubtitle
         label: Research Page Subtitle
-        type: rich-teachingsTitle
+        type: rich-text
         required: true
 
   # Our Team Page Configuration
