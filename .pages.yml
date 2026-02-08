@@ -112,9 +112,9 @@ content:
         label: Research Page Subtitle
         type: block
         list: 
-        collapsible:
-          collapsed: true
-          summary: "#{index} — {fields.type}"
+          collapsible:
+            collapsed: true
+            summary: "#{index} — {fields.type}"
         blockKey: type
         blocks:
           - name: paragraph
