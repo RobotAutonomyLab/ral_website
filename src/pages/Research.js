@@ -1,88 +1,181 @@
 import React from 'react'
 import './Research.scss'
 
-import { Link } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeRaw from 'rehype-raw'
 
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import MarkdownLink from '../components/HandleMarkdownLinks'
 
-import collab1 from '../data/collab1.png'
-import collab2 from '../data/collab2.png'
-import collab3 from '../data/collab3.png'
-
-import researchimg1 from '../data/researchimg1.jpeg'
-import researchvid1 from '../data/image8.gif'
-import researchvid2 from '../data/image9.gif'
+import research_data from '../data/research.json'
 
 function Research() {
+    const pageTitle = research_data.researchPageTitle || 'Research'
+    const pageSubtitle = research_data.researchPageSubtitle || ''
+
+    // Ongoing projects
+    const onGoingProjectsTitle = research_data.onGoingProjectsTitle
+    const onGoingProjectsData = research_data.onGoingProjectsData
+
+    // Research Projects
+    const researchProjects = research_data.researchProjects
+
+    // Past Projects
+    const pastProjectsTitle = research_data.pastProjectsTitle
+    const pastProjectsData = research_data.pastProjectsData
+
+    // Sponsors
+    const sponsorsTitle = research_data.SponsorsTitle
+    const sponsorsData = research_data.SponsorsData
+
     return (
         <div className='ResearchPage'>
             <NavBar />
             <div className="Research container">
                 <div className="Research section">
-                    <h1>Research</h1>
-                    <p>At the <Link to='/'>Robot Autonomy Lab (RAL)</Link>, we design intelligent robotic systems that achieve <b>safe</b>, <b>adaptive</b>, and <b>robust autonomy</b> in <b>dynamic and uncertain environments</b>. Our research integrates robotics, control theory, and machine learning, with a strong emphasis on <b>real-world deployment</b> and <b>field validation</b>.</p>
-                    <p>We are actively seeking collaborators in:</p>
-                    <ul>
-                        <p>Precision agriculture</p>
-                        <p>Arctic exploration and environmental sensing</p>
-                        <p>Assistive health and mobility in winter environment</p>
-                    </ul>
-                    <p>We enable mobile robots and autonomous vehicles to navigate safely and efficiently in dynamic, uncertain, and previously unknown environments with full autonomy Improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining adaptability and learning capabilities of Artificial Intelligence reliability and predictability of traditional physics model-based control.</p>
+                    <h1>{pageTitle}</h1>
+                    {pageSubtitle.map((block, bidx) => {
+                        if (block.type === "paragraph") {
+                            return (
+                                <ReactMarkdown
+                                    remarkPlugins={[remarkGfm]}
+                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                    components={{ a: MarkdownLink }}
+                                >
+                                    {block.text || ''}
+                                </ReactMarkdown>
+                            );
+                        }
+
+                        if (block.type === "bullet-list") {
+                            return (
+                                <ul key={bidx}>
+                                    {block.items?.map((item, i) => (
+                                        <ReactMarkdown
+                                            remarkPlugins={[remarkGfm]}
+                                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                            components={{ a: MarkdownLink }}
+                                        >
+                                            {item}
+                                        </ReactMarkdown>
+                                    ))}
+                                </ul>
+                            );
+                        }
+
+                        return null;
+                    })}
                 </div>
 
                 <div className="Research section">
-                    <h2>Ongoing Projects</h2>
-                    <div className='research_projects'>
-                        <h3>NSERC Discovery Grant - Safe Control in Uncertain Environments</h3>
-                        <p>Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments.</p>
-                    </div>
-                    <div className='research_projects'>
-                        <h3>Research Manitoba New Investigator Operating Grant & University Research Grants Program</h3>
-                        {/* <h3>University Research Grants Program</h3> */}
-                        <p><b>Learning-Based Control for Agricultural Robotics</b>: Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments.</p>
-                    </div>
-                    <div className='research_projects'>
-                        <h3>University Start-up Grant - Field Robotics in Arctic Harsh Environments</h3>
-                        <p>Exploration of mobile robotic platforms for sea ice navigation, autonomous environmental sensing, and manipulation tasks under extreme Arctic conditions.</p>
-                    </div>
-                </div>
-                
-                <div className="Research section">
-                    <h2>Machine Learning-Based Model Predictive Control</h2>
-                    <div className="research_project_main">
-                        <img src={researchimg1} alt="" />
-                        <ul>
-                            <p>Enhanced <b>Dynamics</b> Modeling: Gaussian Process (GP) machine learning models correct discrepancies in physics-based models using real-world data</p>
-                            <p><b>Uncertainty</b> Quantification: GP estimated uncertainties improve modeling reliability</p>
-                            <p>Improved <b>Safety</b>: Incorporates uncertainty into control decisions</p>
-                            <p><b>Constraint</b> Satisfication: Enforces all input and output constraints withing the Model Predictive Control (MPC)</p>
-                            <p><b>Optimal</b> Control: Achieves efficient and robust system control under uncertainty</p>
-                        </ul>
-                    </div>
+                    <h2>{onGoingProjectsTitle}</h2>
+                    {onGoingProjectsData.map((block, bidx) => {
+                        return <div className="research_projects">
+                            <h3>{block.projectTitle}</h3>
+                            {block.projectDescription.map((desc, didx) => {
+                                if (desc.type === "paragraph") {
+                                    return (
+                                        <ReactMarkdown
+                                            remarkPlugins={[remarkGfm]}
+                                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                            components={{ a: MarkdownLink }}
+                                        >
+                                            {desc.text || ''}
+                                        </ReactMarkdown>
+                                    );
+                                }
+
+                                if (desc.type === "bullet-list") {
+                                    return (
+                                        <ul key={bidx}>
+                                            {desc.items?.map((item, i) => (
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                                    components={{ a: MarkdownLink }}
+                                                >
+                                                    {item}
+                                                </ReactMarkdown>
+                                            ))}
+                                        </ul>
+                                    );
+                                }
+
+                                return null;
+                            })}
+                        </div>
+                    })}
                 </div>
 
+                {researchProjects.map((section, idx) => {
+                    return <div className="Research section" key={idx}>
+                        <h2>{section.sectionTitle}</h2>
+                        <div className="research_project_main">
+                            {section.sectionData.map((block, bidx) => {
+                                if (block.type === "paragraph") {
+                                    return (
+                                        <ReactMarkdown
+                                            remarkPlugins={[remarkGfm]}
+                                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                            components={{ a: MarkdownLink }}
+                                        >
+                                            {block.text || ''}
+                                        </ReactMarkdown>
+                                    );
+                                }
+
+                                if (block.type === "bullet-list") {
+                                    return (
+                                        <ul key={bidx}>
+                                            {block.items?.map((item, i) => (
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
+                                                    components={{ a: MarkdownLink }}
+                                                >
+                                                    {item}
+                                                </ReactMarkdown>
+                                            ))}
+                                        </ul>
+                                    );
+                                }
+
+                                if (block.type === 'image') {
+                                    return (
+                                        <img src={block.src.replace('/public', '')} alt="" />
+                                    )
+                                }
+
+                                return null;
+                            })
+                            }
+                        </div>
+                    </div>
+                })}
+
                 <div className="Research section">
-                    <h2>Past Projects</h2>
+                    <h2>{pastProjectsTitle}</h2>
                     <div className="past_projects">
-                        <div>
-                            <h3>Project 1: Learning-Based Control for Improved Mobile Robot Path Following</h3>
-                            <img src={researchvid1} alt="" />
-                        </div>
-                        <div>
-                            <h3>Project 2: Mixed Human-Driven and Autonomous Vehicle Platooning Safe Control</h3>
-                            <img src={researchvid2} alt="" />
-                        </div>
+                        {pastProjectsData.map((block, idx) => {
+                            return <div>
+                                <h3>{block.projectTitle}</h3>
+                                <img src={block.projectImage.replace('/public', '')} alt="" />
+                            </div>
+
+                        })}
                     </div>
                 </div>
-                
+
 
                 <div className="Research section">
-                    <h2>Sponsors</h2>
+                    <h2>{sponsorsTitle}</h2>
                     <div className="research_collaborators">
-                        <img src={collab1} alt="" />
-                        <img src={collab2} alt="" />
-                        <img src={collab3} alt="" />
+                        {sponsorsData.map((value, idx) => {
+                            return <img src={value.replace('/public', '')} alt="" />
+                        })}
                     </div>
                 </div>
             </div>

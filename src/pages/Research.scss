@@ -1,4 +1,8 @@
 .Research {
+    strong {
+        font-weight: 700;
+    }
+
     .section {
         p {
             a {
@@ -44,26 +48,32 @@
 
         .past_projects {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             gap: 2rem;
-    
-            div {
-                img {
-                    width: 100%;
-                    height: auto;
-                    align-self: center;
-                }
+
+            // 2 per row (account for the gap)
+            >div {
+                flex: 0 0 calc(50% - 1rem);
             }
 
+            >div img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            // <= 992px: 1 per row
             @media (max-width: 992px) {
-                flex-direction: column;
+                >div {
+                    flex: 0 0 100%;
+                }
             }
         }
 
         .research_projects {
             border: 3px solid white;
             border-left: 5px solid var(--accent-color);
-            box-shadow: 0 1px 5px 0px rgba(38,59,94,0.3);
+            box-shadow: 0 1px 5px 0px rgba(38, 59, 94, 0.3);
             margin: 0rem 0rem 2rem 0rem;
             padding: 1rem;
 
@@ -77,7 +87,7 @@
             gap: 5rem;
             justify-content: center;
             flex-wrap: wrap;
-            
+
             img {
                 width: 200px;
             }

@@ -5,6 +5,12 @@ media:
     output: /home_page_media
     categories: [image, video]
 
+  - name: research_page_media
+    label: Research page media
+    input: public/research_page_media
+    output: /research_page_media
+    categories: [image, video]
+
   - name: our_team_files
     label: Our team files
     input: public/our_team_files
@@ -91,7 +97,21 @@ content:
             required: true
 
   # Research Page Configuration
-  
+  - name: researchPage
+    label: Research Page
+    type: file
+    path: src/data/research.json
+    format: json
+    fields:
+      - name: researchPageTitle
+        label: Research Page Title
+        type: string
+        required: true
+
+      - name: researchPageSubtitle
+        label: Research Page Subtitle
+        type: rich-teachingsTitle
+        required: true
 
   # Our Team Page Configuration
   - name: ourTeamPage
