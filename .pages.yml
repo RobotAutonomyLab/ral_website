@@ -45,28 +45,32 @@ content:
     fields:
       - name: homePageMedia
         label: Home Page Media
-        type: object
+        type: block
         list:
           collapsible:
             collapsed: true
+          summary: "#{index} — {fields.type}"
         required: true
-        fields:
-          - name: type
-            label: Type
-            type: string
-            required: true
-            options:
-              - label: Image
-                value: image
-              - label: Video
-                value: video
-
-          - name: src
-            label: Source
-            type: file
-            required: true
-            options:
-              media: home_page_media
+        blockKey: type
+        blocks:
+          - name: image
+            label: Image
+            fields:
+              - name: src
+                label: Source
+                type: image
+                required: true
+                options:
+                  media: home_page_media
+          - name: video
+            label: Video
+            fields:
+              - name: src
+                label: Source
+                type: file
+                required: true
+                options:
+                  media: home_page_media
 
       - name: homePageSubtitle
         label: Home Page Subtitle
