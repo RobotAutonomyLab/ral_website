@@ -1,29 +1,49 @@
-name: Build and Deploy
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches:
-      - main  # CHANGE THIS if your default branch is named 'master'
+    branches: ["main"]
+  workflow_dispatch:
 
+# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Prevents concurrent deploys colliding
+  # Build job
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install and Build 🔧
-        env:
-          CI: false
         run: |
           npm ci
           npm run build
+        env:
+          CI: false # Ignores warnings so the build doesn't fail
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: build # The folder the build script generates
-          branch: gh-pages # The branch the action should deploy to
+          path: build # Uploads the 'build' folder directly to Pages
+
+  # Deploy job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
