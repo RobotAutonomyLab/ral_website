@@ -1,6 +1,6 @@
 {
   "teachingPageTitle": "Teaching",
-  "teachingPageSubtitle": "[Dr. Wang](/team) instructs a range of courses focused on robotics, autonomy, and machine learning, such as Mobile Robotics. These courses blend theoretical foundations with hands-on applications, preparing students for real-world challenges in mobile robotic systems design and implementation.",
+  "teachingPageSubtitle": "[Dr. Wang](/team) instructs a range of courses focused on robotics, control, and machine learning. These courses blend theoretical foundations with hands-on applications, preparing students for real-world challenges in mobile robotic systems design and implementation.",
   "teachings": [
     {
       "teachingsTitle": "MECG 3550 - Robotics and Computer Numerical Control",
