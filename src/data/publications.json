@@ -719,47 +719,7 @@
       ]
     },
     {
-      "sectionTitle": "Theses",
-      "years": [
-        {
-          "year": "2017",
-          "papers": [
-            {
-              "title": "Autonomous Locomotion Mode Transition of Ground Hybrid Robots",
-              "journal": "University of Calgary",
-              "authors": [
-                {
-                  "name": "Jay Wang",
-                  "link": "/team"
-                }
-              ],
-              "links": [
-                {
-                  "type": "PDF",
-                  "url": "/public/publications_files/Theses/t_2017_1.pdf"
-                },
-                {
-                  "type": "DOI",
-                  "url": "https://ucalgary.scholaris.ca/items/e08f10cd-1f0f-473b-b3d0-a1bc7e70ccbf"
-                }
-              ],
-              "keywords": [
-                "Robotics"
-              ],
-              "highlights": [
-                "Introduces a fully autonomous locomotion‑mode‑transition framework that lets wheel/track‑legged robots pick between rolling and walking purely from on‑board sensing and power data.",
-                "Builds simplified but generic dynamic models for both rolling and walking, and deploys a DeNOC‑based multibody formulation to keep simulation and control computations lightweight.",
-                "Defines a new energy‑consumption criterion that fuses intrinsic motor load with sensed obstacle height, replacing task‑specific heuristics with a terrain‑aware cost metric.",
-                "Derives an analytic rule for calculating mode‑switch thresholds from predicted walking energy, eliminating hand‑tuned parameters and making the method portable to other hybrid platforms.",
-                "Designs two stair‑climbing gaits for the quadruped ‘Cricket’ robot and validates the criterion through extensive V‑REP/Vortex simulations across step heights up to four wheel‑radii.",
-                "Demonstrates that the system autonomously switches to walking on high obstacles and returns to efficient rolling once clear, advancing hybrid‑robot mobility in USAR‑like scenarios."
-              ],
-              "abstract": "Multi-modal locomotion (eg terrestrial, aerial, and aquatic) is gaining increasing interest in robotics research as it improves the robots’ environmental adaptability, locomotion versatility, and operational flexibility. Within the terrestrial multiple locomotion robots, the main advantage of hybrid robots stems from their multiple (two or more) locomotion modes, among which robots can select from depending on the encountering terrain conditions. The majority of the ground hybrid robots proposed in the past two decades are wheel/track-legged systems due to their excellence in both locomotive efficiency and rough terrain negotiation abilities. However, there are many challenges in improving the autonomy of the locomotion mode transition between their multiple locomotion modes. The main goal of this research is to develop a method to enable an autonomous locomotion mode transition for ground hybrid robots. To achieve this goal, simplified dynamic modeling methods for the rolling and walking locomotion modes of wheel/track-legged hybrid robots are developed, a novel energy based criterion is proposed to evaluate the locomotion performance of the rolling and walking locomotion mode, a new rule to determine the threshold values of the locomotion transition criterion is derived, and two walking gaits to negotiate steps with different heights for quadruped wheel/track-legged hybrid robots are proposed. The autonomous locomotion mode transition method is proposed. It’s first proposed based on the energy performance knowledge of the simplified rolling and walking locomotion evaluations of ground hybrid robots. Then, the method is refined by the work on the Cricket robot. Simulated case study results are presented to illustrate that the autonomous locomotion mode transition method is able to switch between the Cricket’s rolling and walking locomotion modes when negotiating step style obstacles. Even though the proposed method is improved by the work on the Cricket robot, the method is generally applicable to a wide range of wheel/track-legged hybrid robots.",
-              "citation": "@article{wang2017autonomous,\n  title={Autonomous locomotion mode transition of ground hybrid robots},\n  author={Wang, Jie},\n  year={2017}\n}"
-            }
-          ]
-        }
-      ]
+      "sectionTitle": "Theses"
     },
     {
       "sectionTitle": "Patents"
