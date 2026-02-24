@@ -21,7 +21,7 @@
   "onGoingProjectsTitle": "Ongoing Projects",
   "onGoingProjectsData": [
     {
-      "projectTitle": "NSERC Discovery Grant - Safe Control in Uncertain Environments",
+      "projectTitle": "NSERC Discovery Grant -- Safe Control in Uncertain Environments",
       "projectDescription": [
         {
           "type": "paragraph",
@@ -30,16 +30,16 @@
       ]
     },
     {
-      "projectTitle": "Research Manitoba & University of Manitoba",
+      "projectTitle": "Research Manitoba & University of Manitoba -- AI-Enhanced Agricultural Robots",
       "projectDescription": [
         {
           "type": "paragraph",
-          "text": "Learning-Based Control for Agricultural Robotics (New Investigator Operating Grant 2025, URGP 2024, UCRP 2025): Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments."
+          "text": "New Investigator Operating Grant 2025, URGP 2024, UCRP 2025: Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments."
         }
       ]
     },
     {
-      "projectTitle": "University Start-up Grant - Field Robotics in Arctic Harsh Environments",
+      "projectTitle": "University Start-up Grant -- Field Robotics in Arctic Harsh Environments",
       "projectDescription": [
         {
           "type": "paragraph",
