@@ -1,93 +1,89 @@
 {
-    "researchPageTitle": "Research",
-    "researchPageSubtitle": [
+  "researchPageTitle": "Research",
+  "researchPageSubtitle": [
+    {
+      "type": "paragraph",
+      "text": "At the [Robot Autonomy Lab (RAL)](/), we design intelligent robotic systems that achieve **safe**, **adaptive**, and **robust autonomy** in **dynamic and uncertain environments**. Our research integrates robotics, control theory, and machine learning, with a strong emphasis on **real-world deployment** and **field validation**.\n\nWe are actively seeking collaborators in:"
+    },
+    {
+      "type": "bullet-list",
+      "items": [
+        "Precision agriculture",
+        "Arctic exploration and environmental sensing",
+        "Assistive health and mobility in winter environment"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "We enable mobile robots and autonomous vehicles to navigate safely and efficiently in dynamic, uncertain, and previously unknown environments with full autonomy Improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining adaptability and learning capabilities of Artificial Intelligence reliability and predictability of traditional physics model-based control."
+    }
+  ],
+  "onGoingProjectsTitle": "Ongoing Projects",
+  "onGoingProjectsData": [
+    {
+      "projectTitle": "NSERC Discovery Grant - Safe Control in Uncertain Environments",
+      "projectDescription": [
         {
-            "type": "paragraph",
-            "text": "At the [Robot Autonomy Lab (RAL)](/), we design intelligent robotic systems that achieve **safe**, **adaptive**, and **robust autonomy** in **dynamic and uncertain environments**. Our research integrates robotics, control theory, and machine learning, with a strong emphasis on **real-world deployment** and **field validation**.\n\nWe are actively seeking collaborators in:"
-        },
-        {
-            "type": "bullet-list",
-            "items": [
-                "Precision agriculture",
-                "Arctic exploration and environmental sensing",
-                "Assistive health and mobility in winter environment"
-            ]
-        },
-        {
-            "type": "paragraph",
-            "text": "We enable mobile robots and autonomous vehicles to navigate safely and efficiently in dynamic, uncertain, and previously unknown environments with full autonomy Improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining adaptability and learning capabilities of Artificial Intelligence reliability and predictability of traditional physics model-based control."
+          "type": "paragraph",
+          "text": "Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments."
         }
-    ],
-
-    "onGoingProjectsTitle": "Ongoing Projects",
-    "onGoingProjectsData": [
+      ]
+    },
+    {
+      "projectTitle": "Research Manitoba & University of Manitoba",
+      "projectDescription": [
         {
-            "projectTitle": "NSERC Discovery Grant - Safe Control in Uncertain Environments",
-            "projectDescription": [
-                {
-                    "type": "paragraph",
-                    "text": "Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments."
-                }
-            ]
+          "type": "paragraph",
+          "text": "Learning-Based Control for Agricultural Robotics (New Investigator Operating Grant 2025, URGP 2024, UCRP 2025): Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments."
+        }
+      ]
+    },
+    {
+      "projectTitle": "University Start-up Grant - Field Robotics in Arctic Harsh Environments",
+      "projectDescription": [
+        {
+          "type": "paragraph",
+          "text": "Exploration of mobile robotic platforms for sea ice navigation, autonomous environmental sensing, and manipulation tasks under extreme Arctic conditions."
+        }
+      ]
+    }
+  ],
+  "researchProjects": [
+    {
+      "sectionTitle": "Machine Learning-Based Model Predictive Control",
+      "sectionData": [
+        {
+          "type": "image",
+          "src": "/public/research_page_media/Research Media/researchimg1.jpeg"
         },
         {
-            "projectTitle": "Research Manitoba New Investigator Operating Grant & University Research Grants Program",
-            "projectDescription": [
-                {
-                    "type": "paragraph",
-                    "text": "**Learning-Based Control for Agricultural Robotics**: Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments."
-                }
-            ]
-        },
-        {
-            "projectTitle": "University Start-up Grant - Field Robotics in Arctic Harsh Environments",
-            "projectDescription": [
-                {
-                    "type": "paragraph",
-                    "text": "Exploration of mobile robotic platforms for sea ice navigation, autonomous environmental sensing, and manipulation tasks under extreme Arctic conditions."
-                }
-            ]
+          "type": "bullet-list",
+          "items": [
+            "Enhanced **Dynamics** Modeling: Gaussian Process (GP) machine learning models correct discrepancies in physics-based models using real-world data",
+            "**Uncertainty** Quantification: GP estimated uncertainties improve modeling reliability",
+            "Improved **Safety**: Incorporates uncertainty into control decisions",
+            "**Constraint** Satisfication: Enforces all input and output constraints withing the Model Predictive Control (MPC)",
+            "**Optimal** Control: Achieves efficient and robust system control under uncertainty"
+          ]
         }
-    ],
-
-    "researchProjects": [
-        {
-            "sectionTitle": "Machine Learning-Based Model Predictive Control",
-            "sectionData": [
-                {
-                    "type": "image",
-                    "src": "/public/research_page_media/Research Media/researchimg1.jpeg"
-                },
-                {
-                    "type": "bullet-list",
-                    "items": [
-                        "Enhanced **Dynamics** Modeling: Gaussian Process (GP) machine learning models correct discrepancies in physics-based models using real-world data",
-                        "**Uncertainty** Quantification: GP estimated uncertainties improve modeling reliability",
-                        "Improved **Safety**: Incorporates uncertainty into control decisions",
-                        "**Constraint** Satisfication: Enforces all input and output constraints withing the Model Predictive Control (MPC)",
-                        "**Optimal** Control: Achieves efficient and robust system control under uncertainty"
-                    ]
-                }
-            ]
-        }
-    ],
-
-    "pastProjectsTitle": "Past Projects",
-    "pastProjectsData": [
-        {
-            "projectTitle": "Project 1: Learning-Based Control for Improved Mobile Robot Path Following",
-            "projectImage": "/public/research_page_media/Research Media/image8.gif"
-        },
-        {
-            "projectTitle": "Project 2: Mixed Human-Driven and Autonomous Vehicle Platooning Safe Control",
-            "projectImage": "/public/research_page_media/Research Media/image9.gif"
-        }
-    ],
-
-    "SponsorsTitle": "Sponsors",
-    "SponsorsData": [
-        "/public/research_page_media/Collaboration Images/collab1.png",
-        "/public/research_page_media/Collaboration Images/collab2.png",
-        "/public/research_page_media/Collaboration Images/collab3.png"
-    ]
+      ]
+    }
+  ],
+  "pastProjectsTitle": "Past Projects",
+  "pastProjectsData": [
+    {
+      "projectTitle": "Project 1: Learning-Based Control for Improved Mobile Robot Path Following",
+      "projectImage": "/public/research_page_media/Research Media/image8.gif"
+    },
+    {
+      "projectTitle": "Project 2: Mixed Human-Driven and Autonomous Vehicle Platooning Safe Control",
+      "projectImage": "/public/research_page_media/Research Media/image9.gif"
+    }
+  ],
+  "SponsorsTitle": "Sponsors",
+  "SponsorsData": [
+    "/public/research_page_media/Collaboration Images/collab1.png",
+    "/public/research_page_media/Collaboration Images/collab2.png",
+    "/public/research_page_media/Collaboration Images/collab3.png"
+  ]
 }
