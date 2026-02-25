@@ -16,16 +16,16 @@
   "homePageSubtitle": "Our long-term vision is to empower mobile robots with safe, efficient, and fully autonomous operation in dynamic, uncertain, and previously unexplored environments—enabling true long-term autonomy and bridging the gap between theoretical advances and real-world deployment.",
   "homePageBlocks": [
     {
-      "title": "Browse Our Publications",
-      "subtitle": "Explore the latest research from the Robot Autonomy Lab. Our team publishes journal articles and conference papers on robotics and autonomous systems. Visit our publications page to learn more.",
-      "linkText": "OUR PAPERS",
-      "link": "/publications"
-    },
-    {
-      "title": "Meet Our Team",
+      "title": "Team",
       "subtitle": "Our team includes faculty members, graduate students, and researchers working together on robotics and autonomous systems. Visit our team page to learn more about who we are and what we do.",
       "linkText": "OUR TEAM",
       "link": "/team"
+    },
+    {
+      "title": "Publications",
+      "subtitle": "Explore the latest research from the Robot Autonomy Lab. Our team publishes journal articles and conference papers on robotics and autonomous systems. Visit our publications page to learn more.",
+      "linkText": "OUR PAPERS",
+      "link": "/publications"
     },
     {
       "title": "Apply",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Teaching",
-      "subtitle": "Professor Wang teaches courses on robotics and autonomous systems at the University of Manitoba. Visit the Teaching page to learn more about these course.",
+      "subtitle": "Dr. Wang teaches courses on robotics and autonomous systems at the University of Manitoba. Visit the Teaching page to learn more about these course.",
       "linkText": "COURSES",
       "link": "/teaching"
     }
