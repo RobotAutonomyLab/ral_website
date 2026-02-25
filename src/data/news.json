@@ -9,7 +9,7 @@
       "newsData": "We’re excited to welcome [Ilyas Dawoodjee](#/team/ilyas) as the first MSc student in the Robot Autonomy Lab. Ilyas will focus on learning-based control and field-robotics autonomy with applications in agricultural robotics. He holds a B.Eng. in Mechatronics (First Class Honours with Distinction, APU, 2022) and brings prior research experience from the [Building Robotics Laboratory](https://building-robotics-lab.github.io/brlab/) at the [National University of Singapore](https://www.nus.edu.sg/). Supported by the [University of Manitoba Graduate Fellowship (UMGF)](https://umanitoba.ca/graduate-studies/funding-awards/university-manitoba-graduate-fellowship-umgf) and International Graduate Student Entrance Scholarship (IGSES) awards, Ilyas is a fantastic addition to the team!"
     },
     {
-      "newsTitle": "RAL Awarded URGP Grant",
+      "newsTitle": "RAL Awarded UM URGP Grant",
       "newsDate": "February 18, 2025",
       "newsPic": "/public/news_images/2.png",
       "newsData": "Dr. Wang received a University of Manitoba URGP grant for his project, “AI-Enhanced Mobile Robotic Arms for Precision and Efficiency in Greenhouse Harvesting.” The project develops AI-based control systems for mobile robotic arms to enhance precision and efficiency in harvesting delicate crops like tomatoes, advancing smart agriculture."
@@ -49,6 +49,12 @@
       "newsDate": "January 22, 2026",
       "newsPic": "/news_images/8.png",
       "newsData": "Glad to share that Dr. Wang’s keynote presentation at St. Jean Farm Days 2026 was featured in [The Western Producer](https://www.producer.com/news/autonomous-machines-still-struggle-in-farm-fields/). The coverage highlights the challenge of agricultural autonomy in dynamic, uncertain farm field conditions. Our agricultural robotics research focuses on trustworthy AI-enhanced autonomy that can better adapt to these real-world conditions by combining physics-based methods with AI. We gratefully acknowledge support for this work from Research Manitoba (New Investigator Operating Grant 2025) and the University of Manitoba (URGP 2024 and UCRP 2025)."
+    },
+    {
+      "newsTitle": "RAL Awarded UM UCRP Grant ",
+      "newsDate": "February 20, 2026",
+      "newsPic": "/news_images/9.png",
+      "newsData": "Dr. Wang has received a University Collaborative Research Program (UCRP) grant for the project “Autonomous Robot-Towed Ground-Penetrating Radar for Soil Moisture Mapping in Prairie Agriculture.” This project will develop a robot-towed ground-penetrating radar platform for soil moisture profiling in Prairie fields. The work also supports interdisciplinary collaboration between field robotics and soil science."
     }
   ]
 }
