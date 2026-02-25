@@ -43,6 +43,12 @@
       "newsDate": "November 10, 2025",
       "newsPic": "/public/news_images/7.jpeg",
       "newsData": "Excited to share that our work at the Robot Autonomy Lab was featured today on [CTV News](https://www.ctvnews.ca/winnipeg/article/u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/) and [UM News](https://news.umanitoba.ca/ctv-news-u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/#:~:text=A%20Manitoba%20professor%20has%20developed,and%20harvesting%20in%20the%20province.) highlighting our AI-enhanced mobile robotics research and how it can support Prairie agriculture. This project is part of our research program on trustworthy AI-enhanced autonomous systems for agricultural applications, funded by Research Manitoba and supported by NSERC."
+    },
+    {
+      "newsTitle": "Featured in The Western Producer Following St. Jean Farm Days 2026 Keynote",
+      "newsDate": "January 22, 2026",
+      "newsPic": "/news_images/246658_web1_Jan_Wang_UM_ST_JEAN_JAN_2026_DN.jpg",
+      "newsData": "Glad to share that Dr. Wang’s keynote presentation at St. Jean Farm Days 2026 was featured in [The Western Producer](https://www.producer.com/news/autonomous-machines-still-struggle-in-farm-fields/). The coverage highlights an important challenge in agricultural autonomy: unlike roads, farm fields involve changing terrain, soil conditions, and environmental uncertainty. Our agricultural robotics research focuses on trustworthy AI-enhanced autonomy that can better adapt to these real-world conditions by combining physics-based methods with AI. We gratefully acknowledge support for this work from Research Manitoba (New Investigator Operating Grant 2025) and the University of Manitoba (URGP 2024 and UCRP 2025)."
     }
   ]
 }
