@@ -27,7 +27,7 @@
       "newsData": "Meet Mini Niu, our first lab robot at the Robot Autonomy Lab! This AgileX Scout Mini wheeled robot features a 32-beam RS-Helios LiDAR, ZED2i stereo camera, and Fixposition V-RTK2 for precise localization. Powered by an NVIDIA Orin and ROS2, Mini Niu will drive our research in autonomous navigation, control, and perception. Stay tuned for updates!"
     },
     {
-      "newsTitle": "Grant Secured for Safe, Efficient Ag Robotics",
+      "newsTitle": "RAL Awarded Research Manitoba New Investigator Operating Grant",
       "newsDate": "August 13, 2025",
       "newsPic": "/public/news_images/5.jpeg",
       "newsData": "Dr. Wang has received a Research Manitoba New Investigator Operating Grant for “AI-Enhanced Autonomous Agricultural Robotics: Advancing Safety, Efficiency, and Field Deployment.” The project will design and field-test AI-driven robotic systems to improve the safety and productivity of farming operations, with a clear focus on robust performance in real-world conditions."
@@ -45,7 +45,7 @@
       "newsData": "Excited to share that our work at the Robot Autonomy Lab was featured today on [CTV News](https://www.ctvnews.ca/winnipeg/article/u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/) and [UM News](https://news.umanitoba.ca/ctv-news-u-of-m-professor-develops-robot-that-uses-ai-to-help-with-farming/#:~:text=A%20Manitoba%20professor%20has%20developed,and%20harvesting%20in%20the%20province.) highlighting our AI-enhanced mobile robotics research and how it can support Prairie agriculture. This project is part of our research program on trustworthy AI-enhanced autonomous systems for agricultural applications, funded by Research Manitoba and supported by NSERC."
     },
     {
-      "newsTitle": "The Western Producer Highlights Dr. Wang’s St. Jean Farm Days 2026 Keynote",
+      "newsTitle": "Western Producer Highlights Dr. Wang’s St. Jean Farm Days 2026 Keynote",
       "newsDate": "January 22, 2026",
       "newsPic": "/news_images/8.png",
       "newsData": "Glad to share that Dr. Wang’s keynote presentation at St. Jean Farm Days 2026 was featured in [The Western Producer](https://www.producer.com/news/autonomous-machines-still-struggle-in-farm-fields/). The coverage highlights the challenge of agricultural autonomy in dynamic, uncertain farm field conditions. Our agricultural robotics research focuses on trustworthy AI-enhanced autonomy that can better adapt to these real-world conditions by combining physics-based methods with AI. We gratefully acknowledge support for this work from Research Manitoba (New Investigator Operating Grant 2025) and the University of Manitoba (URGP 2024 and UCRP 2025)."
