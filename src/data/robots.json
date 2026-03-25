@@ -1,11 +1,21 @@
 {
   "robotPageTitle": "Our Robots",
-  "robotPageSubtitle": "RAL proudly showcases a cutting-edge collection of recently acquired robots, including the AgileX Scout Mini mobile robot, Go2, Universal Robots UR5e, and DJI Matrice 350 RTK. Stay tuned for more exciting additions!",
+  "robotPageSubtitle": "RAL proudly showcases a cutting-edge collection of recently acquired robots, including the AgileX Scout Mini mobile robot, Go2/Go2W, Hexapod, Universal Robots UR5e, and DJI Matrice 350 RTK. Stay tuned for more exciting additions!",
   "robots": [
     {
       "robotsTitle": "AgileX Scout Mini",
       "robotsPic": "/public/robot_images/1.jpeg",
       "robotsData": "The AgileX Scout Mini is a wheeled mobile robot powered by an NVIDIA Jetson Orin and outfitted with a cutting-edge sensor suite: a 32-beam RS-Helios LiDAR for 360° depth perception, a ZED2i stereo camera for RGB-D imaging, and a Fixposition Vision-RTK2 module for centimeter-level GNSS-RTK localization."
+    },
+    {
+      "robotsTitle": "Unitree Go2W",
+      "robotsPic": "/robot_images/20260324-IMG_8912.jpg",
+      "robotsData": "The Unitree Go2-W is a wheeled–legged quadruped robot used as a versatile platform for locomotion and navigation research. It is equipped with a Livox Mid-360 LiDAR and an onboard NVIDIA Jetson computer, enabling real-time perception, SLAM, and control within a ROS 2 framework. Its hybrid mobility design supports both efficient traversal on flat terrain and robust operation in complex environments."
+    },
+    {
+      "robotsTitle": "Dobot Hexapod",
+      "robotsPic": "/robot_images/20260324-653C2DB4-126C-4236-B96A-1E52D01A466F.jpg",
+      "robotsData": "The DOBOT Hexplorer is a six-legged robotic platform designed for stable locomotion and multi-terrain operation. It is equipped with a Livox Mid-360 LiDAR and an onboard computing system, enabling real-time perception, SLAM, and control within a ROS 2 framework. Its bio-inspired hexapod design provides high stability and load-carrying capability, making it suitable for operation in complex and unstructured environments."
     },
     {
       "robotsTitle": "Unitree Go2",
