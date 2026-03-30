@@ -72,6 +72,8 @@ content:
                 required: true
                 options:
                   media: home_page_media
+                  categories: [video]
+                  extensions: [mp4, webm, mov]
 
       - name: homePageSubtitle
         label: Home Page Subtitle
@@ -407,7 +409,7 @@ content:
                 label: Featured Publications
                 type: rich-text
                 list: true
-                required false
+                required: false
               
               - name: Links
                 label: Links
@@ -488,7 +490,7 @@ content:
                 label: Interests
                 type: string
                 list: true
-                required true
+                required: true
               
   # Publications Page Configuration
   - name: publicationsPage
