@@ -4,6 +4,7 @@ media:
     input: public/home_page_media
     output: /home_page_media
     categories: [image, video]
+    extensions: [jpg, jpeg, png, webp, mp4, webm, mov]
 
   - name: research_page_media
     label: Research page media
