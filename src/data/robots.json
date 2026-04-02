@@ -18,16 +18,6 @@
       "robotsData": "The DOBOT Hexplorer is a six-legged robotic platform designed for stable locomotion and multi-terrain operation. It is equipped with a Livox Mid-360 LiDAR and an onboard computing system, enabling real-time perception, SLAM, and control within a ROS 2 framework. Its bio-inspired hexapod design provides high stability and load-carrying capability, making it suitable for operation in complex and unstructured environments."
     },
     {
-      "robotsTitle": "Unitree Go2",
-      "robotsPic": "/public/robot_images/2.jpeg",
-      "robotsData": "The Unitree Go2, a four-legged robot, serves as our lab’s versatile platform for locomotion and perception research. With onboard computing, depth cameras, and LiDAR, it runs ROS 2 for real-time SLAM and navigation. Its modular design and open API enable projects from autonomous inspection to agile movement on uneven terrain."
-    },
-    {
-      "robotsTitle": "Universal Robots UR5e",
-      "robotsPic": "/public/robot_images/3.jpg",
-      "robotsData": "The UR5e, a six-axis collaborative robotic arm, is our lab’s primary manipulation platform. With force-torque sensing and ROS 2 interface, it supports vision-guided pick-and-place, adaptive welding, and human-robot studies. Its repeatable motion, lightweight design, and safety features enable rapid, cage-free experiments in precision assembly and reinforcement-learning control."
-    },
-    {
       "robotsTitle": "DJI Matrice 350 RTK",
       "robotsPic": "/public/robot_images/4.jpeg",
       "robotsData": "The DJI Matrice 350 RTK, our lab’s heavy-lift multirotor, is a weather-sealed, RTK-enabled platform for centimeter-accurate aerial data and autonomous missions. With dual batteries, O3 Enterprise video, and a flexible gimbal for LiDAR or ROS 2 sensors, it excels in mapping, inspection, photogrammetry, SLAM, and search-and-rescue drills."
