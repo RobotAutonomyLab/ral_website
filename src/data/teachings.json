@@ -1,14 +1,18 @@
 {
   "teachingPageTitle": "Teaching",
-  "teachingPageSubtitle": "[Dr. Wang](/team) instructs a range of courses focused on robotics, control, and machine learning. These courses blend theoretical foundations with hands-on applications, preparing students for real-world challenges in mobile robotic systems design and implementation.",
+  "teachingPageSubtitle": "[Dr. Wang](/team) instructs a range of courses focused on robotics, control, and machine learning. These courses blend theoretical foundations with hands-on applications, preparing students for real-world challenges in robotics design and implementation.",
   "teachings": [
     {
+      "teachingsTitle": "MECH 4342 – Mechatronics in AI-driven Robotics",
+      "teachingsData": "MECH 4342 is a new undergraduate course in the newly established Mechatronics Stream within the [Department of Mechanical Engineering](https://umanitoba.ca/engineering/faculty-staff/mechanical-engineering), offering an *introduction to mobile robotics*. The course focuses on the modeling and control of wheeled mobile robots, beginning with autonomy architecture, kinematic modeling under holonomic and nonholonomic constraints, and discrete-time implementations for control. Students learn to formulate state-space models, analyze controllability, and design tracking and path-following controllers using state-feedback, Jacobian linearization, and PID control. Building on this foundation, the course introduces AI-enhanced control methods, including Gaussian process (GP) learning–based modeling and GP-PID. Offered in **Winter 2026**. "
+    },
+    {
       "teachingsTitle": "MECH 3550 – Robotics and Numerical Control ",
-      "teachingsData": "MECH 3550 is a new undergraduate course in the newly established Mechatronics Stream within the [Department of Mechanical Engineering](https://umanitoba.ca/engineering/faculty-staff/mechanical-engineering), offering an *introduction to robotics*. The course covers the fundamental principles of robotic manipulator kinematics, dynamics, and control. Students learn to represent and analyze robot motion, model the forces and torques governing manipulator behavior, and design controllers for accurate and stable performance. Topics include homogeneous transformations, Denavit–Hartenberg (D–H) modeling, forward and inverse kinematics, Jacobian-based velocity and force analysis, singularities, manipulator dynamics, and trajectory tracking through simulation and control design."
+      "teachingsData": "MECH 3550 is a new undergraduate course in the newly established Mechatronics Stream within the [Department of Mechanical Engineering](https://umanitoba.ca/engineering/faculty-staff/mechanical-engineering), offering an *introduction to robotics*. The course covers the fundamental principles of robotic manipulator kinematics, dynamics, and control. Students learn to represent and analyze robot motion, model the forces and torques governing manipulator behavior, and design controllers for accurate and stable performance. Topics include homogeneous transformations, Denavit–Hartenberg (D–H) modeling, forward and inverse kinematics, Jacobian-based velocity and force analysis, singularities, manipulator dynamics, and trajectory tracking through simulation and control design. Offered in **Fall 2025**. "
     },
     {
       "teachingsTitle": " MECG 7740 – Mobile Robotics",
-      "teachingsData": "This is a new graduate course within the newly established Mechatronics Stream within the [Department of Mechanical Engineering](https://umanitoba.ca/engineering/faculty-staff/mechanical-engineering), covering advanced topics in mobile robotics. The course covers AI-enhanced navigation and control for mobile robotic systems, with emphasis on real-world implementation and deployment. "
+      "teachingsData": "This is a new graduate course within the newly established Mechatronics Stream within the [Department of Mechanical Engineering](https://umanitoba.ca/engineering/faculty-staff/mechanical-engineering), covering *advanced topics in mobile robotics*. The course covers AI-enhanced navigation and control for mobile robotic systems, with emphasis on real-world implementation and deployment. Offered in **Fall 2025** and **Winter 2026**. "
     }
   ]
 }
