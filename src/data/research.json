@@ -3,19 +3,7 @@
   "researchPageSubtitle": [
     {
       "type": "paragraph",
-      "text": "### At the [Robot Autonomy Lab (RAL)](/), we design autonomous robotic systems that achieve **safe**, **adaptive**, and **robust autonomy** in **dynamic and uncertain environments**. Our research integrates robotics, control systems, and machine learning, with a strong emphasis on **real-world deployment** and **field validation**.\n\nWe are actively seeking collaborators in:"
-    },
-    {
-      "type": "bullet-list",
-      "items": [
-        "**Precision agriculture**",
-        "**Arctic exploration and environmental sensing**",
-        "**Assistive health and mobility in winter environment**"
-      ]
-    },
-    {
-      "type": "paragraph",
-      "text": "We aim to improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining the adaptability and learning capabilities of Artificial Intelligence with the reliability and predictability of traditional physics model-based control."
+      "text": "### At the [Robot Autonomy Lab (RAL)](/), we design autonomous robotic systems that achieve safe, adaptive, and robust autonomy in dynamic and uncertain environments. We improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining the adaptability and learning capabilities of Artificial Intelligence with the reliability and predictability of traditional physics model-based control. Our research integrates robotics, control systems, and machine learning, with a strong emphasis on real-world deployment and field validation."
     }
   ],
   "onGoingProjectsTitle": "Ongoing Projects",
