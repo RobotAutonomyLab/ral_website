@@ -3,6 +3,11 @@
   "robotPageSubtitle": "RAL proudly showcases a cutting-edge collection of recently acquired robots, including the AgileX Scout Mini mobile robot, Go2/Go2W, Hexapod, Universal Robots UR5e, and DJI Matrice 350 RTK. Stay tuned for more exciting additions!",
   "robots": [
     {
+      "robotsTitle": "Unitree A2-W Pro",
+      "robotsPic": "/robot_images/20260827-DSC01386.jpg",
+      "robotsData": "The Unitree A2-W Pro is an industrial wheeled-legged quadruped robot designed for high-mobility operation in complex environments. It combines efficient wheeled locomotion with the terrain adaptability of legged robots and is equipped with dual LiDAR sensors, an HD camera, and two high-performance computing platforms for perception and autonomous development. "
+    },
+    {
       "robotsTitle": "AgileX Scout Mini",
       "robotsPic": "/public/robot_images/1.jpeg",
       "robotsData": "The AgileX Scout Mini is a wheeled mobile robot powered by an NVIDIA Jetson Orin and outfitted with a cutting-edge sensor suite: a 32-beam RS-Helios LiDAR for 360° depth perception, a ZED2i stereo camera for RGB-D imaging, and a Fixposition Vision-RTK2 module for centimeter-level GNSS-RTK localization."
@@ -18,15 +23,14 @@
       "robotsData": "The DOBOT Hexplorer is a six-legged robotic platform designed for stable locomotion and multi-terrain operation. It is equipped with a Livox Mid-360 LiDAR and an onboard computing system, enabling real-time perception, SLAM, and control within a ROS 2 framework. Its bio-inspired hexapod design provides high stability and load-carrying capability, making it suitable for operation in complex and unstructured environments."
     },
     {
+      "robotsTitle": "Unitree Z1 Pro",
+      "robotsPic": "/robot_images/20260828-DSC01397.jpg",
+      "robotsData": "The Unitree Z1 Pro is a compact six-axis robotic arm designed for mobile manipulation, robotics research, and automation applications. It provides a reach of approximately 740 mm and a payload capacity of at least 3 kg, while supporting both position and force control with integrated force feedback and collision detection. Its Ethernet interface, Ubuntu-compatible development environment, and open programming interfaces allow integration with mobile robots and custom end effectors, making it suitable for manipulation, inspection, logistics, and autonomous robotics research."
+    },
+    {
       "robotsTitle": "DJI Matrice 350 RTK",
       "robotsPic": "/public/robot_images/4.jpeg",
       "robotsData": "The DJI Matrice 350 RTK, our lab’s heavy-lift multirotor, is a weather-sealed, RTK-enabled platform for centimeter-accurate aerial data and autonomous missions. With dual batteries, O3 Enterprise video, and a flexible gimbal for LiDAR or ROS 2 sensors, it excels in mapping, inspection, photogrammetry, SLAM, and search-and-rescue drills."
-    },
-    {
-      "robotsTitle": "Unitree A2-W Pro",
-      "robotsPic": "/robot_images/20260827-DSC01386.jpg",
-      "robotsData": "The Unitree A2-W Pro is an industrial wheeled-legged quadruped robot designed for high-mobility operation in complex environments. It combines efficient wheeled locomotion with the terrain adaptability of legged robots and is equipped with dual LiDAR sensors, an HD camera, and two high-performance computing platforms for perception and autonomous development. "
-    },
-    {}
+    }
   ]
 }
