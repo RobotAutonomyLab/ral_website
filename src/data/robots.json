@@ -21,6 +21,12 @@
       "robotsTitle": "DJI Matrice 350 RTK",
       "robotsPic": "/public/robot_images/4.jpeg",
       "robotsData": "The DJI Matrice 350 RTK, our lab’s heavy-lift multirotor, is a weather-sealed, RTK-enabled platform for centimeter-accurate aerial data and autonomous missions. With dual batteries, O3 Enterprise video, and a flexible gimbal for LiDAR or ROS 2 sensors, it excels in mapping, inspection, photogrammetry, SLAM, and search-and-rescue drills."
-    }
+    },
+    {
+      "robotsTitle": "Unitree A2-W Pro",
+      "robotsPic": "/robot_images/20260827-DSC01386.jpg",
+      "robotsData": "The Unitree A2-W Pro is an industrial wheeled-legged quadruped robot designed for high-mobility operation in complex environments. It combines efficient wheeled locomotion with the terrain adaptability of legged robots and is equipped with dual LiDAR sensors, an HD camera, and two high-performance computing platforms for perception and autonomous development. "
+    },
+    {}
   ]
 }
