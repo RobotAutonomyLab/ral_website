@@ -55,6 +55,12 @@
       "newsDate": "February 20, 2026",
       "newsPic": "/news_images/9.png",
       "newsData": "Dr. Wang has received a University Collaborative Research Program (UCRP) grant for the project “Autonomous Robot-Towed Ground-Penetrating Radar for Soil Moisture Mapping in Prairie Agriculture.” This project will develop a robot-towed ground-penetrating radar platform for soil moisture profiling in Prairie fields. The work also supports interdisciplinary collaboration between field robotics and soil science."
+    },
+    {
+      "newsTitle": "RAL Celebrates Its First MSc Graduate",
+      "newsDate": "August 17, 2026",
+      "newsPic": "/news_images/10.jpg",
+      "newsData": "Congratulations to Ilyas Dawoodjee on successfully [defending his MSc thesis](https://www.linkedin.com/posts/ilyas-dawoodjee_congratulations-to-ilyas-dawoodjee-on-successfully-activity-7498865172808286208-kB08?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAqPoPUBqm0KgF09mmEcdUBvF3BHod_oPJk), \"Safety-Filtered, Uncertainty-Aware Learning-Based MPC for Field Robot Path Following on Low-Traction Terrain.” Ilyas is the first student to graduate from the lab. It has been a pleasure to see Ilyas grow throughout his research journey, both technically and professionally. Also excited that he will be joining PTx Trimble as a Robotics Developer in Winnipeg, and we look forward to his future contributions to agricultural robotics."
     }
   ]
 }
