@@ -59,8 +59,14 @@
     {
       "newsTitle": "RAL Celebrates Its First MSc Graduate",
       "newsDate": "August 17, 2026",
-      "newsPic": "/news_images/10.jpg",
-      "newsData": "Congratulations to Ilyas Dawoodjee on successfully [defending his MSc thesis](https://www.linkedin.com/posts/ilyas-dawoodjee_congratulations-to-ilyas-dawoodjee-on-successfully-activity-7498865172808286208-kB08?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAqPoPUBqm0KgF09mmEcdUBvF3BHod_oPJk), \"Safety-Filtered, Uncertainty-Aware Learning-Based MPC for Field Robot Path Following on Low-Traction Terrain.” Ilyas is the first student to graduate from the lab. It has been a pleasure to see Ilyas grow throughout his research journey, both technically and professionally. Also excited that he will be joining PTx Trimble as a Robotics Developer in Winnipeg, and we look forward to his future contributions to agricultural robotics."
+      "newsPic": "/news_images/ilyas_defense.jpg",
+      "newsData": "Congratulations to Ilyas on successfully [defending his MSc thesis](https://www.linkedin.com/posts/ilyas-dawoodjee_congratulations-to-ilyas-dawoodjee-on-successfully-activity-7498865172808286208-kB08?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAqPoPUBqm0KgF09mmEcdUBvF3BHod_oPJk), \"Safety-Filtered, Uncertainty-Aware Learning-Based MPC for Field Robot Path Following on Low-Traction Terrain.” Ilyas is the first student to graduate from the lab. It has been a pleasure to see Ilyas grow throughout his research journey, both technically and professionally. Also excited that he will be joining PTx Trimble as a Robotics Developer in Winnipeg, and we look forward to his future contributions to agricultural robotics."
+    },
+    {
+      "newsTitle": "Project BARK Featured by CBC and UM News",
+      "newsDate": "August 28, 2026",
+      "newsPic": "/news_images/project_bark.jpg",
+      "newsData": "We are glad to share that Project BARK: Building Assistive Robotic K9s for Wheelchair Users was recently featured by CBC in “[Robot Dog Lends a Helping Paw](https://www.cbc.ca/player/play/video/9.7323361)” and by UM News in \"[Barking up the right tree](https://umtoday.ca/stories/barking-right-tree).\" Project BARK is an ongoing collaboration led by Dr. [Jacquie Ripat](https://umanitoba.ca/rehabilitation-sciences/faculty-staff/jacquie-ripat) and her rehabilitation sciences team, in partnership with the Robot Autonomy Lab. The project explores how assistive robots can better support wheelchair users in everyday environments, while keeping user control, safety, and real needs at the centre of the design. "
     }
   ]
 }
