@@ -2,11 +2,11 @@
   "homePageMedia": [
     {
       "type": "image",
-      "src": "/home_page_media/home1.jpeg"
+      "src": "/public/home_page_media/home2.jpeg"
     },
     {
       "type": "image",
-      "src": "/public/home_page_media/home2.jpeg"
+      "src": "/home_page_media/IMG_7199.jpeg"
     },
     {
       "type": "video",
