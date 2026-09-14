@@ -21,7 +21,7 @@
   "homePageBlocks": [
     {
       "title": "Research",
-      "subtitle": "Our research focuses on trustworthy autonomy for robots operating in complex real-world environments. We develop learning-based control and navigation methods for applications in intelligent agriculture, Arctic and remote operations, and assistive technology. Visit our research page to learn more about our current projects.",
+      "subtitle": "Our research focuses on trustworthy autonomy for robots operating in complex real-world environments, with applications in intelligent agriculture, Arctic and remote operations, and assistive technology. Visit our research page to learn more about our current projects.",
       "linkText": "RESEARCH",
       "link": "/research"
     },
