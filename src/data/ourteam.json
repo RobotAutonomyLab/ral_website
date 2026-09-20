@@ -110,6 +110,23 @@
           "Name": "Jiayu Li",
           "Position": "PhD Student",
           "Biography": "I am Jiayu Li, a Ph.D. student in Mechanical Engineering at the University of Manitoba, where I explore robot learning, embodied AI, and autonomous mobile robots. Previously, I earned my Master’s degree in Geophysics at Tongji University after completing my Bachelor’s degree in Aerospace Engineering at Chongqing University. My research background spans machine learning, numerical simulation, and computational modeling. My current interests focus on developing intelligent robotic systems that can perceive, learn, and operate reliably in complex real-world environments.",
+          "Education": [
+            {
+              "degreeName": "Doctor of Philosophy in Mechanical Engineering",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": 2030
+            },
+            {
+              "degreeName": "Master of Science in Geophysics",
+              "degreeUniversity": "Tongji University",
+              "gradYear": 2026
+            },
+            {
+              "degreeName": "Bachelor of Engineering in Aerospace Engineering",
+              "degreeUniversity": "Chongqing University",
+              "gradYear": 2023
+            }
+          ],
           "Interests": [
             "Robot",
             "Control Theory",
