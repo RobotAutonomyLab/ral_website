@@ -144,6 +144,9 @@
               "awardTime": "Sep. 2021"
             }
           ],
+          "Featured_Publications": [
+            "Li, J., Tang, J., et al., 2025. A Large-scale, High-quality Dataset for Lithology Identification: Construction and Applications. Petroleum Science.  \nLi, J., et al., 2025. LithoGPT-mini: A Practical Lightweight Language Model for Fast and Accurate Complex Lithology Identification—Application to Underground Gas Storage Facility. ADIPEC 2025  \nTang, J., Li, J., et al., 2025. Differential Impacts of Multi-Scale Natural Fractures on Hydraulic Fracture Network Formation. Earth-Science Reviews."
+          ],
           "Links": [
             {
               "type": "Email",
