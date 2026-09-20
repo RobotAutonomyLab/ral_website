@@ -29,6 +29,9 @@
               "type": "GitHub",
               "link": "https://github.com/jwangjie"
             }
+          ],
+          "Interests": [
+            "Robotics"
           ]
         }
       ]
@@ -195,6 +198,46 @@
             "Robotics",
             "Control Theory"
           ]
+        },
+        {
+          "ProfileName": "Kei",
+          "ProfileLink": "/team/kei",
+          "ProfilePic": "/public/our_team_files/Kei Nobuto.png",
+          "Name": "Kei Nobuto",
+          "Position": "MSc Student",
+          "Biography": "I am Kei Nobuto, an MSc student in Mechanical Engineering at the University of Manitoba and a member of the Robot Autonomy Laboratory (RAL). My experience participating in the Rescue Robot Contest during my undergraduate studies sparked my interest in autonomous mobile robots. My current research interests focus on decision-making and action selection in autonomous navigation, with the goal of enabling robots to make better use of their inherent locomotion capabilities. In particular, I am interested in planning and control methods that consider both the surrounding environment and the robot’s current state to select appropriate actions from multiple possible behaviors, thereby improving robotic autonomy and mobility.",
+          "Education": [
+            {
+              "degreeName": "Master of Science in Mechanical Engineering",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": 2028
+            },
+            {
+              "degreeName": "Bachelor of Engineering",
+              "degreeUniversity": "Kwansei Gakuin University",
+              "gradYear": 2026
+            }
+          ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "nobutok@myumanitoba.ca"
+            },
+            {
+              "type": "GitHub",
+              "link": "https://github.com/mon0108"
+            },
+            {
+              "type": "LinkedIn",
+              "link": "http://linkedin.com/in/kei-nobuto-5b1b13399/"
+            }
+          ],
+          "Interests": [
+            "Machine Learning",
+            "Mobile Robotics",
+            "Control Theory",
+            "Autonomous Navigation"
+          ]
         }
       ]
     },
@@ -259,6 +302,9 @@
               "type": "LinkedIn",
               "link": "https://www.linkedin.com/in/parker-prince-803b36372"
             }
+          ],
+          "Interests": [
+            "Robotics "
           ]
         },
         {
