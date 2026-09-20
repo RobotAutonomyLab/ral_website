@@ -127,6 +127,23 @@
               "gradYear": 2023
             }
           ],
+          "Awards": [
+            {
+              "awardName": "Canada Impact+ Research Training Award – Doctoral",
+              "awardPlace": "Natural Sciences and Engineering Research Council of Canada",
+              "awardTime": "Apr. 2026"
+            },
+            {
+              "awardName": "National Scholarship for Graduate Students",
+              "awardPlace": "Tongji University",
+              "awardTime": "Oct. 2025"
+            },
+            {
+              "awardName": "National Encouragement Scholarship",
+              "awardPlace": "Chongqing University",
+              "awardTime": "Sep. 2021"
+            }
+          ],
           "Interests": [
             "Robot",
             "Control Theory",
