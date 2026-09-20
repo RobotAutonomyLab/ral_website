@@ -144,6 +144,20 @@
               "awardTime": "Sep. 2021"
             }
           ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "lij51@myumanitoba.ca"
+            },
+            {
+              "type": "Personal Website",
+              "link": "jiayuli.net"
+            },
+            {
+              "type": "GitHub",
+              "link": "https://github.com/JiayuLi1120"
+            }
+          ],
           "Interests": [
             "Robot",
             "Control Theory",
