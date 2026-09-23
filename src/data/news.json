@@ -67,6 +67,12 @@
       "newsDate": "August 28, 2026",
       "newsPic": "/news_images/project_bark.jpg",
       "newsData": "We are glad to share that Project BARK: Building Assistive Robotic K9s for Wheelchair Users was recently featured by CBC in “[Robot Dog Lends a Helping Paw](https://www.cbc.ca/player/play/video/9.7323361)” and by UM News in \"[Barking up the right tree](https://umtoday.ca/stories/barking-right-tree).\" Project BARK is an ongoing collaboration led by Dr. [Jacquie Ripat](https://umanitoba.ca/rehabilitation-sciences/faculty-staff/jacquie-ripat) and her rehabilitation sciences team, in partnership with the Robot Autonomy Lab. The project explores how assistive robots can better support wheelchair users in everyday environments, while keeping user control, safety, and real needs at the centre of the design. "
+    },
+    {
+      "newsTitle": "RAL Featured in UM’s Up Close Series",
+      "newsDate": "September 21, 2026",
+      "newsPic": "/news_images/youtube_UM.png",
+      "newsData": "Excited to share that our research at the Robot Autonomy Lab was recently featured in the University of Manitoba’s Up Close series, [Can AI Teach A Tractor To Think?](https://youtu.be/3xOZGT5BXNA?si=OWTjnBlSrsaHSekB) In the interview, Dr. Wang introduces our work on combining artificial intelligence with physics-based control to develop safer, more adaptive autonomous robots for real-world agricultural environments. Our long-term goal is to bring reliable autonomy to existing farm machinery and extend these technologies to other challenging environments. "
     }
   ]
 }
