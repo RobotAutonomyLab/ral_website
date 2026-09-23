@@ -42,7 +42,7 @@ function Footer() {
                     © 2026 Robot Autonomy Laboratory
                 </span>
                 <span className="caption right">
-                    Website by <a href="https://blank-ed.github.io/ilyas_dawoodjee/#/" target='_blank' rel="noreferrer">Ilyas Dawoodjee</a>
+                    Website by <a href="https://robotautonomylab.com/" target='_blank' rel="noreferrer">Robot Autonomy Lab</a>
                 </span>
             </div>
         </div>
