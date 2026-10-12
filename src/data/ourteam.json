@@ -3,7 +3,7 @@
   "ourTeamPageSubtitle": "We are a team of faculty, engineers, and students advancing mobile-robot autonomy in real-world settings through machine learning and physics-based modeling.",
   "ourTeam": [
     {
-      "sectionTitle": "Principle Investigator",
+      "sectionTitle": "Principal Investigator",
       "teamMembers": [
         {
           "ProfileName": "Meet the PI",
@@ -174,12 +174,96 @@
       "sectionTitle": "Graduate Students (MSc)",
       "teamMembers": [
         {
+          "ProfileName": "Kei",
+          "ProfileLink": "/team/kei",
+          "ProfilePic": "/public/our_team_files/Kei Nobuto.png",
+          "Name": "Kei Nobuto",
+          "Position": "MSc Student",
+          "Biography": "I am Kei Nobuto, an MSc student in Mechanical Engineering at the University of Manitoba and a member of the Robot Autonomy Laboratory (RAL). My experience participating in the Rescue Robot Contest during my undergraduate studies sparked my interest in autonomous mobile robots. My current research interests focus on decision-making and action selection in autonomous navigation, with the goal of enabling robots to make better use of their inherent locomotion capabilities. In particular, I am interested in planning and control methods that consider both the surrounding environment and the robot’s current state to select appropriate actions from multiple possible behaviors, thereby improving robotic autonomy and mobility.",
+          "Education": [
+            {
+              "degreeName": "Master of Science in Mechanical Engineering",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": 2028
+            },
+            {
+              "degreeName": "Bachelor of Engineering",
+              "degreeUniversity": "Kwansei Gakuin University",
+              "gradYear": 2026
+            }
+          ],
+          "Awards": [
+            {
+              "awardName": "International Graduate Student Entrance Scholarship (IGSES)",
+              "awardPlace": "University of Manitoba",
+              "awardTime": "September 2026"
+            }
+          ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "nobutok@myumanitoba.ca"
+            },
+            {
+              "type": "GitHub",
+              "link": "https://github.com/mon0108"
+            },
+            {
+              "type": "LinkedIn",
+              "link": "http://linkedin.com/in/kei-nobuto-5b1b13399/"
+            }
+          ],
+          "Interests": [
+            "Machine Learning",
+            "Mobile Robotics",
+            "Control Theory",
+            "Autonomous Navigation"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Undergraduate Students"
+    },
+    {
+      "sectionTitle": "Engineers",
+      "teamMembers": [
+        {
+          "ProfileName": "Ehsan",
+          "ProfileLink": "/team/ehsan",
+          "ProfilePic": "/public/our_team_files/Placeholder.png",
+          "Name": "Ehsan Jalayeri",
+          "Position": "Technologist",
+          "Biography": "Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here",
+          "Education": [
+            {
+              "degreeName": "Bachelor of Engineering in xyz",
+              "degreeUniversity": "University of xyz",
+              "gradYear": 2022
+            }
+          ],
+          "Links": [
+            {
+              "type": "Email",
+              "link": "Ehsan.Jalayeri@umanitoba.ca"
+            }
+          ],
+          "Interests": [
+            "Interest1"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Alumni",
+      "teamMembers": [
+        {
           "ProfileName": "Ilyas",
           "ProfileLink": "/team/ilyas",
           "ProfilePic": "/public/our_team_files/Ilyas/Ilyas.jpg",
           "Name": "Ilyas Dawoodjee",
-          "Position": "MSc Student",
-          "Biography": "I am [Ilyas Dawoodjee](https://blank-ed.github.io/ilyas_dawoodjee/), currently a MSc Mechanical Engineering student at University of Manitoba where I research in the Robot Autonomy Laboratory (RAL). My area of research involves learning-based mobile robots that integrates machine learning with physics-informed modelllings. I have experience involving the detection of physiological signals using computer vision and digial signal processing. I previously worked as a Research Engineer in the [Building Robotics Laboratory](https://building-robotics-lab.github.io/brlab/) at the [National University of Singapore (NUS)](http://www.nus.edu.sg/). I am constantly trying to learn new things and expand my knowledge base. My main language is Python.",
+          "Position": "MSc Alumnus (2026)",
+          "Biography": "I am [Ilyas Dawoodjee](https://blank-ed.github.io/ilyas_dawoodjee/), an MSc graduate in Mechanical Engineering from the University of Manitoba (2026). I conducted my research in the Robot Autonomy Laboratory (RAL), focusing on learning-based mobile robotics that integrates machine learning with physics-informed modeling. I also have experience in detecting physiological signals using computer vision and digital signal processing. Previously, I worked as a Research Engineer in the [Building Robotics Laboratory](https://building-robotics-lab.github.io/brlab/) at the [National University of Singapore (NUS)](http://www.nus.edu.sg/). I am constantly trying to learn new things and expand my knowledge base. My main programming language is Python.",
           "Education": [
             {
               "degreeName": "Master of Science in Mechanical Engineering",
@@ -264,90 +348,6 @@
             "Control Theory"
           ]
         },
-        {
-          "ProfileName": "Kei",
-          "ProfileLink": "/team/kei",
-          "ProfilePic": "/public/our_team_files/Kei Nobuto.png",
-          "Name": "Kei Nobuto",
-          "Position": "MSc Student",
-          "Biography": "I am Kei Nobuto, an MSc student in Mechanical Engineering at the University of Manitoba and a member of the Robot Autonomy Laboratory (RAL). My experience participating in the Rescue Robot Contest during my undergraduate studies sparked my interest in autonomous mobile robots. My current research interests focus on decision-making and action selection in autonomous navigation, with the goal of enabling robots to make better use of their inherent locomotion capabilities. In particular, I am interested in planning and control methods that consider both the surrounding environment and the robot’s current state to select appropriate actions from multiple possible behaviors, thereby improving robotic autonomy and mobility.",
-          "Education": [
-            {
-              "degreeName": "Master of Science in Mechanical Engineering",
-              "degreeUniversity": "University of Manitoba",
-              "gradYear": 2028
-            },
-            {
-              "degreeName": "Bachelor of Engineering",
-              "degreeUniversity": "Kwansei Gakuin University",
-              "gradYear": 2026
-            }
-          ],
-          "Awards": [
-            {
-              "awardName": "International Graduate Student Entrance Scholarship (IGSES)",
-              "awardPlace": "University of Manitoba",
-              "awardTime": "September 2026"
-            }
-          ],
-          "Links": [
-            {
-              "type": "Email",
-              "link": "nobutok@myumanitoba.ca"
-            },
-            {
-              "type": "GitHub",
-              "link": "https://github.com/mon0108"
-            },
-            {
-              "type": "LinkedIn",
-              "link": "http://linkedin.com/in/kei-nobuto-5b1b13399/"
-            }
-          ],
-          "Interests": [
-            "Machine Learning",
-            "Mobile Robotics",
-            "Control Theory",
-            "Autonomous Navigation"
-          ]
-        }
-      ]
-    },
-    {
-      "sectionTitle": "Undergraduate Students"
-    },
-    {
-      "sectionTitle": "Engineers",
-      "teamMembers": [
-        {
-          "ProfileName": "Ehsan",
-          "ProfileLink": "/team/ehsan",
-          "ProfilePic": "/public/our_team_files/Placeholder.png",
-          "Name": "Ehsan Jalayeri",
-          "Position": "Technologist",
-          "Biography": "Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here Ehsan bio here",
-          "Education": [
-            {
-              "degreeName": "Bachelor of Engineering in xyz",
-              "degreeUniversity": "University of xyz",
-              "gradYear": 2022
-            }
-          ],
-          "Links": [
-            {
-              "type": "Email",
-              "link": "Ehsan.Jalayeri@umanitoba.ca"
-            }
-          ],
-          "Interests": [
-            "Interest1"
-          ]
-        }
-      ]
-    },
-    {
-      "sectionTitle": "Alumni",
-      "teamMembers": [
         {
           "ProfileName": "Parker",
           "ProfileLink": "/team/parker",
