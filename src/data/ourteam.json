@@ -353,7 +353,7 @@
           "ProfileLink": "/team/parker",
           "ProfilePic": "/public/our_team_files/Parker/Parker.jpg",
           "Name": "Parker Prince",
-          "Position": "BEng Student",
+          "Position": "BEng Alumnus (2025)",
           "Biography": "My name is Parker Prince and I am an undergraduate mechanical engineering student at the University of Manitoba. I am completing my first Co-op work term in the Robot Autonomy Lab as a research assistant where I am researching machine learning applications in mobile robots. My aim is to apply the skills and knowledge gain ed in this role to continue to contribute to innovative projects.",
           "Education": [
             {
@@ -384,7 +384,7 @@
           "ProfileLink": "/team/abraham",
           "ProfilePic": "/public/our_team_files/Abraham/Abraham.jpeg",
           "Name": "Syed Abraham Ahmed",
-          "Position": "BSc Student",
+          "Position": "BSc Alumnus (2025)",
           "Biography": "My name is Abraham and I currently am a Computer Engineering Undergraduate student at the University of Manitoba. I am currently interested in topics regarding Deep Learning and Generative Models. My experience is vast with embedded systems, website development, applied machine learning, and systems engineering.",
           "Education": [
             {
@@ -444,7 +444,7 @@
           "ProfileLink": "/team/edcel",
           "ProfilePic": "/public/our_team_files/Edcel/Edcel.jpg",
           "Name": "Edcel Abanto",
-          "Position": "BSc Student",
+          "Position": "BSc Alumnus (2025)",
           "Biography": "My name is Edcel Abanto, and I am an undergraduate Electrical Engineering student at the University of Manitoba. I currently serve as the Team Lead of the University of Manitoba Robotics Team (2025) (UMRT Link: [https://umrt.ca/](https://umrt.ca/)).\n\nMy technical experience spans both software and hardware. On the software side, I primarily work with Python, C++, and ROS 2. On the hardware side, I have hands-on experience with brushed motor systems, safety-critical kill switch implementations, and camera-based vision systems.\n\nMy interests include Robotics, Swarm Robotics, Computer Vision, Machine Learning, and Generative AI. I am especially interested in integrating these fields—for example, using Generative AI to enhance swarm behavior and coordination in multi-agent robotic systems.\n\nIn one of my recent capstone projects, I helped develop a gesture-based control system for managing a swarm of robots, including both drones and ground vehicles.\n\nLooking ahead, I hope to pursue a Master’s degree in Robotics to deepen my expertise and contribute meaningfully to the advancement of the field.",
           "Education": [
             {
