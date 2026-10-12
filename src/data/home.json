@@ -2,11 +2,15 @@
   "homePageMedia": [
     {
       "type": "image",
-      "src": "/public/home_page_media/home2.jpeg"
+      "src": "/home_page_media/Researchers and robot in autumn fields.jpg"
     },
     {
       "type": "image",
       "src": "/home_page_media/Ilyas-dinner.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/public/home_page_media/home2.jpeg"
     },
     {
       "type": "video",
