@@ -52,17 +52,17 @@
           "Education": [
             {
               "degreeName": "Doctor of Philosophy in Mechanical Engineering",
-              "degreeUniversity": "University of Manitoba",
+              "degreeUniversity": "University of Manitoba, Canada",
               "gradYear": 2030
             },
             {
               "degreeName": "Master of Science in Robotics and Autonomous Systems",
-              "degreeUniversity": "University of Macau",
+              "degreeUniversity": "University of Macau, China",
               "gradYear": 2025
             },
             {
               "degreeName": "Bachelor of Engineering in Landscape Architecture (Major) & Automation (Minor)",
-              "degreeUniversity": "South China Agriculture University",
+              "degreeUniversity": "South China Agriculture University, China",
               "gradYear": 2023
             }
           ],
@@ -113,17 +113,17 @@
           "Education": [
             {
               "degreeName": "Doctor of Philosophy in Mechanical Engineering",
-              "degreeUniversity": "University of Manitoba",
+              "degreeUniversity": "University of Manitoba, Canada",
               "gradYear": 2030
             },
             {
               "degreeName": "Master of Science in Geophysics",
-              "degreeUniversity": "Tongji University",
+              "degreeUniversity": "Tongji University, China",
               "gradYear": 2026
             },
             {
               "degreeName": "Bachelor of Engineering in Aerospace Engineering",
-              "degreeUniversity": "Chongqing University",
+              "degreeUniversity": "Chongqing University, China",
               "gradYear": 2023
             }
           ],
@@ -183,12 +183,12 @@
           "Education": [
             {
               "degreeName": "Master of Science in Mechanical Engineering",
-              "degreeUniversity": "University of Manitoba",
+              "degreeUniversity": "University of Manitoba, Canada",
               "gradYear": 2028
             },
             {
               "degreeName": "Bachelor of Engineering",
-              "degreeUniversity": "Kwansei Gakuin University",
+              "degreeUniversity": "Kwansei Gakuin University, Japan",
               "gradYear": 2026
             }
           ],
@@ -267,12 +267,12 @@
           "Education": [
             {
               "degreeName": "Master of Science in Mechanical Engineering",
-              "degreeUniversity": "University of Manitoba",
+              "degreeUniversity": "University of Manitoba, Canada",
               "gradYear": 2026
             },
             {
               "degreeName": "Bachelor of Engineering (First Class Honours w/ Distinction) in Mechatronics Engineering",
-              "degreeUniversity": "Asia Pacific University of Technology & Innovation",
+              "degreeUniversity": "Asia Pacific University of Technology & Innovation, Malaysia",
               "gradYear": 2022
             }
           ],
