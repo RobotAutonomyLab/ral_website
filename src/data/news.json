@@ -91,6 +91,12 @@
       "newsDate": "October 18, 2026",
       "newsPic": "/news_images/Autonomous Farming Robots in the Field.png",
       "newsData": "Dr. Wang was interviewed on the Corus Radio Network's Weekends with Rob Fai in the segment [Can AI help our agriculture sector? A University of Manitoba think so](https://robfai.podbean.com/e/can-ai-help-our-agriculture-sector-a-university-of-manitoba-think-so/). The conversation explored how AI can help make farming equipment autonomous. Our research combines artificial intelligence with physics-based control to develop reliable robots that can adapt to changing field conditions, with the long-term goal of reducing farmers’ workload and supporting more efficient agricultural operations. "
+    },
+    {
+      "newsTitle": "RAL Awarded UM SREF Grant",
+      "newsDate": "October 22, 2026",
+      "newsPic": "/news_images/Autonomous rover towing radar across prairie.png",
+      "newsData": "Dr. Wang has received a $25,000 University of Manitoba Small Research Equipment Grant (SREF) for “NOGGIN 500 GPR for Robotic Soil-Moisture and Arctic Subsurface Sensing.” Together with the previously awarded UCRP grant, this funding will enable the purchase and integration of a ground-penetrating radar system for autonomous soil-moisture mapping in Prairie fields. The equipment will also support Arctic subsurface sensing, interdisciplinary collaboration between field robotics and soil science, and student research training."
     }
   ]
 }
