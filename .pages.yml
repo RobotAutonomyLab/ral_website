@@ -122,126 +122,135 @@ content:
         type: string
         required: true
 
-      - name: researchPageSubtitle
-        label: Research Page Subtitle
-        type: block 
-        list: 
-          collapsible:
-            collapsed: true
-            summary: "#{index} — {fields.type}"
-        blockKey: type
-        blocks:
-          - name: paragraph
-            label: Paragraph
-            fields:
-              - name: text
-                label: Paragraph Text
-                type: rich-text
-                required: true
-
-          - name: bullet-list
-            label: Bullet List
-            fields:
-              - name: items
-                label: Bullet Items
-                type: rich-text
-                list: true
-                required: true
-
-      - name: onGoingProjectsTitle
-        label: Ongoing Projects Title
+      - name: researchPageHeadline
+        label: Research Headline
         type: string
         required: true
 
-      - name: onGoingProjectsData
-        label: Ongoing Projects Data
+      - name: researchPageSubtitle
+        label: Research Introduction
+        type: text
+        required: true
+
+      - name: researchApplications
+        label: Research Applications
         type: object
         list:
           collapsible:
             collapsed: true
-            summary: "#{index} — {fields.projectTitle}"
-        required: true
+            summary: "{fields.title}"
         fields:
-          - name: projectTitle
-            label: Project Title
+          - name: id
+            label: Section ID (unique, lowercase, hyphens)
             type: string
             required: true
-
-          - name: projectDescription
-            label: Project Description
-            type: block 
-            list: 
-              collapsible:
-                collapsed: true
-                summary: "#{index} — {fields.type}"
-            blockKey: type
-            blocks:
-              - name: paragraph
-                label: Paragraph
-                fields:
-                  - name: text
-                    label: Paragraph Text
-                    type: rich-text
-                    required: true
-
-              - name: bullet-list
-                label: Bullet List
-                fields:
-                  - name: items
-                    label: Bullet Items
-                    type: rich-text
-                    list: true
-                    required: true
-
-      - name: researchProjects
-        label: Research Projects
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "#{index} — {fields.sectionTitle}"
-        required: true
-        fields:
-          - name: sectionTitle
-            label: Section Title
+          - name: icon
+            label: Application Icon
+            type: select
+            options:
+              values: [agriculture, assistive, arctic]
+          - name: title
+            label: Application Title
             type: string
             required: true
-
-          - name: sectionData
-            label: Section Data
-            type: block 
-            list: 
+          - name: tagline
+            label: Short Tagline
+            type: string
+          - name: description
+            label: Application Description
+            type: text
+          - name: projects
+            label: Project Cards
+            type: object
+            list:
               collapsible:
                 collapsed: true
-                summary: "#{index} — {fields.type}"
-            blockKey: type
-            blocks:
-              - name: paragraph
-                label: Paragraph
-                fields:
-                  - name: text
-                    label: Paragraph Text
-                    type: rich-text
-                    required: true
-
-              - name: bullet-list
-                label: Bullet List
-                fields:
-                  - name: items
-                    label: Bullet Items
-                    type: rich-text
-                    list: true
-                    required: true
-
+                summary: "{fields.title}"
+            fields:
+              - name: id
+                label: Project ID (unique)
+                type: string
+                required: true
+              - name: title
+                label: Project Name
+                type: string
+                required: true
+              - name: subtitle
+                label: Project Headline
+                type: string
+                required: true
+              - name: description
+                label: Project Description
+                type: text
+                required: true
               - name: image
-                label: Image
-                fields:
-                  - name: src
-                    label: Image File
-                    type: image
-                    required: true
-                    options:
-                      media: research_page_media
+                label: Project Image
+                type: image
+                options:
+                  media: research_page_media
+              - name: imageAlt
+                label: Image Description for Accessibility
+                type: string
+              - name: imageFit
+                label: Image Fit
+                type: select
+                options:
+                  values: [cover, contain]
+              - name: imageCaption
+                label: Image Caption (optional)
+                type: string
+              - name: status
+                label: Project Status
+                type: string
+              - name: tags
+                label: Research Topics
+                type: string
+                list: true
+              - name: url
+                label: Project URL (leave empty for coming soon)
+                type: string
+              - name: linkLabel
+                label: Link Label (optional)
+                type: string
+              - name: videoUrl
+                label: Video URL (optional)
+                type: string
+          - name: highlight
+            label: Additional Research (optional)
+            type: object
+            fields:
+              - name: title
+                label: Highlight Title
+                type: string
+              - name: description
+                label: Highlight Description
+                type: text
+              - name: url
+                label: Link (optional)
+                type: string
+              - name: linkLabel
+                label: Link Label (optional)
+                type: string
+          - name: mediaCoverage
+            label: Media Coverage
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.outlet}"
+            fields:
+              - name: outlet
+                label: Media Outlet
+                type: string
+              - name: title
+                label: Story Title
+                type: string
+              - name: date
+                label: Display Date
+                type: string
+              - name: url
+                label: Story URL
+                type: string
 
       - name: pastProjectsTitle
         label: Past Projects Title
