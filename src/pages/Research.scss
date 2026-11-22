@@ -1,104 +1,121 @@
 .Research {
-    strong {
-        font-weight: 700;
+    --research-ink: #15263c;
+    --research-muted: #526173;
+    --research-line: #dce4ed;
+    color: var(--research-ink);
+    p { text-align: left; line-height: 1.7; }
+    a:hover { padding: 0; background: transparent; color: #00477e; border-radius: 0; text-decoration: underline; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 5px; }
+    h2:focus { outline: none; }
+    .research-intro {
+        max-width: 950px; padding: 0 0 2.4rem;
+        h1 { color: #111; margin-bottom: 1.5rem; }
+        .research-headline { color: var(--accent-color); font-size: clamp(2.2rem, 2.3vw, 3.1rem); font-weight: 700; line-height: 1.3; margin-bottom: 1.6rem; text-wrap: balance; }
+        .research-summary { font-size: 1.8rem; color: var(--research-muted); margin: 0; max-width: 910px; }
     }
-
-    .section {
-        p {
-            a {
-                font-weight: 900;
-            }
-
-            b {
-                font-weight: 700;
-            }
+    .research-jump-nav {
+        display: flex; flex-wrap: wrap; gap: 1.2rem; padding: 0 0 3.6rem;
+        button {
+            display: inline-flex; align-items: center; gap: 1rem;
+            font-size: 1.6rem; font-weight: 600; line-height: 1.5;
+            border: 1px solid #cad9e7; border-radius: 5px;
+            color: #155b92; background: #f4f8fc; padding: 1.1rem 1.7rem; cursor: pointer;
+            &:hover { background: #e6f0fa; border-color: var(--accent-color); }
+            svg { width: 1.8rem; height: 1.8rem; }
+            &.past-projects-jump { margin-left: auto; background: white; color: var(--research-muted); border-color: var(--research-line); }
         }
+    }
+    .application-section { padding: 3.8rem 0 4.4rem; border-top: 1px solid var(--research-line); scroll-margin-top: 2.4rem; }
+    .application-heading {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 2.8rem; align-items: start; margin-bottom: 2.7rem;
+        .application-label { display: flex; align-items: center; gap: 1.3rem; }
+        .application-label > svg { color: var(--accent-color); width: 2.5rem; height: 2.5rem; flex-shrink: 0; }
+        h2 { font-size: clamp(2.6rem, 2.6vw, 3.4rem); line-height: 1.2; margin: 0; text-wrap: wrap; }
+        .application-tagline { margin: 1.1rem 0 0; color: var(--research-muted); font-size: 1.7rem; }
+        .application-description { color: var(--research-muted); margin: 0; font-size: 1.6rem; }
+    }
+    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.6rem; }
+    .project-grid-single { grid-template-columns: 1fr; }
+    .project-card {
+        min-width: 0; border: 1px solid var(--research-line); border-radius: 7px; overflow: hidden; background: white;
+        box-shadow: 0 3px 12px rgba(29, 54, 86, .045); display: flex; flex-direction: column;
+        .project-visual { position: relative; background: #f1f4f7; overflow: hidden; }
+        .project-visual > a { display: block; padding: 0; }
+        .project-visual img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+        .project-visual img.project-image-contain { object-fit: contain; background: white; }
+        .project-visual > a:focus-visible { outline-offset: -4px; }
+        .project-image-caption { position: absolute; bottom: 0; left: 0; right: 0; margin: 0; padding: 2rem 1.8rem 1rem; background: linear-gradient(transparent, rgba(10,30,48,.85)); color: white; font-size: 1.4rem; line-height: 1.5; pointer-events: none; }
+        .project-copy { padding: 2.3rem 2.5rem 2.4rem; display: flex; flex: 1; flex-direction: column; }
+        .project-topline { display: flex; gap: 1rem; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 1.2rem; }
+        .project-name { font-size: 1.6rem; font-weight: 800; color: var(--accent-color); line-height: 1.4; margin: 0; }
+        .project-status { font-size: 1.4rem; font-weight: 500; color: #556577; background: #f1f5f9; padding: .3rem .9rem; border-radius: 3px; white-space: nowrap; }
+        h3 { font-size: 2.3rem; line-height: 1.35; font-weight: 700; margin-bottom: 1.2rem; text-wrap: pretty; }
+        .project-description { color: var(--research-muted); font-size: 1.6rem; line-height: 1.7; margin-bottom: 1.8rem; }
+        .project-tags { display: flex; flex-wrap: wrap; list-style: none; padding: 0; gap: .6rem .8rem; margin: auto 0 1.9rem; }
+        .project-tags li { font-size: 1.4rem; line-height: 1.5; padding: .3rem .9rem; border-radius: 3px; background: #f1f5f9; color: #4e6175; }
+        .project-links { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; border-top: 1px solid #edf1f5; padding-top: 1.6rem; min-height: 4.1rem; }
+        .research-video-link { font-size: 1.5rem; font-weight: 600; }
+        .project-coming-soon { font-size: 1.5rem; color: var(--research-muted); font-weight: 600; }
+    }
+    .project-card-wide {
+        display: grid; grid-template-columns: 1fr 1fr;
+        .project-visual { min-height: 100%; }
+        .project-visual img { height: 100%; min-height: 310px; aspect-ratio: auto; object-position: center; }
+        .project-copy { padding: 3rem; }
+    }
+    .research-link { color: var(--accent-color); font-size: 1.6rem; font-weight: 700; line-height: 1.5; white-space: nowrap; }
+    .research-highlight {
+        display: flex; gap: 2rem; align-items: center; justify-content: space-between;
+        background: #f1f7fc; border-left: 3px solid var(--accent-color); padding: 2rem 2.4rem; margin-top: 2.5rem;
+        h3 { font-size: 1.8rem; line-height: 1.4; margin-bottom: .7rem; text-wrap: wrap; }
+        p { color: var(--research-muted); font-size: 1.5rem; margin: 0; }
+    }
+    .research-media {
+        margin-top: 2.7rem;
+        h3 { font-size: 1.5rem; font-weight: 700; color: #576879; margin-bottom: 1.2rem; }
+        ul { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 2.4rem; padding: 0; }
+        li { display: flex; flex-direction: column; align-items: flex-start; gap: .55rem; padding-left: 1.5rem; border-left: 2px solid #dce7f0; }
+        .media-outlet { font-weight: 700; color: var(--research-ink); font-size: 1.4rem; }
+        a { font-size: 1.5rem; font-weight: 500; line-height: 1.5; }
+        .media-date { color: #667587; font-size: 1.3rem; margin-top: auto; }
+    }
+    .research-past-section { border-top: 1px solid var(--research-line); padding-top: 3.8rem; padding-bottom: 4.4rem; scroll-margin-top: 2.4rem; }
+    .past_projects {
+        display: flex; flex-wrap: wrap; gap: 2rem;
+        > div { flex: 0 0 calc(50% - 1rem); min-width: 0; }
+        > div img { width: 100%; height: auto; display: block; }
+        h3 { color: #111; }
+    }
+    .research-sponsors-section { border-top: 1px solid var(--research-line); padding-top: 3.5rem; }
+    .research_collaborators { display: flex; gap: 5rem; justify-content: center; align-items: center; flex-wrap: wrap; padding: 1rem 0; img { width: 200px; height: auto; object-fit: contain; } }
+    @media (max-width: 992px) {
+        .application-heading { grid-template-columns: 1fr; gap: 1.2rem; }
+        .research-jump-nav button.past-projects-jump { margin-left: 0; }
+        .project-copy { padding: 2rem; }
+        .project-card h3 { font-size: 2.1rem; }
+        .project-card-wide .project-copy { padding: 2rem; }
+        .past_projects > div { flex: 0 0 100%; }
+        .research-media ul { grid-template-columns: 1fr 1fr; gap: 1.8rem; }
+    }
+    @media (max-width: 640px) {
+        .research-intro h1 { font-size: 3.8rem; }
+        .research-intro .research-summary { font-size: 1.6rem; }
+        .research-jump-nav { gap: .8rem; padding-bottom: 2.8rem; }
+        .research-jump-nav button { padding: .9rem 1.2rem; font-size: 1.4rem; gap: .7rem; }
+        .research-jump-nav button svg { height: 1.6rem; width: 1.6rem; }
+        .application-section { padding: 2.8rem 0 3.4rem; }
+        .project-grid { grid-template-columns: 1fr; gap: 2rem; }
+        .project-card-wide { display: flex; }
+        .project-card-wide .project-visual img { aspect-ratio: 16 / 9; height: auto; min-height: 0; }
+        .research-highlight { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.8rem; }
+        .research-media ul { grid-template-columns: 1fr; gap: 1.8rem; }
+        .research_collaborators { gap: 2.5rem; img { width: 150px; } }
+    }
+}
 
-        h3 {
-            text-wrap: wrap;
-        }
-
-        ul {
-            padding-left: 2.5rem;
-
-            p {
-                display: list-item;
-                text-align: left;
-                text-wrap: wrap;
-            }
-
-            @media (max-width: 576px) {
-                p {
-                    margin-bottom: 1rem;
-
-                }
-            }
-        }
-
-        .research_project_main {
-            img {
-                width: 700px;
-                height: auto;
-                display: block;
-                object-fit: contain;
-                margin: 0rem auto 1rem auto;
-            }
-
-        }
-
-        .past_projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-
-            // 2 per row (account for the gap)
-            >div {
-                flex: 0 0 calc(50% - 1rem);
-            }
-
-            >div img {
-                width: 100%;
-                height: auto;
-                display: block;
-            }
-
-            // <= 992px: 1 per row
-            @media (max-width: 992px) {
-                >div {
-                    flex: 0 0 100%;
-                }
-            }
-        }
-
-        .research_projects {
-            border: 3px solid white;
-            border-left: 5px solid var(--accent-color);
-            box-shadow: 0 1px 5px 0px rgba(38, 59, 94, 0.3);
-            margin: 0rem 0rem 2rem 0rem;
-            padding: 1rem;
-
-            h3 {
-                text-wrap: wrap;
-            }
-        }
-
-        .research_collaborators {
-            display: flex;
-            gap: 5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            img {
-                width: 200px;
-            }
-
-            @media (max-width: 576px) {
-                gap: 2rem;
-
-                img {
-                    width: 150px;
-                }
-            }
-        }
+// Keep the existing header comfortably spaced on the Research page at phone widths.
+@media (max-width: 768px) {
+    .ResearchPage .NavBar .NavBar-container .NavBar-container-left a img {
+        width: min(220px, calc(100vw - 125px));
     }
 }

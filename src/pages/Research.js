@@ -1,187 +1,92 @@
 import React from 'react'
-import './Research.scss'
-
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeSanitize from 'rehype-sanitize'
-import rehypeRaw from 'rehype-raw'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSeedling, faUniversalAccess, faSnowflake } from '@fortawesome/free-solid-svg-icons'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import MarkdownLink from '../components/HandleMarkdownLinks'
+import researchData from '../data/research.json'
+import './Research.scss'
 
-import research_data from '../data/research.json'
+const applicationIcons = { agriculture: faSeedling, assistive: faUniversalAccess, arctic: faSnowflake }
+const mediaPath = (path = '') => path.replace(/^\/public\//, '/')
 
-function Research() {
-    const pageTitle = research_data.researchPageTitle || 'Research'
-    const pageSubtitle = research_data.researchPageSubtitle || ''
+function ExternalLink({ href, children, ...props }) {
+    return <a href={href} target="_blank" rel="noopener noreferrer" {...props}>{children}</a>
+}
 
-    // Ongoing projects
-    const onGoingProjectsTitle = research_data.onGoingProjectsTitle
-    const onGoingProjectsData = research_data.onGoingProjectsData
-
-    // Research Projects
-    const researchProjects = research_data.researchProjects
-
-    // Past Projects
-    const pastProjectsTitle = research_data.pastProjectsTitle
-    const pastProjectsData = research_data.pastProjectsData
-
-    // Sponsors
-    const sponsorsTitle = research_data.SponsorsTitle
-    const sponsorsData = research_data.SponsorsData
-
+function ProjectCard({ project, wide }) {
+    const illustration = <img src={mediaPath(project.image)} alt={project.imageAlt} loading="lazy" className={project.imageFit === 'contain' ? 'project-image-contain' : undefined} />
     return (
-        <div className='ResearchPage'>
-            <NavBar />
-            <div className="Research container">
-                <div className="Research section">
-                    <h1>{pageTitle}</h1>
-                    {pageSubtitle.map((block, bidx) => {
-                        if (block.type === "paragraph") {
-                            return (
-                                <ReactMarkdown
-                                    remarkPlugins={[remarkGfm]}
-                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                    components={{ a: MarkdownLink }}
-                                >
-                                    {block.text || ''}
-                                </ReactMarkdown>
-                            );
-                        }
-
-                        if (block.type === "bullet-list") {
-                            return (
-                                <ul key={bidx}>
-                                    {block.items?.map((item, i) => (
-                                        <ReactMarkdown
-                                            remarkPlugins={[remarkGfm]}
-                                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                            components={{ a: MarkdownLink }}
-                                        >
-                                            {item}
-                                        </ReactMarkdown>
-                                    ))}
-                                </ul>
-                            );
-                        }
-
-                        return null;
-                    })}
+        <article className={`project-card${wide ? ' project-card-wide' : ''}`}>
+            <div className="project-visual">
+                {project.url ? <ExternalLink href={project.url} aria-label={`Visit ${project.title} project page`}>{illustration}</ExternalLink> : illustration}
+                {project.imageCaption && <p className="project-image-caption">{project.imageCaption}</p>}
+            </div>
+            <div className="project-copy">
+                <div className="project-topline">
+                    <p className="project-name">{project.title}</p>
+                    {project.status && <span className="project-status">{project.status}</span>}
                 </div>
-
-                <div className="Research section">
-                    <h2>{onGoingProjectsTitle}</h2>
-                    {onGoingProjectsData.map((block, bidx) => {
-                        return <div className="research_projects">
-                            <h3>{block.projectTitle}</h3>
-                            {block.projectDescription.map((desc, didx) => {
-                                if (desc.type === "paragraph") {
-                                    return (
-                                        <ReactMarkdown
-                                            remarkPlugins={[remarkGfm]}
-                                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                            components={{ a: MarkdownLink }}
-                                        >
-                                            {desc.text || ''}
-                                        </ReactMarkdown>
-                                    );
-                                }
-
-                                if (desc.type === "bullet-list") {
-                                    return (
-                                        <ul key={bidx}>
-                                            {desc.items?.map((item, i) => (
-                                                <ReactMarkdown
-                                                    remarkPlugins={[remarkGfm]}
-                                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                                    components={{ a: MarkdownLink }}
-                                                >
-                                                    {item}
-                                                </ReactMarkdown>
-                                            ))}
-                                        </ul>
-                                    );
-                                }
-
-                                return null;
-                            })}
-                        </div>
-                    })}
-                </div>
-
-                {researchProjects.map((section, idx) => {
-                    return <div className="Research section" key={idx}>
-                        <h2>{section.sectionTitle}</h2>
-                        <div className="research_project_main">
-                            {section.sectionData.map((block, bidx) => {
-                                if (block.type === "paragraph") {
-                                    return (
-                                        <ReactMarkdown
-                                            remarkPlugins={[remarkGfm]}
-                                            rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                            components={{ a: MarkdownLink }}
-                                        >
-                                            {block.text || ''}
-                                        </ReactMarkdown>
-                                    );
-                                }
-
-                                if (block.type === "bullet-list") {
-                                    return (
-                                        <ul key={bidx}>
-                                            {block.items?.map((item, i) => (
-                                                <ReactMarkdown
-                                                    remarkPlugins={[remarkGfm]}
-                                                    rehypePlugins={[rehypeRaw, rehypeSanitize]}
-                                                    components={{ a: MarkdownLink }}
-                                                >
-                                                    {item}
-                                                </ReactMarkdown>
-                                            ))}
-                                        </ul>
-                                    );
-                                }
-
-                                if (block.type === 'image') {
-                                    return (
-                                        <img src={block.src.replace('/public', '')} alt="" />
-                                    )
-                                }
-
-                                return null;
-                            })
-                            }
-                        </div>
-                    </div>
-                })}
-
-                <div className="Research section">
-                    <h2>{pastProjectsTitle}</h2>
-                    <div className="past_projects">
-                        {pastProjectsData.map((block, idx) => {
-                            return <div>
-                                <h3>{block.projectTitle}</h3>
-                                <img src={block.projectImage.replace('/public', '')} alt="" />
-                            </div>
-
-                        })}
-                    </div>
-                </div>
-
-
-                <div className="Research section">
-                    <h2>{sponsorsTitle}</h2>
-                    <div className="research_collaborators">
-                        {sponsorsData.map((value, idx) => {
-                            return <img src={value.replace('/public', '')} alt="" />
-                        })}
-                    </div>
+                <h3>{project.subtitle}</h3>
+                <p className="project-description">{project.description}</p>
+                {project.tags?.length > 0 && <ul className="project-tags" aria-label="Research topics">{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>}
+                <div className="project-links">
+                    {project.url ? <ExternalLink className="research-link" href={project.url} aria-label={`${project.linkLabel || 'Project page'}: ${project.title}`}>{project.linkLabel || 'Project page'}</ExternalLink> : <span className="project-coming-soon">Project page coming soon</span>}
+                    {project.videoUrl && <ExternalLink className="research-video-link" href={project.videoUrl} aria-label={`Watch ${project.title} video`}>Watch video</ExternalLink>}
                 </div>
             </div>
+        </article>
+    )
+}
+
+function Research() {
+    const applications = researchData.researchApplications || []
+    function jumpTo(id) {
+        const section = document.getElementById(id)
+        if (!section) return
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        section.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' })
+        section.querySelector('h2')?.focus({ preventScroll: true })
+    }
+    return (
+        <div className="ResearchPage">
+            <NavBar />
+            <main className="Research container">
+                <header className="research-intro">
+                    <h1>{researchData.researchPageTitle}</h1>
+                    <p className="research-headline">{researchData.researchPageHeadline}</p>
+                    <p className="research-summary">{researchData.researchPageSubtitle}</p>
+                </header>
+                <nav className="research-jump-nav" aria-label="Research applications">
+                    {applications.map(application => <button key={application.id} onClick={() => jumpTo(application.id)}><FontAwesomeIcon icon={applicationIcons[application.icon] || faSeedling} aria-hidden="true" />{application.title}</button>)}
+                    <button className="past-projects-jump" onClick={() => jumpTo('past-projects')}>Past Projects</button>
+                </nav>
+                {applications.map(application => (
+                    <section className={`application-section application-${application.icon}`} key={application.id} id={application.id} aria-labelledby={`${application.id}-title`}>
+                        <div className="application-heading">
+                            <div>
+                                <div className="application-label"><FontAwesomeIcon icon={applicationIcons[application.icon] || faSeedling} aria-hidden="true" /><h2 id={`${application.id}-title`} tabIndex="-1">{application.title}</h2></div>
+                                <p className="application-tagline">{application.tagline}</p>
+                            </div>
+                            <p className="application-description">{application.description}</p>
+                        </div>
+                        <div className={`project-grid${application.projects.length === 1 ? ' project-grid-single' : ''}`}>
+                            {application.projects.map(project => <ProjectCard key={project.id} project={project} wide={application.projects.length === 1} />)}
+                        </div>
+                        {application.highlight && <aside className="research-highlight" aria-label={application.highlight.title}><div><h3>{application.highlight.title}</h3><p>{application.highlight.description}</p></div>{application.highlight.url && <a href={application.highlight.url} className="research-link">{application.highlight.linkLabel || 'Lab news'}</a>}</aside>}
+                        {application.mediaCoverage?.length > 0 && <aside className="research-media" aria-label={`${application.title} in the news`}><h3>In the news</h3><ul>{application.mediaCoverage.map(item => <li key={item.url}><span className="media-outlet">{item.outlet}</span><ExternalLink href={item.url}>{item.title}</ExternalLink><span className="media-date">{item.date}</span></li>)}</ul></aside>}
+                    </section>
+                ))}
+                <section className="section research-past-section" id="past-projects" aria-labelledby="past-projects-title">
+                    <h2 id="past-projects-title" tabIndex="-1">{researchData.pastProjectsTitle}</h2>
+                    <div className="past_projects">{researchData.pastProjectsData.map(project => <div key={project.projectTitle}><h3>{project.projectTitle}</h3><img src={mediaPath(project.projectImage)} alt={project.projectTitle} loading="lazy" /></div>)}</div>
+                </section>
+                <section className="section research-sponsors-section" aria-labelledby="research-sponsors-title">
+                    <h2 id="research-sponsors-title">{researchData.SponsorsTitle}</h2>
+                    <div className="research_collaborators">{researchData.SponsorsData.map((src, index) => <img key={src} src={mediaPath(src)} alt={`Research sponsor ${index + 1}`} loading="lazy" />)}</div>
+                </section>
+            </main>
             <Footer />
         </div>
     )
 }
-
 export default Research
