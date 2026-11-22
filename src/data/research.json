@@ -1,60 +1,162 @@
 {
   "researchPageTitle": "Research",
-  "researchPageSubtitle": [
+  "researchPageHeadline": "Trustworthy robots for real-world challenges.",
+  "researchPageSubtitle": "We combine physics-based control with machine learning to help robots operate safely, adapt to uncertainty, and work reliably beyond the lab. Our research connects sensing, learning, and decision-making across three application areas.",
+  "researchApplications": [
     {
-      "type": "paragraph",
-      "text": "### At the [Robot Autonomy Lab (RAL)](/), we design autonomous robotic systems that achieve safe, adaptive, and robust autonomy in dynamic and uncertain environments. We improve both the performance (control accuracy and motion efficiency) and reliability (safety, stability, and robustness) by combining the adaptability and learning capabilities of Artificial Intelligence with the reliability and predictability of traditional physics model-based control. Our research integrates robotics, control systems, and machine learning, with a strong emphasis on real-world deployment and field validation."
-    }
-  ],
-  "onGoingProjectsTitle": "Ongoing Projects",
-  "onGoingProjectsData": [
-    {
-      "projectTitle": "NSERC Discovery Grant -- Safe Control in Uncertain Environments",
-      "projectDescription": [
+      "id": "intelligent-agriculture",
+      "icon": "agriculture",
+      "title": "Intelligent Agriculture",
+      "tagline": "Autonomy that adapts to the field.",
+      "description": "Prairie fields change from one pass to the next. We develop robots that learn how the ground affects their motion and adjust their speed to balance accuracy, efficiency, and uncertainty.",
+      "projects": [
         {
-          "type": "paragraph",
-          "text": "Development of AI-enhanced control strategies and physics-informed data-driven modeling techniques for mobile robots operating in agriculture, Arctic, and mining environments."
-        }
-      ]
-    },
-    {
-      "projectTitle": "Research Manitoba & University of Manitoba -- AI-Enhanced Agricultural Robots",
-      "projectDescription": [
-        {
-          "type": "paragraph",
-          "text": "New Investigator Operating Grant 2025, URGP 2024, UCRP 2025: Design of an efficient, uncertainty-aware control framework integrating Gaussian Process-enhanced Model Predictive Control for autonomous field robots, enabling safe and adaptive navigation across uncertain terrains in real-world agricultural environments."
-        }
-      ]
-    },
-    {
-      "projectTitle": "University Start-up Grant -- Field Robotics in Arctic Harsh Environments",
-      "projectDescription": [
-        {
-          "type": "paragraph",
-          "text": "Exploration of mobile robotic platforms for sea ice navigation, autonomous environmental sensing, and manipulation tasks under extreme Arctic conditions."
-        }
-      ]
-    }
-  ],
-  "researchProjects": [
-    {
-      "sectionTitle": "Machine Learning-Based Model Predictive Control",
-      "sectionData": [
-        {
-          "type": "image",
-          "src": "/public/research_page_media/Research Media/researchimg1.jpeg"
+          "id": "terragp-mpc",
+          "title": "TerraGP-MPC",
+          "subtitle": "Learning the terrain while the robot drives",
+          "description": "A physics-structured Gaussian process learns how soil, crop stubble, and grass change the robot’s motion. Online model updates and predictive control help the robot track its path as it crosses unfamiliar terrain.",
+          "image": "/research_page_media/applications/terragp-mpc.jpg",
+          "imageAlt": "TerraGP-MPC robot crossing tilled soil, crop stubble, and grass, with an illustration of online terrain adaptation.",
+          "imageFit": "contain",
+          "status": "Under review",
+          "tags": [
+            "Online learning",
+            "Terrain adaptation",
+            "Predictive control"
+          ],
+          "url": "https://terragp-mpc.github.io/",
+          "videoUrl": "https://terragp-mpc.github.io/#video"
         },
         {
-          "type": "bullet-list",
-          "items": [
-            "Enhanced **Dynamics** Modeling: Gaussian Process (GP) machine learning models correct discrepancies in physics-based models using real-world data",
-            "**Uncertainty** Quantification: GP estimated uncertainties improve modeling reliability",
-            "Improved **Safety**: Incorporates uncertainty into control decisions",
-            "**Constraint** Satisfication: Enforces all input and output constraints withing the Model Predictive Control (MPC)",
-            "**Optimal** Control: Achieves efficient and robust system control under uncertainty"
-          ]
+          "id": "ra-sgp-mpc",
+          "title": "RA-SGP-MPC",
+          "subtitle": "Choosing speed from uncertainty",
+          "description": "How fast should a field robot drive? We use uncertainty in both the learned vehicle model and localisation to select its speed, slowing down where tracking is less reliable and gaining time where conditions allow.",
+          "image": "/research_page_media/applications/ra-sgp-mpc.jpg",
+          "imageAlt": "Drone views of risk-aware path tracking on wheat stubble and tilled soil, with the measured speed along a serpentine route.",
+          "imageFit": "contain",
+          "status": "Under review",
+          "tags": [
+            "Risk-aware control",
+            "Speed adaptation",
+            "Field robotics"
+          ],
+          "url": "https://ra-sgp-mpc.github.io/",
+          "videoUrl": "https://ra-sgp-mpc.github.io/#video"
+        }
+      ],
+      "highlight": {
+        "title": "Robotic sensing beneath the surface",
+        "description": "We are also developing robot-towed ground-penetrating radar for soil-moisture mapping in Prairie agriculture, connecting autonomous navigation with soil science. Supported by UM’s UCRP and SREF programs.",
+        "url": "#/news",
+        "linkLabel": "Lab news"
+      },
+      "mediaCoverage": [
+        {
+          "outlet": "CTV News · National Sci-Tech",
+          "title": "Technology to make farming autonomous",
+          "date": "October 12, 2026",
+          "url": "https://www.ctvnews.ca/sci-tech/article/novel-solution-manitoba-researchers-develop-technology-to-make-farming-autonomous/"
+        },
+        {
+          "outlet": "UM Today · Up Close",
+          "title": "Can AI teach a tractor to think?",
+          "date": "September 21, 2026",
+          "url": "https://umtoday.ca/stories/can-ai-teach-tractor-think"
+        },
+        {
+          "outlet": "Corus Radio Network",
+          "title": "Can AI help our agriculture sector?",
+          "date": "October 18, 2026",
+          "url": "https://robfai.podbean.com/e/can-ai-help-our-agriculture-sector-a-university-of-manitoba-think-so/"
         }
       ]
+    },
+    {
+      "id": "assistive-technology",
+      "icon": "assistive",
+      "title": "Assistive Technology",
+      "tagline": "Robots that support everyday independence.",
+      "description": "We bring safe robot navigation together with rehabilitation research to explore useful assistance in everyday environments. Our focus is on user control, reliable motion, and the needs of people who use assistive technology.",
+      "projects": [
+        {
+          "id": "prism-shield",
+          "title": "PRISM Shield",
+          "subtitle": "Safer navigation in tight spaces",
+          "description": "A safety filter uses live LiDAR point clouds and the robot’s actual footprint to check motion commands. It accounts for nonconvex shapes and operates in the robot’s body frame, reducing dependence on reliable global localisation.",
+          "image": "/research_page_media/applications/prism-shield.jpg",
+          "imageAlt": "The lab’s Go2-W wheeled quadruped, a platform for footprint-aware navigation and safety research.",
+          "imageCaption": "Wheeled quadruped platform at RAL",
+          "status": "Under review",
+          "tags": [
+            "Safety filtering",
+            "Robot footprints",
+            "Point-cloud sensing"
+          ],
+          "url": "https://anonymous.4open.science/w/Prism-Shield-Website-B66F/",
+          "videoUrl": "https://anonymous.4open.science/w/Prism-Shield-Website-B66F/#video"
+        },
+        {
+          "id": "project-bark",
+          "title": "Project BARK",
+          "subtitle": "Exploring assistive robotic K9s",
+          "description": "In collaboration with Dr. Jacquie Ripat and the Technology for Assisted Living lab, we explore how robotic dogs could support wheelchair users. The work centres on real needs, user autonomy, safety, and participation in everyday life.",
+          "image": "/news_images/project_bark.jpg",
+          "imageAlt": "Jay Wang and Jacquie Ripat demonstrating a robotic dog with rehabilitation researchers at the Technology for Assisted Living lab.",
+          "status": "Ongoing collaboration",
+          "tags": [
+            "Assistive robotics",
+            "Human-centred design",
+            "Rehabilitation"
+          ],
+          "url": "https://umtoday.ca/stories/barking-right-tree",
+          "linkLabel": "About the collaboration",
+          "videoUrl": "https://www.cbc.ca/player/play/video/9.7323361"
+        }
+      ],
+      "mediaCoverage": [
+        {
+          "outlet": "CBC News",
+          "title": "Robot dog lends a helping paw",
+          "date": "August 28, 2026",
+          "url": "https://www.cbc.ca/player/play/video/9.7323361"
+        },
+        {
+          "outlet": "UM Today",
+          "title": "Barking up the right tree",
+          "date": "August 31, 2026",
+          "url": "https://umtoday.ca/stories/barking-right-tree"
+        }
+      ]
+    },
+    {
+      "id": "arctic-exploration",
+      "icon": "arctic",
+      "title": "Arctic Exploration",
+      "tagline": "Building autonomy for snow, ice, and remote environments.",
+      "description": "Low traction and uncertain terrain make cold-region robotics especially challenging. We develop learning-based control and safety methods as foundations for future Arctic navigation and environmental sensing.",
+      "projects": [
+        {
+          "id": "snow-and-ice",
+          "title": "Field Robotics on Snow and Ice",
+          "subtitle": "Learning to navigate on low-traction terrain",
+          "description": "Our uncertainty-aware learning-based predictive controller is evaluated in snow-and-ice field trials. This work investigates reliable path following under changing traction and builds a foundation for robots operating in cold and remote environments.",
+          "image": "/research_page_media/applications/snow-and-ice.jpg",
+          "imageAlt": "Aerial view of the lab’s snow-and-ice robot field-testing area in Manitoba.",
+          "imageCaption": "Snow and ice field trials in Manitoba",
+          "status": "Manuscript under review",
+          "tags": [
+            "Cold-region robotics",
+            "Uncertainty-aware control",
+            "Snow and ice"
+          ]
+        }
+      ],
+      "highlight": {
+        "title": "Looking ahead: Arctic environmental sensing",
+        "description": "Our longer-term direction connects mobile robot autonomy with environmental and subsurface sensing in collaboration with Arctic researchers. Ground-penetrating radar acquired through UM’s SREF program will also support this work."
+      },
+      "mediaCoverage": []
     }
   ],
   "pastProjectsTitle": "Past Projects",
