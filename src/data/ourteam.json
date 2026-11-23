@@ -223,7 +223,43 @@
       ]
     },
     {
-      "sectionTitle": "Undergraduate Students"
+      "sectionTitle": "Undergraduate Students",
+      "teamMembers": [
+        {
+          "ProfileName": "Caleb",
+          "ProfileLink": "/team/caleb",
+          "ProfilePic": "/public/our_team_files/Caleb.webp",
+          "Name": "Caleb Pollreis",
+          "Position": "Research Assistant (since Nov 2026)",
+          "Biography": "Caleb Pollreis is an undergraduate Computer Engineering co-op student at the University of Manitoba. He joined the Robot Autonomy Lab as a research assistant in November 2026. His interests include autonomous systems, robotics, and embedded software. He also leads the driverless systems team for the university’s Formula SAE electric race car program.",
+          "Education": [
+            {
+              "degreeName": "Bachelor of Science in Computer Engineering (Co-op)",
+              "degreeUniversity": "University of Manitoba",
+              "gradYear": "expected 2028"
+            }
+          ],
+          "Links": [
+            {
+              "type": "Personal Website",
+              "link": "https://calebpollreis.com/"
+            },
+            {
+              "type": "Email",
+              "link": "calebpollreis@gmail.com"
+            },
+            {
+              "type": "LinkedIn",
+              "link": "https://www.linkedin.com/in/caleb-pollreis/"
+            }
+          ],
+          "Interests": [
+            "Autonomous systems",
+            "Robotics",
+            "Embedded software"
+          ]
+        }
+      ]
     },
     {
       "sectionTitle": "Engineers",
